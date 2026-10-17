@@ -775,8 +775,12 @@ function draw(){
   if(battling.length){
    const frontAlly=battling.filter(u=>u.team==='ally').sort((a,b)=>b.x-a.x)[0];
    const frontFoe=battling.filter(u=>u.team==='foe').sort((a,b)=>a.x-b.x)[0];
-   if(frontAlly&&frontFoe)targetX=(frontAlly.x+frontFoe.x)*.5;
-   else targetX=frontAlly?.x??frontFoe?.x??550;
+   if(frontAlly&&frontFoe){
+    // A very distant formation must not leave the middle of the zoom empty.
+    const gap=frontFoe.x-frontAlly.x;
+    targetX=gap>380?frontAlly.x+150:(frontAlly.x+frontFoe.x)*.5;
+   }else if(frontAlly)targetX=frontAlly.x+135;
+   else if(frontFoe)targetX=frontFoe.x-135;
   }
  }
  targetX=clamp(targetX, W/(2*idealZoom), W-W/(2*idealZoom));
