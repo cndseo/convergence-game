@@ -1,0 +1,12 @@
+{
+  "name": "convergence-game",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Jeu de stratégie tactique mobile CONVERGENCE",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
