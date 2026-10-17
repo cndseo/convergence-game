@@ -139,6 +139,7 @@
 @media(prefers-reduced-motion:reduce){.dock-lane .threat.alert{animation:none}}
 
 /* V10 - actual game layout on mobile, preserving the original desktop page. */
+.dock-wave{display:inline-block;color:#afc7db;font-size:10px;margin-right:4px}
 #mobileMenuBtn{display:none}
 #mobileMenu[hidden],#mobilePlaceHint[hidden]{display:none!important}
 .mobile-menu{position:fixed;inset:0;z-index:55;background:#03080fdc;display:flex;align-items:center;justify-content:center;padding:16px}
@@ -291,7 +292,7 @@
     <button id="dockUnitsTab" class="dock-tab selected" type="button" aria-pressed="true">Troupes</button>
     <button id="dockActionsTab" class="dock-tab" type="button" aria-pressed="false">Actions</button>
   </div>
-  <div class="dock-stats" aria-live="off">Élan <b id="dockMoney">85</b><small>/160</small></div>
+  <div class="dock-stats" aria-live="off"><span id="dockWave" class="dock-wave">V0</span> Élan <b id="dockMoney">85</b><small>/160</small></div>
   <button class="dock-upgrade" id="dockUpgrade" type="button" aria-label="Améliorer mes troupes">↑</button>
 </div>
   <div class="dock-lanes" aria-label="Axe choisi">
