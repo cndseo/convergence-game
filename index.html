@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#111723"><meta name="description" content="CONVERGENCE — jeu tactique de mobilisation, jouable hors ligne sur ordinateur et mobile.">
-<title>CONVERGENCE V9 — La rue s'éveille</title>
+<title>CONVERGENCE V10 — La rue s'éveille</title>
 <style>
 :root{--bg:#0b0f16;--surface:#141c27;--panel:#192332;--line:#2d3c4c;--ink:#f4f4ed;--dim:#94a3b5;--yellow:#f1c849;--orange:#f59b51;--red:#e16e70;--green:#9ce2be;--blue:#7eb3d9;--shadow:0 20px 90px #0008;--radius:17px}
 *{box-sizing:border-box}html{height:100%;background:var(--bg)}body{margin:0;min-height:100%;color:var(--ink);background:radial-gradient(ellipse at 13% -12%,#55402a45,transparent 31%),radial-gradient(ellipse at 90% 22%,#24596d28,transparent 36%),var(--bg);font:500 14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:hidden}button{font:inherit;cursor:pointer;color:inherit}button:disabled{cursor:not-allowed;opacity:.42}button:focus-visible{outline:2px solid #fff;outline-offset:3px}.wrap{max-width:1440px;margin:auto;padding:21px clamp(14px,2.6vw,42px) 52px}.mast{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:21px}.logo{display:flex;align-items:center;gap:15px}.mark{height:52px;width:52px;border:2px solid var(--yellow);border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#f1c84920,#f1c84905);transform:rotate(-7deg);box-shadow:inset 0 0 0 5px #0c1119}.mark svg{height:32px;width:32px;transform:rotate(7deg)}.eyebrow{color:var(--yellow);text-transform:uppercase;letter-spacing:.2em;font-weight:850;font-size:10px}.brand{font-weight:1000;letter-spacing:-.055em;font-size:clamp(28px,3.7vw,45px);line-height:1;margin:3px 0}.subbrand{font-size:12px;letter-spacing:.055em;color:var(--dim);text-transform:uppercase}.mast-actions{display:flex;gap:8px;flex-wrap:wrap}.small-btn{border:1px solid var(--line);background:#17202b;padding:10px 13px;border-radius:10px;font-weight:740;font-size:12px;transition:.15s}.small-btn:hover{background:#253449}.small-btn.active{background:#493b21;border-color:#ad8c35;color:#fff0bd}.ticker{border:1px solid #5f5036;background:linear-gradient(90deg,#423922,#1d2930 64%);padding:11px 16px;border-radius:12px;display:flex;align-items:center;gap:14px;margin-bottom:16px;box-shadow:inset 3px 0 0 var(--yellow)}.ticker strong{color:var(--yellow);font-size:11px;letter-spacing:.1em;white-space:nowrap}.ticker span{font-size:12px;color:#d5d6ca}.top-grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px}.battle{min-width:0}.battle-top{border:1px solid var(--line);background:linear-gradient(180deg,#202d3d,#161e2b);border-radius:var(--radius) var(--radius) 0 0;display:flex;align-items:center;gap:20px;justify-content:space-between;padding:16px 19px}.battle-top .act{font-weight:930;font-size:16px;letter-spacing:.01em}.battle-top .location{color:var(--dim);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.scoreboard{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;border-top:1px solid var(--line);padding:14px 19px;background:#111925}.scorecol.right{text-align:right}.scoretitle{font-size:10px;letter-spacing:.12em;font-weight:900;color:var(--dim)}.scoreval{font-weight:930;font-size:24px;line-height:1.2;margin:4px 0}.scorecol.left .scoreval{color:var(--yellow)}.scorecol.right .scoreval{color:var(--red)}.meter{height:7px;border-radius:20px;overflow:hidden;background:#283444}.meter span{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--orange),var(--yellow));transition:width .3s}.scorecol.right .meter span{background:linear-gradient(90deg,#cc5364,#f28b7f);margin-left:auto}.versus{font-size:10px;border-radius:40px;border:1px solid #4a5864;padding:8px;color:#9eacb7;letter-spacing:.18em;font-weight:900}.canvas-shell{position:relative;overflow:hidden;border:1px solid var(--line);border-top:0;background:#273b48}.canvas-shell canvas{width:100%;height:auto;display:block;touch-action:manipulation;cursor:pointer;aspect-ratio:1100/490}.canvas-corner{position:absolute;pointer-events:none;top:12px;left:13px;font-size:10px;font-weight:900;letter-spacing:.12em;background:#0d1722ae;border:1px solid #ffffff28;border-radius:7px;padding:6px 9px;color:#e8e9e0}.canvas-corner.right{right:13px;left:auto}.lane-picker{display:flex;gap:7px;border:1px solid var(--line);border-top:0;background:#121a25;padding:11px;border-radius:0 0 var(--radius) var(--radius)}.lane{flex:1;min-width:0;background:#202b39;border:1px solid #334153;border-radius:9px;padding:10px 5px;font-size:11px;font-weight:780;letter-spacing:.045em;white-space:nowrap}.lane.selected{background:#594a28;border-color:var(--yellow);color:#ffe78f;box-shadow:inset 0 -2px 0 #f1c849}.lane:hover{filter:brightness(1.14)}.side{display:flex;flex-direction:column;gap:12px}.panel{border:1px solid var(--line);background:linear-gradient(150deg,#1b2635,#131d29);border-radius:var(--radius);padding:18px}.panel h2,.section-title{margin:0;color:var(--ink);font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.panel small{display:block;color:var(--dim);margin-top:5px}.resource{border-color:#7d6836;background:radial-gradient(circle at top right,#71602e50,transparent 65%),linear-gradient(145deg,#272b2b,#1a222b)}.resource-title{display:flex;justify-content:space-between;color:var(--yellow);font-size:10px;letter-spacing:.12em;font-weight:900}.resource-total{font-size:46px;font-weight:1000;letter-spacing:-.055em;line-height:1.1;margin-top:8px}.resource-total span{color:#b6b7af;font-size:14px;letter-spacing:0}.resource-bar{height:7px;border-radius:10px;background:#49505a;overflow:hidden;margin:13px 0 8px}.resource-bar>div{height:100%;width:45%;background:linear-gradient(90deg,#f38c4b,#efd15a)}.meta{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--dim)}.meta b{color:var(--ink)}.ability{width:100%;text-align:left;border-radius:11px;padding:12px;margin-top:11px;display:flex;gap:11px;align-items:center;background:#203042;border:1px solid #38516a}.ability:hover:not(:disabled){border-color:#83bad8}.ability .glyph{display:grid;place-items:center;width:39px;height:39px;border-radius:9px;background:#30546c;font-size:22px;flex:none}.ability strong{font-size:12px;display:block}.ability em{font-size:10px;color:#a8b7c7;font-style:normal;display:block;margin-top:2px}.ability .cool{margin-left:auto;color:#d8ecfb;font-size:12px;font-weight:900}.side .chapter-list{display:flex;gap:6px;margin-top:12px}.chapter{height:36px;flex:1;border:1px solid #465066;border-radius:8px;background:#273244;font-weight:900}.chapter.current{border-color:var(--yellow);background:#6c5a2b}.chapter:disabled{opacity:.35}.description{color:var(--dim);font-size:12px;margin-top:10px;line-height:1.55}.lower{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;margin-top:20px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 12px}.help-text{color:var(--dim);font-size:11px}.roster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.unit-card{border-radius:13px;min-width:0;background:linear-gradient(150deg,#202d3a,#161f2c);border:1px solid #324353;position:relative;overflow:hidden;transition:transform .12s,border-color .12s,background .12s}.unit-card:hover{transform:translateY(-2px);border-color:#728491}.unit-card.affordable{border-color:#635837}.unit-card.locked{opacity:.57}.unit-deploy{display:grid;grid-template-columns:47px minmax(0,1fr) 53px;align-items:center;gap:9px;width:100%;border:0;background:transparent;text-align:left;padding:12px 11px 9px}.unit-pict{width:44px;height:44px;display:grid;place-items:center;border-radius:11px;background:#ffffff10;font-size:27px}.unit-name{display:block;font-weight:880;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.unit-role{display:block;font-size:10px;color:var(--dim);line-height:1.35;margin-top:3px}.cost{text-align:center;color:#ffdd75;font-weight:950;font-size:16px}.cost small{display:block;font-size:9px;color:#aeb3ad;font-weight:700}.unit-bottom{border-top:1px solid #344151;padding:7px 11px 9px;display:flex;align-items:center;justify-content:space-between;gap:8px;color:#c3cdd5;font-size:10px}.level-dots{display:flex;gap:3px;margin-top:4px}.dot{height:5px;width:13px;border-radius:3px;background:#455361}.dot.on{background:var(--yellow)}.upgrade{border:1px solid #816a3b;background:#59492c;border-radius:8px;min-width:89px;padding:6px;font-size:10px;font-weight:900;color:#ffe9a2}.upgrade:hover:not(:disabled){background:#756038}.notes{display:flex;flex-direction:column;gap:7px;margin-top:13px}.note{font-size:11px;padding:9px 11px;color:#a9b9c9;background:#151f2d;border-left:2px solid #4a7992;border-radius:5px}.note:first-child{color:#f1e8be;border-color:#ecd078}.counter{color:var(--yellow);font-weight:900}.footer-info{border:1px solid #293947;border-radius:12px;padding:14px;color:#95a4b2;font-size:11px;margin-top:20px;line-height:1.65}.footer-info b{color:#e3ddbc}.kbd{border:1px solid #445667;border-radius:5px;padding:1px 5px;font-family:ui-monospace,monospace;color:#d5e0e9}.overlay{position:fixed;inset:0;z-index:30;background:#080d16d9;backdrop-filter:blur(10px);display:grid;place-items:center;padding:18px}.overlay[hidden]{display:none}.modal{width:min(520px,100%);background:radial-gradient(circle at 10% 0%,#67532a45,transparent 45%),linear-gradient(#1e2a38,#131c27);border:1px solid #79818b;border-radius:21px;padding:clamp(22px,5vw,39px);box-shadow:0 36px 130px #0009;text-align:center;position:relative}.modal:before{content:"";position:absolute;inset:6px;pointer-events:none;border:1px solid #ffffff0e;border-radius:16px}.modal .hero-icon{font-size:45px;margin-bottom:12px}.modal .eyebrow{font-size:11px}.modal h2{font-size:clamp(27px,5vw,43px);letter-spacing:-.04em;line-height:1.1;margin:12px 0}.modal p{color:#b7c4cf;font-size:13px;line-height:1.7}.primary{border:0;border-radius:10px;padding:14px 22px;background:linear-gradient(100deg,#eebc43,#ffe17a);color:#1c252c;font-size:13px;font-weight:1000;letter-spacing:.045em;box-shadow:0 7px 30px #e7ae3536}.primary:hover{filter:brightness(1.1)}.secondary{border:1px solid #64778b;padding:12px 18px;border-radius:9px;background:#253546;color:#dce9f3;font-weight:780}.modal-actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:23px}.instruct{margin:15px 0;background:#172434;border-radius:10px;padding:13px;text-align:left;font-size:12px;line-height:1.8;color:#d0dae3}.instruct b{color:#f0ce74}.hidden{display:none!important}.flash{animation:flash .4s ease}@keyframes flash{50%{filter:brightness(1.7)}}
@@ -67,7 +67,7 @@
  .dock-abilities{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:6px}
  .dock-ability{height:30px;border-radius:7px;border:1px solid #507188;background:#243c50;font-size:11px;font-weight:800}
  .dock-ability:disabled{opacity:.4}
- body:has(.overlay:not([hidden])) #mobileDock,body:has(.upgrade-sheet:not([hidden])) #mobileDock{visibility:hidden;pointer-events:none}
+ body.mobile-menu-open #mobileDock,body:has(.overlay:not([hidden])) #mobileDock,body:has(.upgrade-sheet:not([hidden])) #mobileDock{visibility:hidden;pointer-events:none}
  .overlay{padding:12px 10px calc(12px + env(safe-area-inset-bottom,0px))}
  .modal{padding:21px 18px;border-radius:16px;max-height:calc(100dvh - 26px);overflow:auto}
  .modal .hero-icon{font-size:35px;margin-bottom:4px}
@@ -137,11 +137,146 @@
 @media(max-width:650px){.dock-abilities{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:29px}.dock-ability{height:29px}#mobileDock .dock-abilities{display:grid}}
 @media(max-width:360px){.dock-ability{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.dock-lane .threat.alert{animation:none}}
+
+/* V10 - actual game layout on mobile, preserving the original desktop page. */
+#mobileMenuBtn{display:none}
+#mobileMenu[hidden],#mobilePlaceHint[hidden]{display:none!important}
+.mobile-menu{position:fixed;inset:0;z-index:55;background:#03080fdc;display:flex;align-items:center;justify-content:center;padding:16px}
+.mobile-menu-box{width:min(430px,100%);max-height:min(90dvh,750px);overflow-y:auto;border-radius:20px;padding:18px;background:linear-gradient(155deg,#22354a,#101925);border:1px solid #aa905b;box-shadow:0 30px 80px #000a}
+.mobile-menu-heading{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.mobile-menu-heading h2{margin:0;font-size:21px}
+.mobile-menu-heading button{min-width:44px;min-height:44px;border-radius:10px;background:#2a3f50;border:1px solid #667d8d}
+.mobile-menu-box p{font-size:13px;color:#b9cada;margin:8px 0 16px}
+.mobile-chapters{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px}
+.mobile-chapters button{min-height:55px;border:1px solid #587185;border-radius:11px;background:#1c3042;font-size:16px;font-weight:900}
+.mobile-chapters button[aria-current="true"]{border-color:#efc967;color:#ffe5a0;background:#554627}
+.mobile-chapters button:disabled{opacity:.35}
+.mobile-menu-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:18px}
+.mobile-menu-actions button{min-height:48px;border-radius:10px;background:#273a4b;border:1px solid #688092;font-weight:800}
+.mobile-menu-actions button:last-child{border-color:#b18b4e;background:#513c2b}
+.dock-tabs{display:flex;gap:3px;padding:3px;border:1px solid #334b61;border-radius:11px;background:#071320}
+.dock-tab{min-height:34px;padding:5px 12px;border:0;border-radius:8px;background:transparent;color:#b6cadd;font-weight:850;font-size:12px}
+.dock-tab.selected{background:#f0c969;color:#161d27;box-shadow:0 1px 8px #f0c9693a}
+.mobile-place-hint{display:flex;align-items:center;gap:9px;justify-content:space-between;color:#fff0ca;background:#65401c;border:1px solid #e6b45b;border-radius:10px;padding:6px 8px;line-height:1.1;font-size:11px;font-weight:800}
+.mobile-place-hint button{background:#243648;border:1px solid #f7d897;border-radius:8px;min-height:35px;padding:3px 11px;color:#fff;font-weight:900}
+@media(max-width:650px) and (orientation:portrait){
+ html,body{height:100%;overscroll-behavior:none;overflow:hidden}
+ body{min-height:100dvh;padding:0!important}
+ .wrap{width:100%;height:100dvh;max-width:none;padding:calc(5px + env(safe-area-inset-top,0px)) 7px calc(177px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:0;overflow:hidden}
+ .mast{display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:4px;height:43px;min-height:43px;margin:0 0 5px}
+ .mark,.eyebrow,.subbrand{display:none!important}
+ .logo{min-width:0;gap:0}
+ .brand{font-size:18px;line-height:1;letter-spacing:-.055em;white-space:nowrap}
+ .mast-actions{width:auto;flex:none;display:flex;gap:5px;margin:0}
+ .mast-actions button{border-radius:9px;min-width:37px;min-height:38px;padding:4px 6px}
+ #rulesBtn,#resetBtn{display:none!important}
+ #mobileMenuBtn{display:block!important;font-size:19px;font-weight:800}
+ #muteBtn,#pauseBtn{font-size:0;width:38px}
+ #muteBtn:after{content:"♪";font-size:19px;line-height:1}
+ #muteBtn[aria-pressed="false"]:after{content:"♪̸";opacity:.7}
+ #pauseBtn:after{content:"Ⅱ";font-size:18px;line-height:1}
+ #speedBtn{width:38px;font-size:13px}
+ .ticker,.top-grid>.side,.lower,.footer-info{display:none!important}
+ .top-grid{display:flex;flex:1;min-height:0;gap:0}
+ .battle{height:100%;min-height:0;flex:1;display:flex;flex-direction:column;overflow:hidden;border:1px solid #3c5265;border-radius:12px;background:#142130}
+ .battle-top{padding:6px 9px;min-height:39px;flex:none}
+ .battle-top .location{font-size:8px}
+ .battle-top .act{font-size:12px}
+ .scoreboard{padding:4px 9px;min-height:45px;flex:none}
+ .scoretitle{font-size:8px}
+ .scoreval{font-size:15px}
+ .scoreboard .meter{margin:0;height:4px}
+ .versus{padding:4px;font-size:8px}
+ .canvas-shell{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:0;background:radial-gradient(ellipse at center,#344556,#101c2d 70%)}
+ .canvas-shell canvas{display:block;width:100%;height:auto!important;max-height:100%;aspect-ratio:1100/490;min-height:0!important;object-fit:contain}
+ .camera-button{top:5px;min-height:32px}
+ .canvas-corner{font-size:8px}
+ .mobile-intel{height:34px;min-height:34px;flex:none;padding:4px 8px;font-size:9px;border-radius:0}
+ .mobile-intel strong{font-size:10px;text-align:center;max-width:47%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ #mobileDock{display:block;position:fixed;left:0;right:0;top:auto;bottom:0;height:auto;padding:6px max(7px,env(safe-area-inset-right,0px)) calc(7px + env(safe-area-inset-bottom,0px)) max(7px,env(safe-area-inset-left,0px));background:linear-gradient(0deg,#0d1621,#172a39);border-top:1px solid #a88a54;box-shadow:0 -6px 24px #06080cb0}
+ .dock-top{display:flex;height:38px;gap:5px;margin-bottom:5px;align-items:center}
+ .dock-stats{flex:1;text-align:right;font-size:10px}
+ .dock-stats b{font-size:17px}
+ .dock-stats small{font-size:10px;color:#95aaba}
+ .dock-upgrade{min-width:37px;height:36px;font-size:20px;padding:0 5px}
+ .dock-lanes{margin:0 0 6px;gap:5px}
+ .dock-lane{height:40px;min-height:40px;font-size:10px;border-radius:9px}
+ .dock-lane .threat{font-size:10px}
+ .dock-units{grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;height:66px}
+ .dock-unit{height:66px;min-height:66px;border-radius:11px;gap:1px}
+ .dock-unit .dock-icon{font-size:21px}
+ .dock-unit .dock-short{font-size:9px}
+ .dock-unit .dock-cost{font-size:12px}
+ .dock-abilities{margin:0!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;height:66px}
+ #mobileDock .dock-abilities{grid-template-columns:repeat(5,minmax(0,1fr));grid-auto-rows:66px}
+ .dock-ability{height:66px;min-height:66px;font-size:10px;white-space:normal;line-height:1.3;padding:5px 2px;border-radius:11px}
+ #mobileDock[data-tab="units"] .dock-abilities{display:none!important}
+ #mobileDock[data-tab="actions"] .dock-units{display:none!important}
+ #mobileDock[data-tab="actions"] .dock-abilities{display:grid!important}
+ #mobileDock .mobile-place-hint:not([hidden]){margin-top:5px}
+ .overlay{z-index:40}
+ .upgrade-sheet{z-index:48}
+}
+@media(max-width:360px) and (orientation:portrait){
+ .brand{font-size:16px}
+ .dock-tab{padding:5px 8px;font-size:11px}
+ .dock-unit .dock-short{font-size:8px}
+ .dock-unit .dock-icon{font-size:19px}
+ .dock-unit .dock-cost{font-size:11px}
+ .dock-ability{font-size:9px}
+ .dock-stats b{font-size:16px}
+}
+@media(max-height:550px) and (orientation:landscape) and (max-width:1000px){
+ html,body{height:100%;overflow:hidden}
+ body{padding:0!important}
+ .wrap{height:100dvh;max-width:none;display:flex;flex-direction:column;overflow:hidden;padding:4px calc(32vw + 8px + env(safe-area-inset-right,0px)) 4px max(6px,env(safe-area-inset-left,0px))}
+ .mast{height:34px;min-height:34px;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:5px;margin:0 0 4px}
+ .mark,.eyebrow,.subbrand{display:none!important}
+ .brand{font-size:17px;line-height:1}
+ .mast-actions{width:auto;display:flex;gap:4px;margin:0}
+ .mast-actions button{min-height:29px;min-width:32px;padding:3px 5px}
+ #rulesBtn,#resetBtn{display:none!important}
+ #mobileMenuBtn{display:block!important}
+ .ticker,.top-grid>.side,.lower,.footer-info{display:none!important}
+ .top-grid{flex:1;display:flex;min-height:0}
+ .battle{flex:1;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+ .battle-top{min-height:30px;padding:4px 8px}
+ .battle-top .act{font-size:11px}
+ .scoreboard{min-height:34px;padding:3px 8px}
+ .scoretitle{font-size:8px}.scoreval{font-size:13px;margin:0}.meter{height:3px}
+ .canvas-shell{flex:1;min-height:0;display:flex;justify-content:center;align-items:center;overflow:hidden}
+ .canvas-shell canvas{width:100%;height:auto!important;max-height:100%;min-height:0!important;aspect-ratio:1100/490}
+ .mobile-intel{display:flex;flex:none;height:23px;min-height:23px;padding:3px 6px;font-size:9px}
+ #mobileDock{display:flex;flex-direction:column;position:fixed;top:0;bottom:0;left:auto;right:0;width:32vw;min-width:250px;height:100dvh;padding:8px calc(8px + env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) 8px;background:#142333;border-left:1px solid #b69b66;z-index:20;gap:4px}
+ .dock-top{display:flex;gap:3px;min-height:37px;height:37px;flex:none}
+ .dock-tabs{gap:2px;padding:2px}
+ .dock-tab{font-size:10px;padding:3px 7px;min-height:30px}
+ .dock-stats{flex:1;text-align:right;font-size:9px}
+ .dock-stats b{font-size:15px}
+ .dock-upgrade{height:34px;min-height:34px;padding:3px 7px}
+ .dock-lanes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;flex:none;margin:0 0 3px}
+ .dock-lane{height:37px;min-height:37px;font-size:8px;border-radius:8px;padding:2px;gap:2px}
+ .dock-lane .threat{padding:1px 3px;font-size:9px}
+ .dock-units{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:4px;flex:1;min-height:0}
+ .dock-unit{min-height:0;height:100%;min-width:0;border:1px solid #708b7a;border-radius:9px;background:#233d4a;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1px;position:relative}
+ .dock-unit .dock-icon{font-size:18px}
+ .dock-unit .dock-short{font-size:9px}
+ .dock-unit .dock-cost{font-size:11px;font-weight:900;color:#ffe49e}
+ .dock-abilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:4px;flex:1;min-height:0;margin:0!important}
+ #mobileDock .dock-abilities{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:unset}
+ .dock-ability{height:100%;min-height:0;white-space:normal;border-radius:9px;background:#283d4d;font-size:10px;border:1px solid #708b7a}
+ #mobileDock[data-tab="units"] .dock-abilities{display:none!important}
+ #mobileDock[data-tab="actions"] .dock-units{display:none!important}
+ #mobileDock[data-tab="actions"] .dock-abilities{display:grid!important}
+ .camera-button{font-size:9px;min-height:27px;top:4px}
+ .mobile-place-hint{font-size:10px}
+}
+
 </style>
 </head>
 <body>
 <main class="wrap">
-<header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · édition V9</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button></div></header>
+<header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · édition V10</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button><button class="small-btn" type="button" id="mobileMenuBtn" aria-haspopup="dialog" aria-expanded="false" aria-label="Ouvrir le menu">☰</button></div></header>
 <div class="ticker"><strong>● ÉDITION SPÉCIALE</strong><span id="tickerMsg">Une mobilisation inédite traverse le pays. Formez un collectif, rassemblez et faites reculer la ligne de maintien de l'ordre.</span></div>
 <div class="top-grid"><section class="battle" aria-label="Champ de jeu"><div class="battle-top"><div><div class="location" id="stageTag">ACTE 01 · LE ROND-POINT</div><div class="act" id="stageTitle">Première mobilisation</div></div><div style="text-align:right"><div class="location">TEMPS ÉCOULÉ</div><div class="act" id="timeText">00:00</div></div></div><div class="scoreboard"><div class="scorecol left"><div class="scoretitle">MOBILISATION</div><div class="scoreval"><span id="allyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="allyMeter"></span></div></div><div class="versus">VS</div><div class="scorecol right"><div class="scoretitle">LIGNE DES CRS</div><div class="scoreval"><span id="enemyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="enemyMeter"></span></div></div></div><div class="canvas-shell"><button type="button" id="cameraBtn" class="camera-button" aria-pressed="false" aria-label="Activer la caméra rapprochée">◎ Vue proche</button><canvas id="field" width="1100" height="490" aria-label="Bataille stylisée sur trois axes. Sélectionnez un axe puis déployez des unités."></canvas><div class="canvas-corner">← MOBILISATION</div><div class="canvas-corner right">CRS →</div></div><div class="lane-picker" aria-label="Choisir un axe de progression"><button class="lane" data-lane="0">01 · BOULEVARD</button><button class="lane selected" data-lane="1">02 · PLACE</button><button class="lane" data-lane="2">03 · RUE BASSE</button></div></section>
 <div class="mobile-intel" id="mobileIntel"><span id="intelLane">AXE 2 · PLACE</span><strong id="intelMessage">PRÉPARATION</strong><span id="intelWave">VAGUE 0</span></div><aside class="side"><section class="panel resource"><div class="resource-title"><span>ÉLAN COLLECTIF</span><span id="income">+14 / SEC</span></div><div class="resource-total"><span id="resourceValue">85</span> <span>/ 160</span></div><div class="resource-bar"><div id="resourceBar"></div></div><div class="meta"><span>Mobilisation disponible</span><b id="remainingCount">0 unités</b></div></section><section class="panel"><h2>Actions collectives</h2><small>Des capacités à recharger pendant l'affrontement.</small><button class="ability" id="chantBtn"><span class="glyph">📣</span><span><strong>Chant collectif</strong><em>+35 % de puissance · 9 s</em></span><span class="cool" id="chantCd">PRÊT</span></button><button class="ability" id="careBtn"><span class="glyph">✚</span><span><strong>Chaîne de solidarité</strong><em>Rétablit la cohésion du groupe</em></span><span class="cool" id="careCd">PRÊT</span></button><button class="ability" id="barrierBtn"><span class="glyph">▥</span><span><strong>Barricade collective</strong><em>65 élan · freine les renforts · 22 s</em></span><span class="cool" id="barrierCd">PRÊT</span></button>
@@ -150,21 +285,40 @@
 <div class="lower"><section><div class="section-head"><div><h2 class="section-title">Les forces du mouvement</h2><span class="help-text">Touchez une carte pour envoyer une unité sur l'axe sélectionné.</span></div><span class="help-text">💠 <b class="counter" id="points">120</b> points d'organisation <button type="button" class="dock-upgrade" id="rosterUpgrade" style="margin-left:5px">↑ Améliorer</button></span></div><div id="roster" class="roster"></div></section><aside class="side"><section class="panel"><h2>Journal de terrain</h2><small>Les événements de votre partie.</small><div class="notes" id="eventLog" aria-live="polite"></div></section><section class="panel"><h2>Objectif</h2><div class="description">Faites avancer les collectifs jusqu'au point de contrôle adverse. Chaque percée diminue la tenue de la ligne des CRS. Protégez votre propre mobilisation.</div><div class="description"><b style="color:var(--yellow)">Aucune violence graphique</b> : les unités se repoussent, perdent de la cohésion et se retirent.</div></section></aside></div>
 <div class="footer-info"><b>COMMANDES :</b> cliquez sur la voie pour la sélectionner, puis sur une carte pour mobiliser. <span class="kbd">Q</span> <span class="kbd">W</span> <span class="kbd">E</span> : changer d'axe · <span class="kbd">1–6</span> : déployer · <span class="kbd">Espace</span> : pause. Les améliorations et les actes débloqués sont sauvegardés sur cet appareil. Œuvre de fiction : véhicules, feux, gaz et équipements sont uniquement des mécaniques stylisées de jeu.</div>
 </main>
-<nav id="mobileDock" aria-label="Commandes tactiques mobiles">
-  <div class="dock-top"><span class="dock-label">FRONT · <span id="dockWave">V0</span></span><span class="dock-stats">Élan <b id="dockMoney">85</b>/160</span><button class="dock-upgrade" id="dockUpgrade">↑ Troupes</button></div>
+<nav id="mobileDock" aria-label="Commandes tactiques mobiles" data-tab="units">
+  <div class="dock-top">
+  <div class="dock-tabs" role="group" aria-label="Commandes">
+    <button id="dockUnitsTab" class="dock-tab selected" type="button" aria-pressed="true">Troupes</button>
+    <button id="dockActionsTab" class="dock-tab" type="button" aria-pressed="false">Actions</button>
+  </div>
+  <div class="dock-stats" aria-live="off">Élan <b id="dockMoney">85</b><small>/160</small></div>
+  <button class="dock-upgrade" id="dockUpgrade" type="button" aria-label="Améliorer mes troupes">↑</button>
+</div>
   <div class="dock-lanes" aria-label="Axe choisi">
     <button class="dock-lane" data-lane="0" aria-pressed="false">Boulevard <span class="threat" data-threat="0">0</span></button>
     <button class="dock-lane selected" data-lane="1" aria-pressed="true">Place <span class="threat" data-threat="1">0</span></button>
     <button class="dock-lane" data-lane="2" aria-pressed="false">Rue basse <span class="threat" data-threat="2">0</span></button>
   </div>
   <div class="dock-units" id="dockUnits" aria-label="Envoyer une troupe"></div>
-  <div class="dock-abilities">
+  <div class="dock-abilities" id="dockAbilities" aria-label="Capacités spéciales">
     <button class="dock-ability" id="dockChant">📣 Chant <span id="dockChantCd"></span></button>
     <button class="dock-ability" id="dockCare">✚ Soins <span id="dockCareCd"></span></button><button class="dock-ability" id="dockBarrier">▥ Barricade <span id="dockBarrierCd"></span></button>
     <button class="dock-ability fire-action" id="dockPallet" title="Feu de palettes, Gilets jaunes">🔥 Palettes <span id="dockPalletCd"></span></button>
     <button class="dock-ability fire-action" id="dockBin" title="Poubelle en feu, Génération Z">🗑 Poubelle <span id="dockBinCd"></span></button>
   </div>
+  <div id="mobilePlaceHint" class="mobile-place-hint" hidden role="status"><span>Choisis la position sur la voie sélectionnée.</span><button type="button" id="mobilePlaceCancel">Annuler</button></div>
 </nav>
+<div id="mobileMenu" class="mobile-menu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle" hidden>
+  <div class="mobile-menu-box">
+    <div class="mobile-menu-heading"><h2 id="mobileMenuTitle">Menu du jeu</h2><button type="button" id="mobileMenuClose" aria-label="Fermer le menu">✕</button></div>
+    <p>Choisis un acte débloqué, consulte les règles ou reprends ta partie.</p>
+    <div id="mobileChapters" class="mobile-chapters" aria-label="Choix de l'acte"></div>
+    <div class="mobile-menu-actions">
+      <button type="button" id="mobileMenuRules">Règles</button>
+      <button type="button" id="mobileMenuRestart">Recommencer</button>
+    </div>
+  </div>
+</div>
 <div id="upgradeSheet" class="upgrade-sheet" hidden role="dialog" aria-modal="true" aria-labelledby="upgradeTitle">
   <section class="upgrade-box"><div class="upgrade-heading"><h2 id="upgradeTitle">Quartier général · Troupes</h2><button id="upgradeClose" aria-label="Fermer les améliorations">✕</button></div><div id="upgradePoints" class="upgrade-points"></div><div id="upgradeRows"></div><p style="color:#a9b6c5;font-size:11px">Les niveaux sont conservés sur cet appareil. Les améliorations profitent aux prochaines unités déployées.</p></section>
 </div>
@@ -209,7 +363,59 @@ function log(message){const el=$('eventLog');const text=document.createElement('
 function notify(message){$('tickerMsg').textContent=message}
 function upgrade(id){const u=UNITS.find(v=>v.id===id);if(!u||getLevel(u)>=5||save.points<upgradeCost(u))return;const cost=upgradeCost(u);save.points-=cost;save.levels[id]++;persist();updateRoster();log(`${u.name} : niveau ${getLevel(u)} atteint (−${cost} points).`);beep(670,.11)}
 function updateRoster(){const root=$('roster');root.innerHTML='';for(let i=0;i<UNITS.length;i++){const u=UNITS[i],lvl=getLevel(u),card=document.createElement('div');card.className='unit-card'+(money>=u.cost?' affordable':'');card.id='card-'+u.id;const deploy=document.createElement('button');deploy.className='unit-deploy';deploy.title=`Déployer ${u.name} sur ${LANE_NAMES[selectedLane]}`;deploy.setAttribute('aria-label',`Déployer ${u.name}, coût ${u.cost} points d'élan`);deploy.innerHTML=`<span class="unit-pict" style="background:${u.color}22">${u.emoji}</span><span><span class="unit-name">${u.name}</span><span class="unit-role">${u.role}</span></span><span class="cost">${u.cost}<small>ÉLAN</small></span>`;deploy.addEventListener('click',()=>deployUnit(i));const bottom=document.createElement('div');bottom.className='unit-bottom';const label=document.createElement('div');label.textContent=`NIV. ${lvl} / 5`;const dots=document.createElement('div');dots.className='level-dots';dots.innerHTML=Array.from({length:5},(_,j)=>`<i class="dot ${j<lvl?'on':''}"></i>`).join('');label.appendChild(dots);const upgradeBtn=document.createElement('button');upgradeBtn.className='upgrade';upgradeBtn.disabled=lvl>=5||save.points<upgradeCost(u);upgradeBtn.textContent=lvl>=5?'MAX':`↑ ${upgradeCost(u)} pts`;upgradeBtn.setAttribute('aria-label',`Améliorer ${u.name}, coût ${upgradeCost(u)} points`);upgradeBtn.addEventListener('click',()=>upgrade(u.id));bottom.append(label,upgradeBtn);card.append(deploy,bottom);root.append(card)}$('points').textContent=save.points}
-function initMobileDock(){const root=$('dockUnits');root.innerHTML='';const short=['Lycée','Gilets','Gen Z','Paysans','Soins','Pompiers'];for(let i=0;i<UNITS.length;i++){const u=UNITS[i],b=document.createElement('button');b.className='dock-unit';b.id='dock-'+u.id;b.setAttribute('aria-label',`Envoyer ${u.name}, ${u.cost} points d'élan`);b.innerHTML=`<span class="dock-icon">${u.emoji}</span><span class="dock-short">${short[i]}</span><span class="dock-cost">${u.cost}</span><span class="unit-lvl">${getLevel(u)}</span>`;b.addEventListener('click',()=>deployUnit(i));root.append(b)}$('dockChant').addEventListener('click',()=>applyAbility('chant'));$('dockCare').addEventListener('click',()=>applyAbility('care'));$('dockBarrier').addEventListener('click',()=>applyAbility('barrier'));$('dockPallet').addEventListener('click',()=>applyAbility('pallet'));$('dockBin').addEventListener('click',()=>applyAbility('bin'));$('dockUpgrade').addEventListener('click',openUpgrades);$('upgradeClose').addEventListener('click',closeUpgrades);$('upgradeSheet').addEventListener('click',e=>{if(e.target===$('upgradeSheet'))closeUpgrades()})}
+let mobileTab='units',mobileMenuPreviousMode=null;
+function setMobileTab(tab){
+ mobileTab=tab==='actions'?'actions':'units';
+ $('mobileDock').dataset.tab=mobileTab;
+ for(const [t,id] of [['units','dockUnitsTab'],['actions','dockActionsTab']]){
+  const button=$(id),active=t===mobileTab;
+  button.classList.toggle('selected',active);
+  button.setAttribute('aria-pressed',String(active));
+ }
+}
+function renderMobileChapters(){
+ const list=$('mobileChapters');list.innerHTML='';
+ for(let i=0;i<STAGES.length;i++){
+  const button=document.createElement('button');
+  button.textContent=i<=save.highest?String(i+1):'🔒';
+  button.title=STAGES[i].region;
+  button.disabled=i>save.highest;
+  button.setAttribute('aria-label',i<=save.highest?'Acte '+(i+1)+' : '+STAGES[i].region:'Acte '+(i+1)+' verrouillé');
+  button.setAttribute('aria-current',String(i===stage));
+  button.addEventListener('click',()=>{
+   closeMobileMenu();stage=i;present('stage');
+  });
+  list.append(button);
+ }
+}
+function openMobileMenu(){
+ if(!$('mobileMenu').hidden)return;
+ mobileMenuPreviousMode=mode;
+ if(mode==='playing')mode='mobile-menu';
+ renderMobileChapters();
+ $('mobileMenu').hidden=false;
+ $('mobileMenuBtn').setAttribute('aria-expanded','true');
+ document.body.classList.add('mobile-menu-open');
+}
+function closeMobileMenu(){
+ if($('mobileMenu').hidden)return;
+ $('mobileMenu').hidden=true;
+ $('mobileMenuBtn').setAttribute('aria-expanded','false');
+ document.body.classList.remove('mobile-menu-open');
+ if(mode==='mobile-menu')mode=mobileMenuPreviousMode==='playing'?'playing':mobileMenuPreviousMode;
+ mobileMenuPreviousMode=null;
+ updateHud();
+}
+function initMobileDock(){const root=$('dockUnits');root.innerHTML='';const short=['Lycée','Gilets','Gen Z','Paysans','Soins','Pompiers'];for(let i=0;i<UNITS.length;i++){const u=UNITS[i],b=document.createElement('button');b.className='dock-unit';b.id='dock-'+u.id;b.setAttribute('aria-label',`Envoyer ${u.name}, ${u.cost} points d'élan`);b.innerHTML=`<span class="dock-icon">${u.emoji}</span><span class="dock-short">${short[i]}</span><span class="dock-cost">${u.cost}</span><span class="unit-lvl">${getLevel(u)}</span>`;b.addEventListener('click',()=>deployUnit(i));root.append(b)}$('dockChant').addEventListener('click',()=>applyAbility('chant'));$('dockCare').addEventListener('click',()=>applyAbility('care'));$('dockBarrier').addEventListener('click',()=>applyAbility('barrier'));$('dockPallet').addEventListener('click',()=>applyAbility('pallet'));$('dockBin').addEventListener('click',()=>applyAbility('bin'));$('dockUpgrade').addEventListener('click',openUpgrades);
+ $('dockUnitsTab').addEventListener('click',()=>setMobileTab('units'));
+ $('dockActionsTab').addEventListener('click',()=>setMobileTab('actions'));
+ $('mobilePlaceCancel').addEventListener('click',()=>cancelPlacement());
+ $('mobileMenuBtn').addEventListener('click',openMobileMenu);
+ $('mobileMenuClose').addEventListener('click',closeMobileMenu);
+ $('mobileMenu').addEventListener('click',e=>{if(e.target===$('mobileMenu'))closeMobileMenu()});
+ $('mobileMenuRules').addEventListener('click',()=>{closeMobileMenu();$('rulesBtn').click()});
+ $('mobileMenuRestart').addEventListener('click',()=>{closeMobileMenu();$('resetBtn').click()});
+$('upgradeClose').addEventListener('click',closeUpgrades);$('upgradeSheet').addEventListener('click',e=>{if(e.target===$('upgradeSheet'))closeUpgrades()})}
 function updateMobileDock(){$('dockMoney').textContent=Math.floor(money);for(const u of UNITS){const b=$('dock-'+u.id);if(b){b.disabled=mode!=='playing'||money<u.cost;b.classList.toggle('ready',mode==='playing'&&money>=u.cost)}}const a=$('dockChant'),c=$('dockCare');a.disabled=mode!=='playing'||cooldowns.chant>0;c.disabled=mode!=='playing'||cooldowns.care>0;$('dockChantCd').textContent=cooldowns.chant>0?`${Math.ceil(cooldowns.chant)}s`:'';$('dockCareCd').textContent=cooldowns.care>0?`${Math.ceil(cooldowns.care)}s`:'';$('dockBarrier').disabled=mode!=='playing'||money<65||cooldowns.barrier>0||!!barriers[selectedLane];$('dockBarrierCd').textContent=cooldowns.barrier>0?`${Math.ceil(cooldowns.barrier)}s`:'';for(const [type,id,cdid] of [['pallet','dockPallet','dockPalletCd'],['bin','dockBin','dockBinCd']]){
  $(id).disabled=!canUseFire(type);$(cdid).textContent=cooldowns[type]>0?Math.ceil(cooldowns[type])+'s':'';
 }document.querySelectorAll('.unit-lvl').forEach((e,i)=>e.textContent=getLevel(UNITS[i]))}
@@ -398,8 +604,13 @@ function soundEffect(kind){
 
 function beep(f,duration){if(muted)return;try{actSound??=new(window.AudioContext||window.webkitAudioContext)();const o=actSound.createOscillator(),g=actSound.createGain();o.type='triangle';o.frequency.value=f;g.gain.setValueAtTime(.038,actSound.currentTime);g.gain.exponentialRampToValueAtTime(.0001,actSound.currentTime+duration);o.connect(g);g.connect(actSound.destination);o.start();o.stop(actSound.currentTime+duration)}catch{}}
 function cancelPlacement(silent=false){pendingPlacement=null;if(!silent){notify('Placement annulé.');log('Placement annulé.')}updatePlacementUI()}
-function beginPlacement(type){if(!canUseFire(type))return false;pendingPlacement={type,lane:selectedLane};const label=type==='pallet'?'feu de palettes':'poubelle en feu';log(`Placement en attente : choisissez l'emplacement du ${label} sur ${LANE_NAMES[selectedLane]}.`);notify(`Touchez la chaussée pour placer votre ${label}. Il bloquera aussi vos propres troupes tant qu'il brûle.`);canvas.scrollIntoView({behavior:'auto',block:'center'});updatePlacementUI();return true}
-function updatePlacementUI(){const active=pendingPlacement?.type;for(const id of ['pallet','bin']){const armed=active===id;$('dock'+(id==='pallet'?'Pallet':'Bin'))?.classList.toggle('armed',armed);$(id+'Btn')?.classList.toggle('armed',armed)}if(!pendingPlacement)return}
+function beginPlacement(type){if(!canUseFire(type))return false;pendingPlacement={type,lane:selectedLane};setMobileTab('actions');const label=type==='pallet'?'feu de palettes':'poubelle en feu';log(`Placement en attente : choisissez l'emplacement du ${label} sur ${LANE_NAMES[selectedLane]}.`);notify(`Touchez la chaussée pour placer votre ${label}. Il bloquera aussi vos propres troupes tant qu'il brûle.`);canvas.scrollIntoView({behavior:'auto',block:'center'});updatePlacementUI();return true}
+function updatePlacementUI(){
+ const hint=$('mobilePlaceHint');
+ hint.hidden=!pendingPlacement;
+ if(pendingPlacement)hint.querySelector('span').textContent=
+  (pendingPlacement.type==='pallet'?'Palettes':'Poubelle')+' · touche la voie '+(selectedLane+1)+' pour placer';
+ const active=pendingPlacement?.type;for(const id of ['pallet','bin']){const armed=active===id;$('dock'+(id==='pallet'?'Pallet':'Bin'))?.classList.toggle('armed',armed);$(id+'Btn')?.classList.toggle('armed',armed)}if(!pendingPlacement)return}
 function spawnAmbientLife(){ambientActors=[];for(let i=0;i<10;i++)ambientActors.push({x:(90+i*98)%W,y:124+((i%3)-1)*7,v:.8+(i%4)*.18,size:.75+(i%3)*.14,dir:i%2?1:-1,t:(i*1.7)%6});for(let i=0;i<7;i++)ambientActors.push({x:(140+i*132)%W,y:150+((i%2)*12),v:.45+(i%3)*.08,size:.55+(i%2)*.1,dir:i%2?-1:1,t:(i*2.1)%6})}
 function canUseFire(type){
  if(mode!=='playing'||cooldowns[type]>0||fires[selectedLane])return false;
@@ -1063,7 +1274,7 @@ function updateTacticalIntel(){let mostDanger=0,maxThreat=-1;for(let l=0;l<3;l++
 function drawBarrier(b,l){const y=feet[l];ctx.save();ctx.translate(b.x,y);ctx.fillStyle='#1a253188';ctx.fillRect(-25,-35,48,43);for(let k=0;k<3;k++){const off=k*12-14;rounded(-22+off,-35,12,40,2,'#87684b','#d0ae6c');ctx.strokeStyle='#523c30';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-22+off,-25);ctx.lineTo(-10+off,-5);ctx.stroke()}ctx.fillStyle='#101a23';ctx.fillRect(-24,-45,48,5);ctx.fillStyle='#f4d16b';ctx.fillRect(-24,-45,48*Math.max(0,b.hp/b.maxHp),5);ctx.restore()}
 initMobileDock();updateChapters();updateRoster();updateHud();present('intro');requestAnimationFrame(frame);
 // A tiny diagnostic interface used only for local verification, without external dependencies.
-window.CONVERGENCE_TEST={audioStatus:()=>({muted,contextState:actSound?.state||'none',masterGain:sfxBus?.master.gain.value??null,played:{...SFX_VOICES},activeAmbient:!!ambience}),triggerSound:kind=>soundEffect(kind),getState:()=>({mode,stage,money,morale,defense,elapsed,gameSpeed,pendingPlacement:pendingPlacement?.type||null,zoom:camera.zoom,cameraEnabled:camera.enabled,barriers:barriers.filter(Boolean).length,fires:fires.filter(Boolean).map(f=>({type:f.type,lane:f.lane,hp:f.hp,time:f.time,x:f.x})),gasClouds:gasClouds.length,stunFields:stunFields.length,foesByType:Object.fromEntries(FOES.map(f=>[f.id,units.filter(u=>u.team==='foe'&&u.type===f.id).length])),squads:new Set(units.filter(u=>u.squad).map(u=>u.squad)).size,cooldowns:{...cooldowns},unitsPlaced,enemyPlaced,unitPositions:units.map(u=>({id:u.id,type:u.type,team:u.team,lane:u.lane,x:u.x,y:u.y})),allyUnits:units.filter(u=>u.team==='ally').length,foeUnits:units.filter(u=>u.team==='foe').length,highest:save.highest,points:save.points}),start:()=>startStage(stage),deploy:(i,lane)=>{setLane(lane);deployUnit(i)},advance:seconds=>{for(let i=0;i<Math.round(seconds*20)&&mode==='playing';i++)update(.05)},buildBarrier:lane=>{setLane(lane);applyAbility('barrier')},spawnSquad:(type,lane)=>spawnSquad(type,lane),armFire:(type,lane)=>{setLane(lane);return beginPlacement(type)},placeFire:(type,lane,x)=>{setLane(lane);if(!pendingPlacement||pendingPlacement.type!==type)beginPlacement(type);return placeFire(type,x)},openUpgrades,closeUpgrades,toggleSpeed,toggleCamera,cancelPlacement,resetProgress:()=>{save={highest:0,points:120,levels:Object.fromEntries(UNITS.map(u=>[u.id,1])),wins:0};persist();startStage(0)}};
+window.CONVERGENCE_TEST={mobileUi:()=>({tab:mobileTab,menuOpen:!$('mobileMenu').hidden,dockRect:(()=>{const r=$('mobileDock').getBoundingClientRect();return {height:r.height,width:r.width,top:r.top}})()}),audioStatus:()=>({muted,contextState:actSound?.state||'none',masterGain:sfxBus?.master.gain.value??null,played:{...SFX_VOICES},activeAmbient:!!ambience}),triggerSound:kind=>soundEffect(kind),getState:()=>({mode,stage,money,morale,defense,elapsed,gameSpeed,pendingPlacement:pendingPlacement?.type||null,zoom:camera.zoom,cameraEnabled:camera.enabled,barriers:barriers.filter(Boolean).length,fires:fires.filter(Boolean).map(f=>({type:f.type,lane:f.lane,hp:f.hp,time:f.time,x:f.x})),gasClouds:gasClouds.length,stunFields:stunFields.length,foesByType:Object.fromEntries(FOES.map(f=>[f.id,units.filter(u=>u.team==='foe'&&u.type===f.id).length])),squads:new Set(units.filter(u=>u.squad).map(u=>u.squad)).size,cooldowns:{...cooldowns},unitsPlaced,enemyPlaced,unitPositions:units.map(u=>({id:u.id,type:u.type,team:u.team,lane:u.lane,x:u.x,y:u.y})),allyUnits:units.filter(u=>u.team==='ally').length,foeUnits:units.filter(u=>u.team==='foe').length,highest:save.highest,points:save.points}),start:()=>startStage(stage),deploy:(i,lane)=>{setLane(lane);deployUnit(i)},advance:seconds=>{for(let i=0;i<Math.round(seconds*20)&&mode==='playing';i++)update(.05)},buildBarrier:lane=>{setLane(lane);applyAbility('barrier')},spawnSquad:(type,lane)=>spawnSquad(type,lane),armFire:(type,lane)=>{setLane(lane);return beginPlacement(type)},placeFire:(type,lane,x)=>{setLane(lane);if(!pendingPlacement||pendingPlacement.type!==type)beginPlacement(type);return placeFire(type,x)},openUpgrades,closeUpgrades,toggleSpeed,toggleCamera,cancelPlacement,resetProgress:()=>{save={highest:0,points:120,levels:Object.fromEntries(UNITS.map(u=>[u.id,1])),wins:0};persist();startStage(0)}};
 })();
 </script>
 </body></html>
