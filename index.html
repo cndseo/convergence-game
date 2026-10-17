@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#111723"><meta name="description" content="CONVERGENCE — jeu tactique de mobilisation, jouable hors ligne sur ordinateur et mobile.">
-<title>CONVERGENCE V3 — La rue s'éveille</title>
+<title>CONVERGENCE V4 — La rue s'éveille</title>
 <style>
 :root{--bg:#0b0f16;--surface:#141c27;--panel:#192332;--line:#2d3c4c;--ink:#f4f4ed;--dim:#94a3b5;--yellow:#f1c849;--orange:#f59b51;--red:#e16e70;--green:#9ce2be;--blue:#7eb3d9;--shadow:0 20px 90px #0008;--radius:17px}
 *{box-sizing:border-box}html{height:100%;background:var(--bg)}body{margin:0;min-height:100%;color:var(--ink);background:radial-gradient(ellipse at 13% -12%,#55402a45,transparent 31%),radial-gradient(ellipse at 90% 22%,#24596d28,transparent 36%),var(--bg);font:500 14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:hidden}button{font:inherit;cursor:pointer;color:inherit}button:disabled{cursor:not-allowed;opacity:.42}button:focus-visible{outline:2px solid #fff;outline-offset:3px}.wrap{max-width:1440px;margin:auto;padding:21px clamp(14px,2.6vw,42px) 52px}.mast{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:21px}.logo{display:flex;align-items:center;gap:15px}.mark{height:52px;width:52px;border:2px solid var(--yellow);border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#f1c84920,#f1c84905);transform:rotate(-7deg);box-shadow:inset 0 0 0 5px #0c1119}.mark svg{height:32px;width:32px;transform:rotate(7deg)}.eyebrow{color:var(--yellow);text-transform:uppercase;letter-spacing:.2em;font-weight:850;font-size:10px}.brand{font-weight:1000;letter-spacing:-.055em;font-size:clamp(28px,3.7vw,45px);line-height:1;margin:3px 0}.subbrand{font-size:12px;letter-spacing:.055em;color:var(--dim);text-transform:uppercase}.mast-actions{display:flex;gap:8px;flex-wrap:wrap}.small-btn{border:1px solid var(--line);background:#17202b;padding:10px 13px;border-radius:10px;font-weight:740;font-size:12px;transition:.15s}.small-btn:hover{background:#253449}.small-btn.active{background:#493b21;border-color:#ad8c35;color:#fff0bd}.ticker{border:1px solid #5f5036;background:linear-gradient(90deg,#423922,#1d2930 64%);padding:11px 16px;border-radius:12px;display:flex;align-items:center;gap:14px;margin-bottom:16px;box-shadow:inset 3px 0 0 var(--yellow)}.ticker strong{color:var(--yellow);font-size:11px;letter-spacing:.1em;white-space:nowrap}.ticker span{font-size:12px;color:#d5d6ca}.top-grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px}.battle{min-width:0}.battle-top{border:1px solid var(--line);background:linear-gradient(180deg,#202d3d,#161e2b);border-radius:var(--radius) var(--radius) 0 0;display:flex;align-items:center;gap:20px;justify-content:space-between;padding:16px 19px}.battle-top .act{font-weight:930;font-size:16px;letter-spacing:.01em}.battle-top .location{color:var(--dim);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.scoreboard{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;border-top:1px solid var(--line);padding:14px 19px;background:#111925}.scorecol.right{text-align:right}.scoretitle{font-size:10px;letter-spacing:.12em;font-weight:900;color:var(--dim)}.scoreval{font-weight:930;font-size:24px;line-height:1.2;margin:4px 0}.scorecol.left .scoreval{color:var(--yellow)}.scorecol.right .scoreval{color:var(--red)}.meter{height:7px;border-radius:20px;overflow:hidden;background:#283444}.meter span{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--orange),var(--yellow));transition:width .3s}.scorecol.right .meter span{background:linear-gradient(90deg,#cc5364,#f28b7f);margin-left:auto}.versus{font-size:10px;border-radius:40px;border:1px solid #4a5864;padding:8px;color:#9eacb7;letter-spacing:.18em;font-weight:900}.canvas-shell{position:relative;overflow:hidden;border:1px solid var(--line);border-top:0;background:#273b48}.canvas-shell canvas{width:100%;height:auto;display:block;touch-action:manipulation;cursor:pointer;aspect-ratio:1100/490}.canvas-corner{position:absolute;pointer-events:none;top:12px;left:13px;font-size:10px;font-weight:900;letter-spacing:.12em;background:#0d1722ae;border:1px solid #ffffff28;border-radius:7px;padding:6px 9px;color:#e8e9e0}.canvas-corner.right{right:13px;left:auto}.lane-picker{display:flex;gap:7px;border:1px solid var(--line);border-top:0;background:#121a25;padding:11px;border-radius:0 0 var(--radius) var(--radius)}.lane{flex:1;min-width:0;background:#202b39;border:1px solid #334153;border-radius:9px;padding:10px 5px;font-size:11px;font-weight:780;letter-spacing:.045em;white-space:nowrap}.lane.selected{background:#594a28;border-color:var(--yellow);color:#ffe78f;box-shadow:inset 0 -2px 0 #f1c849}.lane:hover{filter:brightness(1.14)}.side{display:flex;flex-direction:column;gap:12px}.panel{border:1px solid var(--line);background:linear-gradient(150deg,#1b2635,#131d29);border-radius:var(--radius);padding:18px}.panel h2,.section-title{margin:0;color:var(--ink);font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.panel small{display:block;color:var(--dim);margin-top:5px}.resource{border-color:#7d6836;background:radial-gradient(circle at top right,#71602e50,transparent 65%),linear-gradient(145deg,#272b2b,#1a222b)}.resource-title{display:flex;justify-content:space-between;color:var(--yellow);font-size:10px;letter-spacing:.12em;font-weight:900}.resource-total{font-size:46px;font-weight:1000;letter-spacing:-.055em;line-height:1.1;margin-top:8px}.resource-total span{color:#b6b7af;font-size:14px;letter-spacing:0}.resource-bar{height:7px;border-radius:10px;background:#49505a;overflow:hidden;margin:13px 0 8px}.resource-bar>div{height:100%;width:45%;background:linear-gradient(90deg,#f38c4b,#efd15a)}.meta{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--dim)}.meta b{color:var(--ink)}.ability{width:100%;text-align:left;border-radius:11px;padding:12px;margin-top:11px;display:flex;gap:11px;align-items:center;background:#203042;border:1px solid #38516a}.ability:hover:not(:disabled){border-color:#83bad8}.ability .glyph{display:grid;place-items:center;width:39px;height:39px;border-radius:9px;background:#30546c;font-size:22px;flex:none}.ability strong{font-size:12px;display:block}.ability em{font-size:10px;color:#a8b7c7;font-style:normal;display:block;margin-top:2px}.ability .cool{margin-left:auto;color:#d8ecfb;font-size:12px;font-weight:900}.side .chapter-list{display:flex;gap:6px;margin-top:12px}.chapter{height:36px;flex:1;border:1px solid #465066;border-radius:8px;background:#273244;font-weight:900}.chapter.current{border-color:var(--yellow);background:#6c5a2b}.chapter:disabled{opacity:.35}.description{color:var(--dim);font-size:12px;margin-top:10px;line-height:1.55}.lower{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;margin-top:20px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 12px}.help-text{color:var(--dim);font-size:11px}.roster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.unit-card{border-radius:13px;min-width:0;background:linear-gradient(150deg,#202d3a,#161f2c);border:1px solid #324353;position:relative;overflow:hidden;transition:transform .12s,border-color .12s,background .12s}.unit-card:hover{transform:translateY(-2px);border-color:#728491}.unit-card.affordable{border-color:#635837}.unit-card.locked{opacity:.57}.unit-deploy{display:grid;grid-template-columns:47px minmax(0,1fr) 53px;align-items:center;gap:9px;width:100%;border:0;background:transparent;text-align:left;padding:12px 11px 9px}.unit-pict{width:44px;height:44px;display:grid;place-items:center;border-radius:11px;background:#ffffff10;font-size:27px}.unit-name{display:block;font-weight:880;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.unit-role{display:block;font-size:10px;color:var(--dim);line-height:1.35;margin-top:3px}.cost{text-align:center;color:#ffdd75;font-weight:950;font-size:16px}.cost small{display:block;font-size:9px;color:#aeb3ad;font-weight:700}.unit-bottom{border-top:1px solid #344151;padding:7px 11px 9px;display:flex;align-items:center;justify-content:space-between;gap:8px;color:#c3cdd5;font-size:10px}.level-dots{display:flex;gap:3px;margin-top:4px}.dot{height:5px;width:13px;border-radius:3px;background:#455361}.dot.on{background:var(--yellow)}.upgrade{border:1px solid #816a3b;background:#59492c;border-radius:8px;min-width:89px;padding:6px;font-size:10px;font-weight:900;color:#ffe9a2}.upgrade:hover:not(:disabled){background:#756038}.notes{display:flex;flex-direction:column;gap:7px;margin-top:13px}.note{font-size:11px;padding:9px 11px;color:#a9b9c9;background:#151f2d;border-left:2px solid #4a7992;border-radius:5px}.note:first-child{color:#f1e8be;border-color:#ecd078}.counter{color:var(--yellow);font-weight:900}.footer-info{border:1px solid #293947;border-radius:12px;padding:14px;color:#95a4b2;font-size:11px;margin-top:20px;line-height:1.65}.footer-info b{color:#e3ddbc}.kbd{border:1px solid #445667;border-radius:5px;padding:1px 5px;font-family:ui-monospace,monospace;color:#d5e0e9}.overlay{position:fixed;inset:0;z-index:30;background:#080d16d9;backdrop-filter:blur(10px);display:grid;place-items:center;padding:18px}.overlay[hidden]{display:none}.modal{width:min(520px,100%);background:radial-gradient(circle at 10% 0%,#67532a45,transparent 45%),linear-gradient(#1e2a38,#131c27);border:1px solid #79818b;border-radius:21px;padding:clamp(22px,5vw,39px);box-shadow:0 36px 130px #0009;text-align:center;position:relative}.modal:before{content:"";position:absolute;inset:6px;pointer-events:none;border:1px solid #ffffff0e;border-radius:16px}.modal .hero-icon{font-size:45px;margin-bottom:12px}.modal .eyebrow{font-size:11px}.modal h2{font-size:clamp(27px,5vw,43px);letter-spacing:-.04em;line-height:1.1;margin:12px 0}.modal p{color:#b7c4cf;font-size:13px;line-height:1.7}.primary{border:0;border-radius:10px;padding:14px 22px;background:linear-gradient(100deg,#eebc43,#ffe17a);color:#1c252c;font-size:13px;font-weight:1000;letter-spacing:.045em;box-shadow:0 7px 30px #e7ae3536}.primary:hover{filter:brightness(1.1)}.secondary{border:1px solid #64778b;padding:12px 18px;border-radius:9px;background:#253546;color:#dce9f3;font-weight:780}.modal-actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:23px}.instruct{margin:15px 0;background:#172434;border-radius:10px;padding:13px;text-align:left;font-size:12px;line-height:1.8;color:#d0dae3}.instruct b{color:#f0ce74}.hidden{display:none!important}.flash{animation:flash .4s ease}@keyframes flash{50%{filter:brightness(1.7)}}
@@ -129,7 +129,7 @@
 </head>
 <body>
 <main class="wrap">
-<header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · 2026</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button></div></header>
+<header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · édition V4</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button></div></header>
 <div class="ticker"><strong>● ÉDITION SPÉCIALE</strong><span id="tickerMsg">Une mobilisation inédite traverse le pays. Formez un collectif, rassemblez et faites reculer la ligne de maintien de l'ordre.</span></div>
 <div class="top-grid"><section class="battle" aria-label="Champ de jeu"><div class="battle-top"><div><div class="location" id="stageTag">ACTE 01 · LE ROND-POINT</div><div class="act" id="stageTitle">Première mobilisation</div></div><div style="text-align:right"><div class="location">TEMPS ÉCOULÉ</div><div class="act" id="timeText">00:00</div></div></div><div class="scoreboard"><div class="scorecol left"><div class="scoretitle">MOBILISATION</div><div class="scoreval"><span id="allyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="allyMeter"></span></div></div><div class="versus">VS</div><div class="scorecol right"><div class="scoretitle">LIGNE DES CRS</div><div class="scoreval"><span id="enemyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="enemyMeter"></span></div></div></div><div class="canvas-shell"><canvas id="field" width="1100" height="490" aria-label="Bataille stylisée sur trois axes. Sélectionnez un axe puis déployez des unités."></canvas><div class="canvas-corner">← MOBILISATION</div><div class="canvas-corner right">CRS →</div></div><div class="lane-picker" aria-label="Choisir un axe de progression"><button class="lane" data-lane="0">01 · BOULEVARD</button><button class="lane selected" data-lane="1">02 · PLACE</button><button class="lane" data-lane="2">03 · RUE BASSE</button></div></section>
 <div class="mobile-intel" id="mobileIntel"><span id="intelLane">AXE 2 · PLACE</span><strong id="intelMessage">PRÉPARATION</strong><span id="intelWave">VAGUE 0</span></div><aside class="side"><section class="panel resource"><div class="resource-title"><span>ÉLAN COLLECTIF</span><span id="income">+14 / SEC</span></div><div class="resource-total"><span id="resourceValue">85</span> <span>/ 160</span></div><div class="resource-bar"><div id="resourceBar"></div></div><div class="meta"><span>Mobilisation disponible</span><b id="remainingCount">0 unités</b></div></section><section class="panel"><h2>Actions collectives</h2><small>Des capacités à recharger pendant l'affrontement.</small><button class="ability" id="chantBtn"><span class="glyph">📣</span><span><strong>Chant collectif</strong><em>+35 % de puissance · 9 s</em></span><span class="cool" id="chantCd">PRÊT</span></button><button class="ability" id="careBtn"><span class="glyph">✚</span><span><strong>Chaîne de solidarité</strong><em>Rétablit la cohésion du groupe</em></span><span class="cool" id="careCd">PRÊT</span></button><button class="ability" id="barrierBtn"><span class="glyph">▥</span><span><strong>Barricade collective</strong><em>65 élan · freine les renforts · 22 s</em></span><span class="cool" id="barrierCd">PRÊT</span></button></section><section class="panel"><h2>Les cinq actes</h2><div class="chapter-list" id="chapters"></div><div class="description" id="stageDescription">D'un rond-point occupé à la grande place : chaque acte mobilise de nouvelles forces.</div></section></aside></div>
@@ -218,48 +218,225 @@ if(elapsed>25){for(let l=0;l<3;l++){const allies=units.filter(u=>u.team==='ally'
 if(elapsed>=240){if(defense<morale)defense=0;else morale=0}
 if(defense<=0){defense=0;finish(true)}else if(morale<=0){morale=0;finish(false)}updateHud();}
 function updateHud(){const am=clamp(Math.round(morale),0,100),pm=clamp(Math.round(defense),0,100);$('allyPct').textContent=am;$('enemyPct').textContent=pm;$('allyMeter').style.width=am+'%';$('enemyMeter').style.width=pm+'%';$('resourceValue').textContent=Math.floor(money);$('resourceBar').style.width=clamp(money/160*100,0,100)+'%';$('remainingCount').textContent=`${units.filter(u=>u.team==='ally').length} sur le terrain`;$('income').textContent=`+${(14+units.filter(u=>u.team==='ally'&&u.type==='genz').length*.65).toFixed(1).replace('.0','')} / SEC`;$('timeText').textContent=`${String(Math.floor(elapsed/60)).padStart(2,'0')}:${String(Math.floor(elapsed%60)).padStart(2,'0')}`;$('chantCd').textContent=cooldowns.chant>0?Math.ceil(cooldowns.chant)+'s':'PRÊT';$('careCd').textContent=cooldowns.care>0?Math.ceil(cooldowns.care)+'s':'PRÊT';$('chantBtn').disabled=mode!=='playing'||cooldowns.chant>0;$('careBtn').disabled=mode!=='playing'||cooldowns.care>0;$('barrierCd').textContent=cooldowns.barrier>0?Math.ceil(cooldowns.barrier)+'s':'PRÊT';$('barrierBtn').disabled=mode!=='playing'||money<65||cooldowns.barrier>0||!!barriers[selectedLane];updateRosterAfford();updateMobileDock();updateTacticalIntel()}
-const buildingColors=['#40576a','#405369','#566a75','#374c62','#465b6e'];
 function rounded(x,y,w,h,r,fill,stroke){ctx.beginPath();ctx.roundRect(x,y,w,h,r);if(fill){ctx.fillStyle=fill;ctx.fill()}if(stroke){ctx.strokeStyle=stroke;ctx.stroke()}}
-function drawBackground(){let sky=ctx.createLinearGradient(0,0,0,H);sky.addColorStop(0,'#2d4058');sky.addColorStop(.33,'#8b7d70');sky.addColorStop(1,'#283a43');ctx.fillStyle=sky;ctx.fillRect(0,0,W,H);ctx.fillStyle='#fff1ae1a';ctx.beginPath();ctx.arc(875,65,61,0,Math.PI*2);ctx.fill();
-// Parallax silhouettes and street shops.
-for(let i=0;i<21;i++){let x=i*57-20,h=45+((i*13+stage*7)%6)*12;ctx.fillStyle=buildingColors[(i+stage)%buildingColors.length];ctx.fillRect(x,125-h,54,h+20);ctx.fillStyle='#f0d99855';for(let j=0;j<2;j++)for(let k=0;k<3;k++)ctx.fillRect(x+10+j*22,132-h+k*17,9,9);ctx.fillStyle='#2c4050';ctx.fillRect(x+20,120,19,23)}ctx.fillStyle='#293f4c';ctx.fillRect(0,135,W,29);ctx.fillStyle='#9ea096';ctx.fillRect(0,152,W,5);ctx.fillStyle='#718083';ctx.fillRect(0,157,W,10);
-for(let lane=0;lane<3;lane++){const y=168+lane*102;let road=ctx.createLinearGradient(0,y,0,y+102);road.addColorStop(0,lane===selectedLane?'#596267':'#515e65');road.addColorStop(1,lane===selectedLane?'#3a474f':'#33434b');ctx.fillStyle=road;ctx.fillRect(0,y,W,102);ctx.strokeStyle='#ffffff1e';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(0,y+101);ctx.lineTo(W,y+101);ctx.stroke();ctx.fillStyle='#cdd5d355';for(let x=24;x<W;x+=83)ctx.fillRect(x,y+90,42,2);if(lane===selectedLane){ctx.fillStyle='#f0ca5020';ctx.fillRect(0,y,W,102);ctx.strokeStyle='#f0c95955';ctx.strokeRect(1,y+1,W-2,100)}}
-// Zebra crossing and checkpoint.
-ctx.fillStyle='#f6e8b11d';for(let k=0;k<9;k++)ctx.fillRect(519,175+k*33,61,12);ctx.setLineDash([7,7]);ctx.strokeStyle='#fbefd263';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(550,171);ctx.lineTo(550,490);ctx.stroke();ctx.setLineDash([]);
-// Left protest structures / right van and barriers.
-ctx.fillStyle='#d8b76b';for(let i=0;i<3;i++){const y=195+i*103;ctx.fillRect(25,y+37,42,5);ctx.fillStyle='#7c5944';ctx.fillRect(31,y+24,30,16);ctx.fillStyle='#d8b76b';ctx.fillRect(25,y+37,42,5)}ctx.fillStyle='#354353';for(let i=0;i<3;i++){const y=209+i*103;rounded(1041,y+4,28,35,5,'#26394e','#9fb8ca');ctx.strokeStyle='#b2c3cf';ctx.beginPath();ctx.moveTo(1047,y+14);ctx.lineTo(1063,y+14);ctx.stroke()}
-// Lamp-posts / banners.
-for(const x of [180,897]){ctx.fillStyle='#1b2d39';ctx.fillRect(x,69,5,93);ctx.beginPath();ctx.arc(x+2,70,13,0,Math.PI*2);ctx.fillStyle='#ffe4a45e';ctx.fill();ctx.beginPath();ctx.arc(x+2,70,5,0,Math.PI*2);ctx.fillStyle='#ffe9bb';ctx.fill()}
-ctx.font='bold 14px system-ui';ctx.textAlign='center';ctx.fillStyle='#ffe5a8aa';ctx.fillText(STAGES[stage].region.toUpperCase(),550,141);
+// V4 GRAPHICS: cached illustrated environment, animated silhouettes and distinct professions.
+// The world remains strictly 1100x490; this layer never changes combat logic or persistence.
+const SCENE_PALETTES=[
+ {sky:'#82929a',far:'#566d7b',near:'#3a5061',wall:'#a99279',trim:'#514f51',haze:'#f4c99b'},
+ {sky:'#8291ac',far:'#606f91',near:'#444f74',wall:'#b5a38e',trim:'#54586b',haze:'#e1d0bb'},
+ {sky:'#718b9c',far:'#5b7483',near:'#475d69',wall:'#a78f78',trim:'#4f5d62',haze:'#f3c9a4'},
+ {sky:'#737d94',far:'#52677c',near:'#344c66',wall:'#9f9295',trim:'#4a5467',haze:'#ffd0a4'},
+ {sky:'#ad9285',far:'#786c7b',near:'#565266',wall:'#c9a895',trim:'#655e68',haze:'#ffe0a5'}
+];
+const scenicCanvas=document.createElement('canvas');scenicCanvas.width=W;scenicCanvas.height=H;
+const scenicCtx=scenicCanvas.getContext('2d',{alpha:false});
+let scenicStage=-1,ambientClock=0;
+const smoothNoise=n=>{const a=Math.sin(n*127.1+21.7)*43758.5453;return a-Math.floor(a)};
+function paintBackscene(){
+ scenicStage=stage;
+ const g=scenicCtx,p=SCENE_PALETTES[stage];
+ const sky=g.createLinearGradient(0,0,0,170);sky.addColorStop(0,p.sky);sky.addColorStop(.8,p.haze);sky.addColorStop(1,p.near);
+ g.fillStyle=sky;g.fillRect(0,0,W,H);
+ // Warm atmospheric glow and distant mountain line, progressively darker in later acts.
+ const light=g.createRadialGradient(825,28,8,825,28,310);light.addColorStop(0,'#fff7d68e');light.addColorStop(1,'#ffffff00');g.fillStyle=light;g.fillRect(0,0,W,185);
+ g.fillStyle='#eae5cf4a';g.beginPath();g.arc(848,35,25,0,Math.PI*2);g.fill();
+ g.fillStyle=p.far;g.beginPath();g.moveTo(0,124);
+ for(let x=0;x<=W;x+=33)g.lineTo(x,93+Math.sin(x*.01+stage)*14+smoothNoise(x+43)*22);
+ g.lineTo(W,163);g.lineTo(0,163);g.fill();
+ // Street architecture: facade geometry, roofs, shutters, wrought-iron balconies and shopfronts.
+ for(let i=0;i<15;i++){
+  const x=i*81-29,h=65+Math.floor(smoothNoise(i+stage*29)*5)*12,roof=146-h,w=79;
+  const front=['#887e78','#8f8882','#a39687','#7c8991','#ada089'][(i+stage)%5];
+  g.fillStyle='#182b36aa';g.fillRect(x+7,roof-9,w+1,h+17);
+  g.fillStyle=front;g.fillRect(x,roof,w-2,h+14);
+  g.fillStyle=p.trim;g.beginPath();g.moveTo(x-3,roof);g.lineTo(x+38,roof-18-smoothNoise(i)*9);g.lineTo(x+w+2,roof);g.closePath();g.fill();
+  g.fillStyle='#f8e9cb22';g.fillRect(x+5,roof+6,w-12,3);
+  for(let floor=0;floor<2;floor++)for(let col=0;col<3;col++){
+   const wx=x+11+col*22,wy=roof+15+floor*27;
+   g.fillStyle='#354955';g.fillRect(wx-2,wy-2,15,23);
+   g.fillStyle=(i+floor+col)%5===0?'#ffdf9b':'#b9ced0';g.fillRect(wx,wy,11,14);
+   g.fillStyle='#506875';g.fillRect(wx+5,wy,1,14);g.fillRect(wx,wy+7,11,1);
+   g.fillStyle='#ece0c7';g.fillRect(wx-3,wy+15,17,2);
+   if(floor===1&&col===1){g.strokeStyle='#343d48';g.lineWidth=2;g.strokeRect(wx-5,wy+13,21,7)}
+  }
+  g.fillStyle='#333e48';g.fillRect(x+3,roof+h-13,w-8,30);
+  g.fillStyle='#d5a16e';g.fillRect(x+5,roof+h-11,w-12,3);
+  for(let j=0;j<4;j++){g.fillStyle=j%2?'#e5c2a4':'#7b4542';g.beginPath();g.moveTo(x+5+j*(w-12)/4,roof+h-8);g.lineTo(x+5+(j+1)*(w-12)/4,roof+h-8);g.lineTo(x+5+(j+.5)*(w-12)/4,roof+h+3);g.fill()}
+ }
+ // Left/right silhouettes (local market, school, arch and civic square).
+ if(stage===0){
+  g.fillStyle='#3a565b';g.beginPath();g.arc(230,147,34,0,Math.PI*2);g.fill();g.fillStyle='#5b745c';g.beginPath();g.arc(231,141,28,0,7);g.fill();
+  g.fillStyle='#777466';g.fillRect(226,145,10,25);g.strokeStyle='#d6c4a0';g.lineWidth=4;g.beginPath();g.ellipse(245,166,76,11,0,0,7);g.stroke();
+ }else if(stage===1){
+  g.fillStyle='#d3bfa9';g.fillRect(420,50,260,99);g.fillStyle='#545d72';g.fillRect(452,72,196,53);
+  for(let j=0;j<7;j++){g.fillStyle='#b1c4ca';g.fillRect(463+j*26,80,18,27)}
+  g.fillStyle='#303d53';g.fillRect(523,109,51,40);g.fillStyle='#b2c0c3';g.fillRect(538,117,20,32);
+ }else if(stage===2){
+  for(let i=0;i<3;i++){g.fillStyle=['#b77959','#cfb074','#82a3a1'][i];g.beginPath();g.moveTo(340+i*120,136);g.lineTo(400+i*120,96);g.lineTo(460+i*120,136);g.fill()}
+ }else if(stage===3){
+  g.strokeStyle='#a6a7a3';g.lineWidth=12;g.beginPath();g.moveTo(0,145);g.quadraticCurveTo(550,94,1100,145);g.stroke();g.strokeStyle='#4d616c';g.lineWidth=2;
+  for(let i=0;i<21;i++){g.beginPath();g.moveTo(i*55,135);g.lineTo(i*55,166);g.stroke()}
+ }else{
+  g.fillStyle='#ddc5ae';g.fillRect(383,46,337,105);g.fillStyle='#6e5d61';g.beginPath();g.moveTo(375,53);g.lineTo(550,8);g.lineTo(725,53);g.fill();
+  for(let i=0;i<7;i++){g.fillStyle='#52546a';g.fillRect(406+i*42,72,25,60);g.fillStyle='#ead6c3';g.fillRect(410+i*42,76,17,52)}
+  g.fillStyle='#c4a990';g.fillRect(532,33,35,26);
+ }
+ // Pavements / lane tracks: three bands in perspective, with grit and lane marks.
+ g.fillStyle='#758489';g.fillRect(0,151,W,20);g.fillStyle='#adada3';g.fillRect(0,166,W,5);
+ g.fillStyle='#36424b';g.fillRect(0,171,W,319);
+ for(let l=0;l<3;l++){
+  const y=171+l*106,asphalt=g.createLinearGradient(0,y,0,y+107);
+  asphalt.addColorStop(0,'#58666b');asphalt.addColorStop(.25,'#44545b');asphalt.addColorStop(1,'#2c3b47');
+  g.fillStyle=asphalt;g.fillRect(0,y,W,106);
+  g.fillStyle='#c6d1ce14';g.fillRect(0,y+2,W,4);
+  g.fillStyle='#fbf4e659';for(let x=24;x<W;x+=88)g.fillRect(x,y+89,44,2);
+  g.fillStyle='#23354177';g.fillRect(0,y+99,W,7);
+  g.strokeStyle='#89929357';g.lineWidth=1;g.beginPath();g.moveTo(0,y+104);g.lineTo(W,y+104);g.stroke();
+ }
+ // Center pedestrian crossing and road paint, mild puddle reflections.
+ g.fillStyle='#eee0ad2f';for(let j=0;j<9;j++){g.beginPath();g.moveTo(507,179+j*36);g.lineTo(576,179+j*36);g.lineTo(573,191+j*36);g.lineTo(510,191+j*36);g.fill()}
+ for(let i=0;i<530;i++){
+  const x=smoothNoise(i+56)*W,y=172+smoothNoise(i*7+819)*315;
+  const sz=.5+smoothNoise(i*5+377)*2.2;
+  g.fillStyle=i%3===0?'#e9ddd31d':'#17273322';g.fillRect(x,y,sz,sz);
+ }
+ for(let i=0;i<10;i++){const x=45+i*118,y=178+(i%3)*102;g.fillStyle='#96b6c014';g.beginPath();g.ellipse(x,y+19,26,3,0,0,7);g.fill()}
+ // Stone barriers, bus shelter, trees and lamps near front plane.
+ for(let lane=0;lane<3;lane++){
+  const y=204+lane*104;
+  g.fillStyle='#52483e';g.fillRect(22,y+13,49,7);g.fillStyle='#c9a772';g.fillRect(26,y,42,13);g.fillStyle='#f2d89d';g.fillRect(32,y+3,30,3);
+  g.fillStyle='#243a4b';g.fillRect(1030,y-8,34,43);g.fillStyle='#dbe7ed88';g.fillRect(1043,y-3,15,11);
+  g.fillStyle='#a4a9a788';g.fillRect(1044,y+14,14,3);
+ }
+ for(const x of [150,966]){
+  g.fillStyle='#1d303d';g.fillRect(x,44,6,126);g.fillStyle='#b9c5c9';g.fillRect(x+1,45,2,121);
+  g.fillStyle='#405463';g.beginPath();g.moveTo(x-1,48);g.quadraticCurveTo(x+4,30,x+22,35);g.lineTo(x+24,40);g.quadraticCurveTo(x+9,38,x+6,54);g.fill();
+  g.fillStyle='#fff3c0ad';g.beginPath();g.arc(x+24,39,5,0,7);g.fill();
+ }
+ // District label is baked once, never blocks moving sprites.
+ g.font='700 13px system-ui';g.textAlign='center';g.fillStyle='#fff0d3bb';g.fillText(STAGES[stage].region.toUpperCase(),W/2,150);
 }
-function drawUnit(u){const isFoe=u.team==='foe';const x=Math.round(u.x),base=Math.round(u.y+Math.sin(u.step*3)*1.2),sc=u.type==='paysans'?1.26:u.type==='van'?1.3:1;ctx.save();ctx.translate(x,base);ctx.scale(sc,sc);
-const a=u.flash>0?1:.95;ctx.globalAlpha=a;ctx.fillStyle='#08182680';ctx.beginPath();ctx.ellipse(0,4,20,6,0,0,7);ctx.fill();
-if(u.type==='paysans'){ctx.fillStyle='#3b6b40';rounded(-27,-25,44,20,4,'#6b9a57','#183a2e');rounded(6,-41,21,23,2,'#6a906e','#1b3c33');rounded(10,-38,15,13,2,'#abc5aa');ctx.fillStyle='#232e30';for(let k of [-16,18]){ctx.beginPath();ctx.arc(k,-3,k===-16?13:10,0,7);ctx.fill();ctx.fillStyle='#9fae9c';ctx.beginPath();ctx.arc(k,-3,4,0,7);ctx.fill()}ctx.fillStyle='#e0bf83';ctx.beginPath();ctx.arc(-8,-42,6,0,7);ctx.fill();ctx.fillStyle='#af924b';ctx.fillRect(-18,-51,20,4)}
-else if(u.type==='van'){rounded(-25,-34,54,33,5,'#314d64','#a7bacb');rounded(3,-28,19,11,2,'#a0bac4');ctx.fillStyle='#1b2634';for(const p of [-14,19]){ctx.beginPath();ctx.arc(p,1,9,0,7);ctx.fill()}ctx.fillStyle='#b7c6d2';ctx.fillRect(-8,-19,18,3);ctx.fillStyle='#88b6e5';ctx.fillRect(1,-36,12,4)}
-else{const col=isFoe?'#243951':u.type==='lyceennes'?'#a991d1':u.type==='gilets'?'#edc63c':u.type==='genz'?'#b979af':u.type==='infirmieres'?'#d9f0e8':'#b86447';
-// legs
-ctx.strokeStyle=isFoe?'#1c293b':'#2d3544';ctx.lineWidth=7;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(-7,-16);ctx.lineTo(-9,0);ctx.moveTo(7,-16);ctx.lineTo(8,0);ctx.stroke();
-// torso
-rounded(-13,-43,26,29,6,col,'#192c36');
-ctx.fillStyle='#d5ac88';ctx.beginPath();ctx.arc(0,-51,9,0,7);ctx.fill();
-// hairstyle and helmet
-if(isFoe){rounded(-12,-60,24,10,4,'#24364b');ctx.fillStyle='#263549';ctx.fillRect(-10,-55,20,6);rounded(8,-41,15,29,3,'#a3b9c8b8','#d0e0ea');ctx.fillStyle='#102f47';ctx.font='bold 8px system-ui';ctx.textAlign='center';ctx.fillText('CRS',14,-22)}
-else if(u.type==='pompiers'){rounded(-12,-62,24,10,5,'#f0cd53');ctx.strokeStyle='#f1dc8e';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(-10,-23);ctx.lineTo(10,-23);ctx.stroke()}
-else if(u.type==='infirmieres'){rounded(-11,-63,22,10,3,'#f4f7f2');ctx.fillStyle='#58a595';ctx.fillRect(-2,-60,4,7);ctx.fillRect(-5,-57,10,3);ctx.fillStyle='#4fa99f';ctx.fillRect(-2,-38,4,11);ctx.fillRect(-6,-34,12,4)}
-else if(u.type==='lyceennes'){ctx.fillStyle='#312c3a';ctx.beginPath();ctx.arc(0,-55,9,Math.PI,0);ctx.fill();ctx.beginPath();ctx.arc(9,-48,6,0,7);ctx.fill();rounded(-18,-38,7,22,3,'#654d77')}
-else if(u.type==='gilets'){ctx.strokeStyle='#fff0a3';ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(-11,-28);ctx.lineTo(11,-28);ctx.stroke();ctx.fillStyle='#2b333c';ctx.fillRect(-10,-60,20,5)}
-else if(u.type==='genz'){ctx.fillStyle='#364f86';ctx.beginPath();ctx.arc(0,-55,11,Math.PI,0);ctx.fill();ctx.fillStyle='#6ed0d8';ctx.fillRect(13,-40,7,13)}
-// arms
-ctx.strokeStyle=isFoe?'#26364b':col;ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(-13,-38);ctx.lineTo(-18,-20);ctx.moveTo(13,-38);ctx.lineTo(16,-23);ctx.stroke();if(!isFoe){ctx.fillStyle='#f3d18e';ctx.fillRect(16,-26,4,5)}
+function drawBackground(){
+ if(scenicStage!==stage)paintBackscene();
+ ctx.drawImage(scenicCanvas,0,0);
+ // Selected battle lane: legible highlight without hiding illustration.
+ const y=171+selectedLane*106;
+ ctx.fillStyle='#ffdf7420';ctx.fillRect(0,y,W,104);
+ ctx.strokeStyle='#ffd877aa';ctx.lineWidth=2;ctx.strokeRect(1,y+1,W-2,102);
+ // Light shafts and airborne dust: small fixed-size work independent of screen DPI.
+ const t=ambientClock;
+ for(let i=0;i<17;i++){
+  const drift=((i*83 + t*(7+i%4*3))%(W+80))-40,py=30+smoothNoise(i+13)*430;
+  ctx.fillStyle=i%2?'#ffe6ad36':'#d0e1d525';ctx.beginPath();ctx.arc(drift,py+Math.sin(t*.65+i)*5,1.4+i%3*.65,0,7);ctx.fill();
+ }
+ // Traffic-light-like glow at the CRS check-point, never a real tactical marker.
+ for(const [x,y] of [[1019,194],[1019,301],[1019,408]]){
+  ctx.fillStyle=Math.sin(t*5)>0?'#7baedf':'#e6a273';ctx.beginPath();ctx.arc(x,y,3.5,0,7);ctx.fill();
+ }
 }
-if(u.type==='lyceennes'||u.type==='gilets'||u.type==='genz'){ctx.strokeStyle='#e6e3d4';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(17,-29);ctx.lineTo(17,-66);ctx.stroke();rounded(12,-76,34,16,2,u.type==='gilets'?'#e7c74f':'#dcded9');ctx.fillStyle='#34424b';ctx.fillRect(17,-70,24,3)}
-// hp indicator
-const pct=clamp(u.hp/u.maxHp,0,1);if(pct<.99){ctx.fillStyle='#101b26';ctx.fillRect(-22,-88,44,4);ctx.fillStyle=isFoe?'#90bbe6':'#f4d877';ctx.fillRect(-22,-88,44*pct,4)}ctx.restore()}
+function personArm(g,ax,ay,bx,by,cx,cy,color,width=6){
+ g.strokeStyle='#1d2b33';g.lineWidth=width+2;g.beginPath();g.moveTo(ax,ay);g.lineTo(bx,by);g.lineTo(cx,cy);g.stroke();
+ g.strokeStyle=color;g.lineWidth=width;g.beginPath();g.moveTo(ax,ay);g.lineTo(bx,by);g.lineTo(cx,cy);g.stroke();
+}
+function circleFill(g,x,y,r,col){g.beginPath();g.arc(x,y,r,0,7);g.fillStyle=col;g.fill()}
+function drawUnit(u){
+ const foe=u.team==='foe',car=u.type==='van'||u.type==='paysans';
+ const walk=Math.sin(u.step*1.95+u.id*.23),bob=Math.abs(walk)*1.6,dir=foe?-1:1;
+ const scale=car?u.type==='paysans'?1.22:1.28:1.12;
+ ctx.save();ctx.translate(Math.round(u.x),Math.round(u.y)-bob);
+ ctx.scale(dir*scale,scale);ctx.lineCap='round';ctx.lineJoin='round';
+ // Ground contact shadow follows the legs without the whole sprite flickering.
+ ctx.fillStyle='#0e20248c';ctx.beginPath();ctx.ellipse(0,2,car?33:17,car?8:5,0,0,7);ctx.fill();
+ if(car){
+  const tractor=u.type==='paysans',hull=tractor?'#6c9a55':'#314963';
+  // Vehicle volume, glazing and wheel suspensions. Wheels visibly rotate while advancing.
+  ctx.fillStyle='#182733';ctx.fillRect(-27,-28,58,22);
+  if(tractor){
+   rounded(-36,-26,52,23,4,'#709958','#284634');rounded(6,-49,23,32,4,'#446b55','#b4c4a5');
+   rounded(9,-44,16,18,2,'#a7c6bb','#d8e3d9');
+   ctx.fillStyle='#c29a77';circleFill(ctx,15,-42,5,'#c59676');
+   rounded(-31,-31,17,6,2,'#7fb35a');rounded(-22,-33,3,6,1,'#293b2e');
+   rounded(-40,-20,10,5,1,'#bdc6a7');rounded(-40,-20,3,4,1,'#f8da8d');
+   ctx.fillStyle='#e8e5cc';ctx.fillRect(19,-43,3,5);
+  }else{
+   rounded(-35,-45,69,38,7,hull,'#91aabd');rounded(5,-39,25,16,3,'#a4bfce','#d7e5ea');
+   rounded(-28,-39,29,14,2,'#647d91','#adcad8');
+   ctx.fillStyle='#e4ecf0';ctx.fillRect(-33,-27,64,2);
+   for(const s of [-1,1]){ctx.fillStyle=s===-1?'#f8d68d':'#cf5251';ctx.fillRect(s===-1?-35:31,-22,4,7)}
+   ctx.fillStyle=Math.sin(ambientClock*9+u.id)>0?'#80d7fa':'#ff9b75';ctx.fillRect(-5,-49,14,4);
+  }
+  for(const wx of [-22,22]){
+   circleFill(ctx,wx,-2,tractor?12:10,'#18242b');circleFill(ctx,wx,-2,tractor?7:6,'#aab6b6');
+   ctx.strokeStyle='#4a6372';ctx.lineWidth=2;
+   for(let j=0;j<4;j++){const a=u.step*.7+j*Math.PI/2;ctx.beginPath();ctx.moveTo(wx+Math.cos(a)*2,-2+Math.sin(a)*2);ctx.lineTo(wx+Math.cos(a)*5,-2+Math.sin(a)*5);ctx.stroke()}
+  }
+ }else{
+  const jacket=foe?'#273f58':u.type==='lyceennes'?'#836aaf':u.type==='gilets'?'#e4b52d':u.type==='genz'?'#ce659a':u.type==='infirmieres'?'#dbeadf':'#bd5843';
+  const pants=foe?'#293543':u.type==='infirmieres'?'#527f83':'#323a44';
+  const skin=['#c88f6e','#f0bf98','#9d674e','#deb18d'][u.id%4];
+  // Rhythmic stride and tapered boots.
+  const stride=walk*6;
+  personArm(ctx,-5,-18,-7+stride*.6,-8,-11+stride,0,pants,6);
+  personArm(ctx,6,-18,9-stride*.5,-8,10-stride,0,pants,6);
+  rounded(-16+stride,-5,10,5,2,'#172b36');rounded(5-stride,-5,12,5,2,'#172b36');
+  // Duffel bag, school rucksack or medical pouch behind body.
+  if(u.type==='lyceennes'||u.type==='genz'||u.type==='infirmieres')rounded(-20,-41,13,23,3,u.type==='infirmieres'?'#528f91':'#53445c','#1f3942');
+  rounded(-12,-45,26,29,5,jacket,'#253c4b');
+  if(u.type==='gilets'){ctx.fillStyle='#f4df8c';ctx.fillRect(-10,-36,22,3);ctx.fillRect(-10,-27,22,3);ctx.fillStyle='#ae7f24';ctx.fillRect(-2,-44,4,29)}
+  if(u.type==='pompiers'){ctx.fillStyle='#ecd37e';ctx.fillRect(-11,-29,24,4);ctx.fillRect(-11,-40,24,2);ctx.fillStyle='#64483a';ctx.fillRect(6,-42,5,10)}
+  if(u.type==='infirmieres'){ctx.fillStyle='#399c96';ctx.fillRect(-1,-38,4,14);ctx.fillRect(-6,-33,14,4)}
+  if(u.type==='genz'){ctx.fillStyle='#f4cce0';ctx.fillRect(-9,-41,17,2);ctx.fillStyle='#743963';ctx.fillRect(-2,-44,5,11)}
+  // Walking upper-body animation, hand gestures, shield equipment.
+  const swing=walk*3;
+  personArm(ctx,-12,-39,-18,-30,-18-swing,-19,jacket,5);
+  personArm(ctx,13,-39,18,-29,19+swing,-18,foe?'#2d455f':jacket,5);
+  circleFill(ctx,-18-swing,-19,3,skin);circleFill(ctx,19+swing,-18,3,skin);
+  // Neck and visible face. Full visor for CRS.
+  rounded(-4,-49,8,7,2,skin);
+  circleFill(ctx,0,-55,10,skin);
+  ctx.fillStyle='#23333c';ctx.fillRect(4,-56,2,1);
+  if(foe){
+   rounded(-12,-66,24,10,5,'#24364d','#6c8090');
+   rounded(-11,-59,24,8,2,'#a0c1d180','#d7e7eb');
+   // Transparent shield on the leading side with visible rim and handle.
+   ctx.fillStyle='#b2d5e459';ctx.beginPath();ctx.moveTo(20,-44);ctx.lineTo(34,-42);ctx.lineTo(33,-13);ctx.lineTo(22,-10);ctx.closePath();ctx.fill();
+   ctx.strokeStyle='#d3e9ee';ctx.lineWidth=2;ctx.stroke();
+   ctx.fillStyle='#254762';ctx.fillRect(25,-32,6,3);
+  }else if(u.type==='pompiers'){
+   rounded(-12,-67,25,10,6,'#ebcc67','#7e573a');ctx.fillStyle='#f8e5a8';ctx.fillRect(-8,-62,16,3);
+   ctx.strokeStyle='#eadca7';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-8,-53);ctx.lineTo(-6,-45);ctx.stroke();
+  }else if(u.type==='infirmieres'){
+   rounded(-11,-65,22,9,3,'#f3f2ee','#9ba6a1');
+   ctx.fillStyle='#3d9b92';ctx.fillRect(-2,-64,4,7);ctx.fillRect(-5,-61,10,3);
+  }else if(u.type==='gilets'){
+   rounded(-12,-65,23,6,3,'#30343d');ctx.fillStyle='#242a35';ctx.fillRect(-10,-61,20,3);
+  }else if(u.type==='genz'){
+   ctx.fillStyle='#ab4d82';ctx.beginPath();ctx.arc(0,-56,12,Math.PI,2*Math.PI);ctx.fill();
+   rounded(19+swing,-32,7,11,2,'#3e5d84','#d4e8ef');ctx.fillStyle='#8fe1e0';ctx.fillRect(21+swing,-29,3,5);
+  }else if(u.type==='lyceennes'){
+   ctx.fillStyle='#353046';ctx.beginPath();ctx.arc(-1,-57,11,Math.PI,2*Math.PI);ctx.fill();
+   circleFill(ctx,9,-49,6,'#3e344f');
+  }
+  // Distinct fabric flag: subtle sway without slogans or readable brands.
+  if(u.type==='lyceennes'||u.type==='gilets'){
+   ctx.strokeStyle='#c9d4d4';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(20,-25);ctx.lineTo(20,-87);ctx.stroke();
+   const wave=Math.sin(ambientClock*3+u.id)*4;
+   ctx.fillStyle=u.type==='gilets'?'#f1c04a':'#d3a6c8';ctx.beginPath();ctx.moveTo(21,-85);ctx.lineTo(45+wave,-82);ctx.lineTo(42+wave,-63);ctx.lineTo(21,-65);ctx.closePath();ctx.fill();
+   ctx.strokeStyle='#fff2cc99';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(25,-81);ctx.lineTo(39+wave,-78);ctx.stroke();
+  }
+ }
+ // Reactive aura on hits and gentle glow for healing units.
+ if(u.flash>0){ctx.globalAlpha=clamp(u.flash*5,0,.65);ctx.strokeStyle='#fff4dd';ctx.lineWidth=2;ctx.beginPath();ctx.ellipse(0,-29,car?37:25,car?26:38,0,0,7);ctx.stroke();ctx.globalAlpha=1}
+ if(u.type==='infirmieres'&&!foe){ctx.globalAlpha=.15+.08*Math.sin(ambientClock*3+u.id);ctx.fillStyle='#86ffcf';ctx.beginPath();ctx.ellipse(0,-27,27,42,0,0,7);ctx.fill();ctx.globalAlpha=1}
+ ctx.restore();
+ const pct=clamp(u.hp/u.maxHp,0,1);
+ if(pct<.99){const hw=car?56:45;ctx.fillStyle='#111c28d8';ctx.fillRect(u.x-hw/2,u.y-(car?83:94),hw,5);ctx.fillStyle=foe?'#a6c9e8':'#f5d471';ctx.fillRect(u.x-hw/2+1,u.y-(car?83:94)+1,(hw-2)*pct,3)}
+}
 function draw(){drawBackground();for(let l=0;l<3;l++)if(barriers[l])drawBarrier(barriers[l],l);const ordered=[...units].sort((a,b)=>a.y-b.y||a.x-b.x);for(const u of ordered)drawUnit(u);for(const e of effects){ctx.globalAlpha=clamp(e.life/e.max,0,1);ctx.fillStyle=e.color;ctx.beginPath();ctx.arc(e.x,e.y,e.r,0,7);ctx.fill()}ctx.globalAlpha=1;ctx.textAlign='center';ctx.font='900 15px system-ui';for(const f of floating){ctx.globalAlpha=clamp(f.life,0,1);ctx.fillStyle='#17212ddd';ctx.fillText(f.text,f.x+1,f.y+2);ctx.fillStyle=f.color;ctx.fillText(f.text,f.x,f.y)}ctx.globalAlpha=1;
 if(mode==='playing'&&elapsed<7&&unitsPlaced===0){rounded(317,281,465,45,10,'#101c2fdc','#e8c560bb');ctx.fillStyle='#ffe3a6';ctx.textAlign='center';ctx.font='900 19px system-ui';ctx.fillText('CHOISISSEZ UNE UNITÉ EN BAS ↓',550,310)}
 if(elapsed<chantUntil){ctx.fillStyle='#f2d473';ctx.font='bold 17px system-ui';ctx.textAlign='center';ctx.fillText('♪  CHANT COLLECTIF ACTIF  ♪',550,174)}
 }
-function frame(t){if(!lastTime)lastTime=t;const dt=Math.min(.05,(t-lastTime)/1000);lastTime=t;if(mode==='playing')update(dt*gameSpeed);draw();requestAnimationFrame(frame)}
+function frame(t){if(!lastTime)lastTime=t;const dt=Math.min(.05,(t-lastTime)/1000);lastTime=t;if(mode==='playing'){ambientClock+=dt*gameSpeed;update(dt*gameSpeed)}draw();requestAnimationFrame(frame)}
 canvas.addEventListener('click',ev=>{const r=canvas.getBoundingClientRect();const y=(ev.clientY-r.top)/r.height*H;setLane(clamp(Math.floor((y-168)/102),0,2));if(mode==='playing')effect(180,feet[selectedLane]-40,'#f4d26f',4)});document.querySelectorAll('[data-lane]').forEach(b=>b.addEventListener('click',()=>setLane(Number(b.dataset.lane))));
 $('barrierBtn').addEventListener('click',()=>applyAbility('barrier'));$('rosterUpgrade').addEventListener('click',openUpgrades);$('speedBtn').addEventListener('click',toggleSpeed);$('chantBtn').addEventListener('click',()=>applyAbility('chant'));$('careBtn').addEventListener('click',()=>applyAbility('care'));$('modalPrimary').addEventListener('click',modalPrimary);$('modalSecondary').addEventListener('click',closeAndShowUpgrades);
 $('pauseBtn').addEventListener('click',()=>{if(mode==='playing')present('paused');else if(mode==='paused'){mode='playing';$('overlay').hidden=true;$('pauseBtn').textContent='Pause'}else present('stage')});
