@@ -139,6 +139,11 @@
 @media(prefers-reduced-motion:reduce){.dock-lane .threat.alert{animation:none}}
 
 /* V10 - actual game layout on mobile, preserving the original desktop page. */
+#mobileFocusCanvas,#mobileFocusHeader{display:none}
+.mobile-focus-header{justify-content:space-between;align-items:center;gap:5px;padding:3px 8px;color:#f3dda1;font-size:10px;font-weight:900;background:#172632}
+.mobile-focus-header span:last-child{font-size:9px;font-weight:600;color:#b0c3d4}
+#mobileFocusCanvas{touch-action:none;cursor:crosshair;outline-offset:-3px}
+#mobileFocusCanvas:focus-visible{outline:2px solid #f4d176}
 .dock-wave{display:inline-block;color:#afc7db;font-size:10px;margin-right:4px}
 #mobileMenuBtn{display:none}
 #mobileMenu[hidden],#mobilePlaceHint[hidden]{display:none!important}
@@ -188,8 +193,10 @@
  .scoreval{font-size:15px}
  .scoreboard .meter{margin:0;height:4px}
  .versus{padding:4px;font-size:8px}
- .canvas-shell{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:0;background:radial-gradient(ellipse at center,#344556,#101c2d 70%)}
- .canvas-shell canvas{display:block;width:100%;height:auto!important;max-height:100%;aspect-ratio:1100/490;min-height:0!important;object-fit:contain}
+ .canvas-shell{flex:1;min-height:0;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;overflow:hidden;border-radius:0;background:radial-gradient(ellipse at center,#344556,#101c2d 70%)}
+ .canvas-shell canvas#field{display:block;flex:none;width:100%;height:clamp(90px,15dvh,127px)!important;max-height:none;aspect-ratio:auto;min-height:0!important;object-fit:fill;border-bottom:1px solid #344a60}
+ .canvas-shell #mobileFocusHeader{display:flex;flex:none;min-height:24px;height:24px}
+ .canvas-shell canvas#mobileFocusCanvas{display:block;flex:1;min-height:0;min-width:0;width:100%;height:100%;max-height:none;border-top:1px solid #536575;background:#1a2b3b}
  .camera-button{top:5px;min-height:32px}
  .canvas-corner{font-size:8px}
  .mobile-intel{height:34px;min-height:34px;flex:none;padding:4px 8px;font-size:9px;border-radius:0}
@@ -279,7 +286,10 @@
 <main class="wrap">
 <header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · édition V10</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button><button class="small-btn" type="button" id="mobileMenuBtn" aria-haspopup="dialog" aria-expanded="false" aria-label="Ouvrir le menu">☰</button></div></header>
 <div class="ticker"><strong>● ÉDITION SPÉCIALE</strong><span id="tickerMsg">Une mobilisation inédite traverse le pays. Formez un collectif, rassemblez et faites reculer la ligne de maintien de l'ordre.</span></div>
-<div class="top-grid"><section class="battle" aria-label="Champ de jeu"><div class="battle-top"><div><div class="location" id="stageTag">ACTE 01 · LE ROND-POINT</div><div class="act" id="stageTitle">Première mobilisation</div></div><div style="text-align:right"><div class="location">TEMPS ÉCOULÉ</div><div class="act" id="timeText">00:00</div></div></div><div class="scoreboard"><div class="scorecol left"><div class="scoretitle">MOBILISATION</div><div class="scoreval"><span id="allyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="allyMeter"></span></div></div><div class="versus">VS</div><div class="scorecol right"><div class="scoretitle">LIGNE DES CRS</div><div class="scoreval"><span id="enemyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="enemyMeter"></span></div></div></div><div class="canvas-shell"><button type="button" id="cameraBtn" class="camera-button" aria-pressed="false" aria-label="Activer la caméra rapprochée">◎ Vue proche</button><canvas id="field" width="1100" height="490" aria-label="Bataille stylisée sur trois axes. Sélectionnez un axe puis déployez des unités."></canvas><div class="canvas-corner">← MOBILISATION</div><div class="canvas-corner right">CRS →</div></div><div class="lane-picker" aria-label="Choisir un axe de progression"><button class="lane" data-lane="0">01 · BOULEVARD</button><button class="lane selected" data-lane="1">02 · PLACE</button><button class="lane" data-lane="2">03 · RUE BASSE</button></div></section>
+<div class="top-grid"><section class="battle" aria-label="Champ de jeu"><div class="battle-top"><div><div class="location" id="stageTag">ACTE 01 · LE ROND-POINT</div><div class="act" id="stageTitle">Première mobilisation</div></div><div style="text-align:right"><div class="location">TEMPS ÉCOULÉ</div><div class="act" id="timeText">00:00</div></div></div><div class="scoreboard"><div class="scorecol left"><div class="scoretitle">MOBILISATION</div><div class="scoreval"><span id="allyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="allyMeter"></span></div></div><div class="versus">VS</div><div class="scorecol right"><div class="scoretitle">LIGNE DES CRS</div><div class="scoreval"><span id="enemyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="enemyMeter"></span></div></div></div><div class="canvas-shell"><button type="button" id="cameraBtn" class="camera-button" aria-pressed="false" aria-label="Activer la caméra rapprochée">◎ Vue proche</button><canvas id="field" width="1100" height="490" aria-label="Bataille stylisée sur trois axes. Sélectionnez un axe puis déployez des unités."></canvas>
+<div id="mobileFocusHeader" class="mobile-focus-header"><span id="mobileFocusLabel">VUE TACTIQUE · PLACE</span><span>↔ Glisser pour explorer</span></div>
+<canvas id="mobileFocusCanvas" width="800" height="490" aria-label="Vue tactique agrandie ; glisser horizontalement pour explorer, toucher pour choisir une voie ou poser un blocage"></canvas>
+<div class="canvas-corner">← MOBILISATION</div><div class="canvas-corner right">CRS →</div></div><div class="lane-picker" aria-label="Choisir un axe de progression"><button class="lane" data-lane="0">01 · BOULEVARD</button><button class="lane selected" data-lane="1">02 · PLACE</button><button class="lane" data-lane="2">03 · RUE BASSE</button></div></section>
 <div class="mobile-intel" id="mobileIntel"><span id="intelLane">AXE 2 · PLACE</span><strong id="intelMessage">PRÉPARATION</strong><span id="intelWave">VAGUE 0</span></div><aside class="side"><section class="panel resource"><div class="resource-title"><span>ÉLAN COLLECTIF</span><span id="income">+14 / SEC</span></div><div class="resource-total"><span id="resourceValue">85</span> <span>/ 160</span></div><div class="resource-bar"><div id="resourceBar"></div></div><div class="meta"><span>Mobilisation disponible</span><b id="remainingCount">0 unités</b></div></section><section class="panel"><h2>Actions collectives</h2><small>Des capacités à recharger pendant l'affrontement.</small><button class="ability" id="chantBtn"><span class="glyph">📣</span><span><strong>Chant collectif</strong><em>+35 % de puissance · 9 s</em></span><span class="cool" id="chantCd">PRÊT</span></button><button class="ability" id="careBtn"><span class="glyph">✚</span><span><strong>Chaîne de solidarité</strong><em>Rétablit la cohésion du groupe</em></span><span class="cool" id="careCd">PRÊT</span></button><button class="ability" id="barrierBtn"><span class="glyph">▥</span><span><strong>Barricade collective</strong><em>65 élan · freine les renforts · 22 s</em></span><span class="cool" id="barrierCd">PRÊT</span></button>
 <button class="ability" id="palletBtn"><span class="glyph">🔥</span><span><strong>Feu de palettes · Gilets jaunes</strong><em>90 élan · 30 s · placement libre</em></span><span class="cool" id="palletCd">PRÊT</span></button>
 <button class="ability" id="binBtn"><span class="glyph">🗑</span><span><strong>Poubelle en feu · Génération Z</strong><em>65 élan · 20 s · placement libre</em></span><span class="cool" id="binCd">PRÊT</span></button></section><section class="panel"><h2>Les cinq actes</h2><div class="chapter-list" id="chapters"></div><div class="description" id="stageDescription">D'un rond-point occupé à la grande place : chaque acte mobilise de nouvelles forces.</div></section></aside></div>
@@ -723,6 +733,8 @@ const scenicCanvas=document.createElement('canvas');scenicCanvas.width=W;scenicC
 const scenicCtx=scenicCanvas.getContext('2d',{alpha:false});
 let scenicStage=-1,ambientClock=0;
 const camera={enabled:false,zoom:1,cx:550,cy:245};
+const focusCanvas=$('mobileFocusCanvas'),focusCtx=focusCanvas.getContext('2d',{alpha:false});
+let focusView={sx:0,sy:0,sw:W,sh:H},focusLastDraw=0,focusManualX=null,focusManualUntil=0;
 const lowMotion=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const compactDevice=window.matchMedia&&window.matchMedia('(max-width:650px)').matches;
 const smoothNoise=n=>{const a=Math.sin(n*127.1+21.7)*43758.5453;return a-Math.floor(a)};
@@ -1255,8 +1267,69 @@ if(mode==='playing'&&elapsed<7&&unitsPlaced===0){rounded(317,281,465,45,10,'#101
 if(elapsed<chantUntil){ctx.fillStyle='#f2d473';ctx.font='bold 17px system-ui';ctx.textAlign='center';ctx.fillText('♪  CHANT COLLECTIF ACTIF  ♪',550,174)}
  ctx.restore();ctx.drawImage(filmCanvas,0,0); // screen-space cinematic grade
 }
-function frame(t){if(!lastTime)lastTime=t;const dt=Math.min(.05,(t-lastTime)/1000);lastTime=t;if(mode==='playing'){ambientClock+=dt*gameSpeed;ambientPulse+=dt*gameSpeed;update(dt*gameSpeed);updateAmbience()}draw();requestAnimationFrame(frame)}
+function focusTrackingTarget(){
+ const a=units.filter(u=>u.team==='ally'&&u.hp>0&&u.lane===selectedLane).sort((x,y)=>y.x-x.x)[0];
+ const f=units.filter(u=>u.team==='foe'&&u.hp>0&&u.lane===selectedLane).sort((x,y)=>x.x-y.x)[0];
+ if(a&&f)return f.x-a.x>320?a.x+155:(a.x+f.x)/2;
+ if(a)return a.x+125;
+ if(f)return f.x-120;
+ return 550;
+}
+function renderMobileFocus(t){
+ if(!window.matchMedia('(max-width:650px) and (orientation:portrait)').matches)return;
+ if(t-focusLastDraw<33)return;focusLastDraw=t;
+ const rect=focusCanvas.getBoundingClientRect();
+ if(rect.width<100||rect.height<80)return;
+ const w=Math.round(rect.width),h=Math.round(rect.height);
+ if(focusCanvas.width!==w||focusCanvas.height!==h){focusCanvas.width=w;focusCanvas.height=h}
+ const sh=Math.min(H,Math.max(250,Math.min(350,H*.8)));
+ const sw=Math.min(W,sh*(w/h));
+ const autoX=focusTrackingTarget();
+ const worldX=(focusManualX!==null&&t<focusManualUntil)?focusManualX:autoX;
+ if(focusManualX!==null&&t>=focusManualUntil)focusManualX=null;
+ const sourceX=(worldX-camera.cx)*camera.zoom+W/2;
+ const sourceY=(feet[selectedLane]-42-camera.cy)*camera.zoom+H/2;
+ const sx=clamp(sourceX-sw/2,0,W-sw);
+ const sy=clamp(sourceY-sh/2,0,H-sh);
+ focusView={sx,sy,sw,sh};
+ focusCtx.drawImage(canvas,sx,sy,sw,sh,0,0,w,h);
+ $('mobileFocusLabel').textContent='VUE TACTIQUE · '+LANE_NAMES[selectedLane].toUpperCase();
+}
+function frame(t){if(!lastTime)lastTime=t;const dt=Math.min(.05,(t-lastTime)/1000);lastTime=t;if(mode==='playing'){ambientClock+=dt*gameSpeed;ambientPulse+=dt*gameSpeed;update(dt*gameSpeed);updateAmbience()}draw();renderMobileFocus(t);requestAnimationFrame(frame)}
 canvas.addEventListener('click',ev=>{const r=canvas.getBoundingClientRect();const sx=(ev.clientX-r.left)/r.width*W,sy=(ev.clientY-r.top)/r.height*H;const x=(sx-W/2)/camera.zoom+camera.cx,y=(sy-H/2)/camera.zoom+camera.cy;if(mode==='playing'&&pendingPlacement){placeFire(pendingPlacement.type,clamp(x,180,920));return;}setLane(clamp(Math.floor((y-168)/102),0,2));if(mode==='playing')effect(x,feet[selectedLane]-40,'#f4d26f',4)});document.querySelectorAll('[data-lane]').forEach(b=>b.addEventListener('click',()=>setLane(Number(b.dataset.lane))));
+// Enlarged canvas: tap to choose lane or position a blockade; drag to pan the action.
+let focusDragStart=null,focusDragX=null,focusPointerId=null;
+focusCanvas.addEventListener('pointerdown',e=>{
+ const r=focusCanvas.getBoundingClientRect();
+ focusPointerId=e.pointerId;focusDragStart=e.clientX;focusDragX=e.clientX;
+ if(focusManualX===null)focusManualX=focusTrackingTarget();
+ focusCanvas.setPointerCapture?.(e.pointerId);
+});
+focusCanvas.addEventListener('pointermove',e=>{
+ if(focusPointerId!==e.pointerId||focusDragX===null)return;
+ const dx=e.clientX-focusDragX;focusDragX=e.clientX;
+ if(Math.abs(dx)>0.6){
+  const w=focusCanvas.getBoundingClientRect().width||1;
+  focusManualX=clamp((focusManualX??focusTrackingTarget())-dx/w*focusView.sw/Math.max(.1,camera.zoom),0,W);
+  focusManualUntil=performance.now()+5000;
+ }
+});
+focusCanvas.addEventListener('pointerup',e=>{
+ if(focusPointerId!==e.pointerId)return;
+ const distance=Math.abs(e.clientX-(focusDragStart??e.clientX));
+ if(distance<11){
+  const r=focusCanvas.getBoundingClientRect();
+  const px=focusView.sx+clamp((e.clientX-r.left)/r.width,0,1)*focusView.sw;
+  const py=focusView.sy+clamp((e.clientY-r.top)/r.height,0,1)*focusView.sh;
+  const worldX=(px-W/2)/camera.zoom+camera.cx;
+  const worldY=(py-H/2)/camera.zoom+camera.cy;
+  if(mode==='playing'&&pendingPlacement)placeFire(pendingPlacement.type,clamp(worldX,180,920));
+  else setLane(clamp(Math.floor((worldY-168)/102),0,2));
+ }
+ focusDragStart=null;focusDragX=null;focusPointerId=null;
+});
+focusCanvas.addEventListener('pointercancel',()=>{focusDragStart=null;focusDragX=null;focusPointerId=null});
+
 $('palletBtn').addEventListener('click',()=>applyAbility('pallet'));$('binBtn').addEventListener('click',()=>applyAbility('bin'));$('barrierBtn').addEventListener('click',()=>applyAbility('barrier'));$('rosterUpgrade').addEventListener('click',openUpgrades);$('speedBtn').addEventListener('click',toggleSpeed);$('cameraBtn').addEventListener('click',toggleCamera);$('chantBtn').addEventListener('click',()=>applyAbility('chant'));$('careBtn').addEventListener('click',()=>applyAbility('care'));$('modalPrimary').addEventListener('click',modalPrimary);$('modalSecondary').addEventListener('click',closeAndShowUpgrades);
 $('pauseBtn').addEventListener('click',()=>{if(mode==='playing')present('paused');else if(mode==='paused'){mode='playing';$('overlay').hidden=true;$('pauseBtn').textContent='Pause'}else present('stage')});
 $('resetBtn').addEventListener('click',()=>{if(mode==='playing'||mode==='paused'||mode==='over'){present('stage')}else present('intro')});
