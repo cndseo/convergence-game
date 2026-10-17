@@ -280,6 +280,22 @@
  .mobile-place-hint{font-size:10px}
 }
 
+
+/* Compact modal in iPhone landscape: start/pause buttons always reachable. */
+@media(max-height:550px) and (orientation:landscape) and (max-width:1000px){
+ .overlay{position:fixed;inset:0;z-index:46;display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:6px calc(32vw + 13px) 6px 7px!important}
+ .overlay .modal{display:flex;flex-direction:column;flex:none;width:100%;max-width:none;max-height:calc(100dvh - 12px);overflow-y:auto;min-height:0;padding:11px 13px 10px;border-radius:12px}
+ .modal .hero-icon{display:none}
+ .modal h2{font-size:19px;line-height:1.15;margin:4px 0}
+ .modal p{font-size:11px;line-height:1.25;margin:4px 0}
+ .modal .instruct{font-size:10px;line-height:1.35;padding:6px;margin:5px 0}
+ .modal-actions{position:sticky;bottom:0;z-index:2;display:flex;gap:5px;background:#1c2836;padding:6px 0 0;margin:3px 0 0}
+ .modal-actions button{min-height:39px;padding:4px 6px;font-size:11px}
+ body:has(.overlay:not([hidden])) #mobileDock,body:has(.upgrade-sheet:not([hidden])) #mobileDock{visibility:hidden!important;pointer-events:none!important}
+}
+@media(max-width:650px) and (orientation:portrait){
+ body:has(#mobilePlaceHint:not([hidden])) .wrap{padding-bottom:calc(216px + env(safe-area-inset-bottom,0px))}
+}
 </style>
 </head>
 <body>
