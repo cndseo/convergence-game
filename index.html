@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#111723"><meta name="description" content="CONVERGENCE — jeu tactique de mobilisation, jouable hors ligne sur ordinateur et mobile.">
-<title>CONVERGENCE V5 — La rue s'éveille</title>
+<title>CONVERGENCE V6 — La rue s'éveille</title>
 <style>
 :root{--bg:#0b0f16;--surface:#141c27;--panel:#192332;--line:#2d3c4c;--ink:#f4f4ed;--dim:#94a3b5;--yellow:#f1c849;--orange:#f59b51;--red:#e16e70;--green:#9ce2be;--blue:#7eb3d9;--shadow:0 20px 90px #0008;--radius:17px}
 *{box-sizing:border-box}html{height:100%;background:var(--bg)}body{margin:0;min-height:100%;color:var(--ink);background:radial-gradient(ellipse at 13% -12%,#55402a45,transparent 31%),radial-gradient(ellipse at 90% 22%,#24596d28,transparent 36%),var(--bg);font:500 14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:hidden}button{font:inherit;cursor:pointer;color:inherit}button:disabled{cursor:not-allowed;opacity:.42}button:focus-visible{outline:2px solid #fff;outline-offset:3px}.wrap{max-width:1440px;margin:auto;padding:21px clamp(14px,2.6vw,42px) 52px}.mast{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:21px}.logo{display:flex;align-items:center;gap:15px}.mark{height:52px;width:52px;border:2px solid var(--yellow);border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#f1c84920,#f1c84905);transform:rotate(-7deg);box-shadow:inset 0 0 0 5px #0c1119}.mark svg{height:32px;width:32px;transform:rotate(7deg)}.eyebrow{color:var(--yellow);text-transform:uppercase;letter-spacing:.2em;font-weight:850;font-size:10px}.brand{font-weight:1000;letter-spacing:-.055em;font-size:clamp(28px,3.7vw,45px);line-height:1;margin:3px 0}.subbrand{font-size:12px;letter-spacing:.055em;color:var(--dim);text-transform:uppercase}.mast-actions{display:flex;gap:8px;flex-wrap:wrap}.small-btn{border:1px solid var(--line);background:#17202b;padding:10px 13px;border-radius:10px;font-weight:740;font-size:12px;transition:.15s}.small-btn:hover{background:#253449}.small-btn.active{background:#493b21;border-color:#ad8c35;color:#fff0bd}.ticker{border:1px solid #5f5036;background:linear-gradient(90deg,#423922,#1d2930 64%);padding:11px 16px;border-radius:12px;display:flex;align-items:center;gap:14px;margin-bottom:16px;box-shadow:inset 3px 0 0 var(--yellow)}.ticker strong{color:var(--yellow);font-size:11px;letter-spacing:.1em;white-space:nowrap}.ticker span{font-size:12px;color:#d5d6ca}.top-grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px}.battle{min-width:0}.battle-top{border:1px solid var(--line);background:linear-gradient(180deg,#202d3d,#161e2b);border-radius:var(--radius) var(--radius) 0 0;display:flex;align-items:center;gap:20px;justify-content:space-between;padding:16px 19px}.battle-top .act{font-weight:930;font-size:16px;letter-spacing:.01em}.battle-top .location{color:var(--dim);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.scoreboard{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;border-top:1px solid var(--line);padding:14px 19px;background:#111925}.scorecol.right{text-align:right}.scoretitle{font-size:10px;letter-spacing:.12em;font-weight:900;color:var(--dim)}.scoreval{font-weight:930;font-size:24px;line-height:1.2;margin:4px 0}.scorecol.left .scoreval{color:var(--yellow)}.scorecol.right .scoreval{color:var(--red)}.meter{height:7px;border-radius:20px;overflow:hidden;background:#283444}.meter span{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--orange),var(--yellow));transition:width .3s}.scorecol.right .meter span{background:linear-gradient(90deg,#cc5364,#f28b7f);margin-left:auto}.versus{font-size:10px;border-radius:40px;border:1px solid #4a5864;padding:8px;color:#9eacb7;letter-spacing:.18em;font-weight:900}.canvas-shell{position:relative;overflow:hidden;border:1px solid var(--line);border-top:0;background:#273b48}.canvas-shell canvas{width:100%;height:auto;display:block;touch-action:manipulation;cursor:pointer;aspect-ratio:1100/490}.canvas-corner{position:absolute;pointer-events:none;top:12px;left:13px;font-size:10px;font-weight:900;letter-spacing:.12em;background:#0d1722ae;border:1px solid #ffffff28;border-radius:7px;padding:6px 9px;color:#e8e9e0}.canvas-corner.right{right:13px;left:auto}.lane-picker{display:flex;gap:7px;border:1px solid var(--line);border-top:0;background:#121a25;padding:11px;border-radius:0 0 var(--radius) var(--radius)}.lane{flex:1;min-width:0;background:#202b39;border:1px solid #334153;border-radius:9px;padding:10px 5px;font-size:11px;font-weight:780;letter-spacing:.045em;white-space:nowrap}.lane.selected{background:#594a28;border-color:var(--yellow);color:#ffe78f;box-shadow:inset 0 -2px 0 #f1c849}.lane:hover{filter:brightness(1.14)}.side{display:flex;flex-direction:column;gap:12px}.panel{border:1px solid var(--line);background:linear-gradient(150deg,#1b2635,#131d29);border-radius:var(--radius);padding:18px}.panel h2,.section-title{margin:0;color:var(--ink);font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.panel small{display:block;color:var(--dim);margin-top:5px}.resource{border-color:#7d6836;background:radial-gradient(circle at top right,#71602e50,transparent 65%),linear-gradient(145deg,#272b2b,#1a222b)}.resource-title{display:flex;justify-content:space-between;color:var(--yellow);font-size:10px;letter-spacing:.12em;font-weight:900}.resource-total{font-size:46px;font-weight:1000;letter-spacing:-.055em;line-height:1.1;margin-top:8px}.resource-total span{color:#b6b7af;font-size:14px;letter-spacing:0}.resource-bar{height:7px;border-radius:10px;background:#49505a;overflow:hidden;margin:13px 0 8px}.resource-bar>div{height:100%;width:45%;background:linear-gradient(90deg,#f38c4b,#efd15a)}.meta{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--dim)}.meta b{color:var(--ink)}.ability{width:100%;text-align:left;border-radius:11px;padding:12px;margin-top:11px;display:flex;gap:11px;align-items:center;background:#203042;border:1px solid #38516a}.ability:hover:not(:disabled){border-color:#83bad8}.ability .glyph{display:grid;place-items:center;width:39px;height:39px;border-radius:9px;background:#30546c;font-size:22px;flex:none}.ability strong{font-size:12px;display:block}.ability em{font-size:10px;color:#a8b7c7;font-style:normal;display:block;margin-top:2px}.ability .cool{margin-left:auto;color:#d8ecfb;font-size:12px;font-weight:900}.side .chapter-list{display:flex;gap:6px;margin-top:12px}.chapter{height:36px;flex:1;border:1px solid #465066;border-radius:8px;background:#273244;font-weight:900}.chapter.current{border-color:var(--yellow);background:#6c5a2b}.chapter:disabled{opacity:.35}.description{color:var(--dim);font-size:12px;margin-top:10px;line-height:1.55}.lower{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;margin-top:20px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 12px}.help-text{color:var(--dim);font-size:11px}.roster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.unit-card{border-radius:13px;min-width:0;background:linear-gradient(150deg,#202d3a,#161f2c);border:1px solid #324353;position:relative;overflow:hidden;transition:transform .12s,border-color .12s,background .12s}.unit-card:hover{transform:translateY(-2px);border-color:#728491}.unit-card.affordable{border-color:#635837}.unit-card.locked{opacity:.57}.unit-deploy{display:grid;grid-template-columns:47px minmax(0,1fr) 53px;align-items:center;gap:9px;width:100%;border:0;background:transparent;text-align:left;padding:12px 11px 9px}.unit-pict{width:44px;height:44px;display:grid;place-items:center;border-radius:11px;background:#ffffff10;font-size:27px}.unit-name{display:block;font-weight:880;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.unit-role{display:block;font-size:10px;color:var(--dim);line-height:1.35;margin-top:3px}.cost{text-align:center;color:#ffdd75;font-weight:950;font-size:16px}.cost small{display:block;font-size:9px;color:#aeb3ad;font-weight:700}.unit-bottom{border-top:1px solid #344151;padding:7px 11px 9px;display:flex;align-items:center;justify-content:space-between;gap:8px;color:#c3cdd5;font-size:10px}.level-dots{display:flex;gap:3px;margin-top:4px}.dot{height:5px;width:13px;border-radius:3px;background:#455361}.dot.on{background:var(--yellow)}.upgrade{border:1px solid #816a3b;background:#59492c;border-radius:8px;min-width:89px;padding:6px;font-size:10px;font-weight:900;color:#ffe9a2}.upgrade:hover:not(:disabled){background:#756038}.notes{display:flex;flex-direction:column;gap:7px;margin-top:13px}.note{font-size:11px;padding:9px 11px;color:#a9b9c9;background:#151f2d;border-left:2px solid #4a7992;border-radius:5px}.note:first-child{color:#f1e8be;border-color:#ecd078}.counter{color:var(--yellow);font-weight:900}.footer-info{border:1px solid #293947;border-radius:12px;padding:14px;color:#95a4b2;font-size:11px;margin-top:20px;line-height:1.65}.footer-info b{color:#e3ddbc}.kbd{border:1px solid #445667;border-radius:5px;padding:1px 5px;font-family:ui-monospace,monospace;color:#d5e0e9}.overlay{position:fixed;inset:0;z-index:30;background:#080d16d9;backdrop-filter:blur(10px);display:grid;place-items:center;padding:18px}.overlay[hidden]{display:none}.modal{width:min(520px,100%);background:radial-gradient(circle at 10% 0%,#67532a45,transparent 45%),linear-gradient(#1e2a38,#131c27);border:1px solid #79818b;border-radius:21px;padding:clamp(22px,5vw,39px);box-shadow:0 36px 130px #0009;text-align:center;position:relative}.modal:before{content:"";position:absolute;inset:6px;pointer-events:none;border:1px solid #ffffff0e;border-radius:16px}.modal .hero-icon{font-size:45px;margin-bottom:12px}.modal .eyebrow{font-size:11px}.modal h2{font-size:clamp(27px,5vw,43px);letter-spacing:-.04em;line-height:1.1;margin:12px 0}.modal p{color:#b7c4cf;font-size:13px;line-height:1.7}.primary{border:0;border-radius:10px;padding:14px 22px;background:linear-gradient(100deg,#eebc43,#ffe17a);color:#1c252c;font-size:13px;font-weight:1000;letter-spacing:.045em;box-shadow:0 7px 30px #e7ae3536}.primary:hover{filter:brightness(1.1)}.secondary{border:1px solid #64778b;padding:12px 18px;border-radius:9px;background:#253546;color:#dce9f3;font-weight:780}.modal-actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:23px}.instruct{margin:15px 0;background:#172434;border-radius:10px;padding:13px;text-align:left;font-size:12px;line-height:1.8;color:#d0dae3}.instruct b{color:#f0ce74}.hidden{display:none!important}.flash{animation:flash .4s ease}@keyframes flash{50%{filter:brightness(1.7)}}
@@ -124,6 +124,12 @@
   body{padding-bottom:calc(218px + env(safe-area-inset-bottom,0px))}
 }
 @media(max-width:360px){.dock-units{gap:3px}.dock-unit .dock-short{font-size:8px}.dock-label{letter-spacing:0}.dock-lane{gap:3px;font-size:8px}}
+/* V6 — close camera / cinematic lighting; no external resources. */
+.canvas-shell{isolation:isolate}
+.camera-button{position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:3;border:1px solid #d4b96aaf;background:#111d29dd;color:#fff0bb;backdrop-filter:blur(7px);border-radius:20px;font-size:11px;font-weight:900;padding:7px 13px;min-height:34px;white-space:nowrap;box-shadow:0 4px 18px #0008}
+.camera-button[aria-pressed=true]{background:#69502c;color:#fff4c8;border-color:#ffe296}
+.camera-button:focus-visible{outline:3px solid #fff4bd}
+@media(max-width:650px){.camera-button{font-size:10px;padding:5px 9px;min-height:29px;top:6px}}
 /* V5 — cinq commandes tactiques en deux rangées sur téléphone. */
 .dock-ability.fire-action{border-color:#ad7744;background:linear-gradient(130deg,#4b3526,#253644)}
 .dock-ability.fire-action:not(:disabled){color:#ffe1aa}
@@ -134,9 +140,9 @@
 </head>
 <body>
 <main class="wrap">
-<header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · édition V5</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button></div></header>
+<header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · édition V6</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button></div></header>
 <div class="ticker"><strong>● ÉDITION SPÉCIALE</strong><span id="tickerMsg">Une mobilisation inédite traverse le pays. Formez un collectif, rassemblez et faites reculer la ligne de maintien de l'ordre.</span></div>
-<div class="top-grid"><section class="battle" aria-label="Champ de jeu"><div class="battle-top"><div><div class="location" id="stageTag">ACTE 01 · LE ROND-POINT</div><div class="act" id="stageTitle">Première mobilisation</div></div><div style="text-align:right"><div class="location">TEMPS ÉCOULÉ</div><div class="act" id="timeText">00:00</div></div></div><div class="scoreboard"><div class="scorecol left"><div class="scoretitle">MOBILISATION</div><div class="scoreval"><span id="allyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="allyMeter"></span></div></div><div class="versus">VS</div><div class="scorecol right"><div class="scoretitle">LIGNE DES CRS</div><div class="scoreval"><span id="enemyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="enemyMeter"></span></div></div></div><div class="canvas-shell"><canvas id="field" width="1100" height="490" aria-label="Bataille stylisée sur trois axes. Sélectionnez un axe puis déployez des unités."></canvas><div class="canvas-corner">← MOBILISATION</div><div class="canvas-corner right">CRS →</div></div><div class="lane-picker" aria-label="Choisir un axe de progression"><button class="lane" data-lane="0">01 · BOULEVARD</button><button class="lane selected" data-lane="1">02 · PLACE</button><button class="lane" data-lane="2">03 · RUE BASSE</button></div></section>
+<div class="top-grid"><section class="battle" aria-label="Champ de jeu"><div class="battle-top"><div><div class="location" id="stageTag">ACTE 01 · LE ROND-POINT</div><div class="act" id="stageTitle">Première mobilisation</div></div><div style="text-align:right"><div class="location">TEMPS ÉCOULÉ</div><div class="act" id="timeText">00:00</div></div></div><div class="scoreboard"><div class="scorecol left"><div class="scoretitle">MOBILISATION</div><div class="scoreval"><span id="allyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="allyMeter"></span></div></div><div class="versus">VS</div><div class="scorecol right"><div class="scoretitle">LIGNE DES CRS</div><div class="scoreval"><span id="enemyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="enemyMeter"></span></div></div></div><div class="canvas-shell"><button type="button" id="cameraBtn" class="camera-button" aria-pressed="false" aria-label="Activer la caméra rapprochée">◎ Vue proche</button><canvas id="field" width="1100" height="490" aria-label="Bataille stylisée sur trois axes. Sélectionnez un axe puis déployez des unités."></canvas><div class="canvas-corner">← MOBILISATION</div><div class="canvas-corner right">CRS →</div></div><div class="lane-picker" aria-label="Choisir un axe de progression"><button class="lane" data-lane="0">01 · BOULEVARD</button><button class="lane selected" data-lane="1">02 · PLACE</button><button class="lane" data-lane="2">03 · RUE BASSE</button></div></section>
 <div class="mobile-intel" id="mobileIntel"><span id="intelLane">AXE 2 · PLACE</span><strong id="intelMessage">PRÉPARATION</strong><span id="intelWave">VAGUE 0</span></div><aside class="side"><section class="panel resource"><div class="resource-title"><span>ÉLAN COLLECTIF</span><span id="income">+14 / SEC</span></div><div class="resource-total"><span id="resourceValue">85</span> <span>/ 160</span></div><div class="resource-bar"><div id="resourceBar"></div></div><div class="meta"><span>Mobilisation disponible</span><b id="remainingCount">0 unités</b></div></section><section class="panel"><h2>Actions collectives</h2><small>Des capacités à recharger pendant l'affrontement.</small><button class="ability" id="chantBtn"><span class="glyph">📣</span><span><strong>Chant collectif</strong><em>+35 % de puissance · 9 s</em></span><span class="cool" id="chantCd">PRÊT</span></button><button class="ability" id="careBtn"><span class="glyph">✚</span><span><strong>Chaîne de solidarité</strong><em>Rétablit la cohésion du groupe</em></span><span class="cool" id="careCd">PRÊT</span></button><button class="ability" id="barrierBtn"><span class="glyph">▥</span><span><strong>Barricade collective</strong><em>65 élan · freine les renforts · 22 s</em></span><span class="cool" id="barrierCd">PRÊT</span></button>
 <button class="ability" id="palletBtn"><span class="glyph">🔥</span><span><strong>Feu de palettes · Gilets jaunes</strong><em>90 élan · 24 s · groupe requis</em></span><span class="cool" id="palletCd">PRÊT</span></button>
 <button class="ability" id="binBtn"><span class="glyph">🗑</span><span><strong>Poubelle en feu · Génération Z</strong><em>65 élan · 16 s · groupe requis</em></span><span class="cool" id="binCd">PRÊT</span></button></section><section class="panel"><h2>Les cinq actes</h2><div class="chapter-list" id="chapters"></div><div class="description" id="stageDescription">D'un rond-point occupé à la grande place : chaque acte mobilise de nouvelles forces.</div></section></aside></div>
@@ -333,6 +339,9 @@ const SCENE_PALETTES=[
 const scenicCanvas=document.createElement('canvas');scenicCanvas.width=W;scenicCanvas.height=H;
 const scenicCtx=scenicCanvas.getContext('2d',{alpha:false});
 let scenicStage=-1,ambientClock=0;
+const camera={enabled:false,zoom:1,cx:550,cy:245};
+const lowMotion=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const compactDevice=window.matchMedia&&window.matchMedia('(max-width:650px)').matches;
 const smoothNoise=n=>{const a=Math.sin(n*127.1+21.7)*43758.5453;return a-Math.floor(a)};
 function paintBackscene(){
  scenicStage=stage;
@@ -415,7 +424,72 @@ function paintBackscene(){
   g.fillStyle='#405463';g.beginPath();g.moveTo(x-1,48);g.quadraticCurveTo(x+4,30,x+22,35);g.lineTo(x+24,40);g.quadraticCurveTo(x+9,38,x+6,54);g.fill();
   g.fillStyle='#fff3c0ad';g.beginPath();g.arc(x+24,39,5,0,7);g.fill();
  }
+
+// Fine geometry remains in the cached background: 2.5D shop depth, shutters, masonry,
+// balconies, tram-like cables, kerb shadows, textured sidewalks and wet asphalt.
+function scenicDetailPass(g){
+ const p=SCENE_PALETTES[stage];
+ for(let i=0;i<15;i++){
+  const x=i*81-29,h=65+Math.floor(smoothNoise(i+stage*29)*5)*12,roof=146-h;
+  // Facade masonry laid behind moving actors (no texture downloads).
+  for(let row=0;row<Math.floor(h/9);row++){
+   const yy=roof+5+row*9;
+   g.strokeStyle=row%3?'#221f1b24':'#ffecce33';g.lineWidth=.75;g.beginPath();g.moveTo(x+3,yy);g.lineTo(x+75,yy);g.stroke();
+   for(let col=0;col<4;col++){
+    g.strokeStyle='#211b1824';g.beginPath();
+    const xx=x+4+col*18+(row%2)*9;g.moveTo(xx,yy);g.lineTo(xx,yy+6);g.stroke();
+   }
+  }
+  g.fillStyle='#19293377';g.fillRect(x+5,roof+7,4,h-13);
+  g.fillStyle='#f7e4bb31';g.fillRect(x+68,roof+6,3,h-8);
+  g.fillStyle='#1a2a35a0';g.fillRect(x+11,roof+h-12,56,25);
+  // Recessed windows and deep framed lower shopfronts.
+  g.fillStyle='#8ab0b24a';g.fillRect(x+19,roof+h-9,37,17);
+  g.fillStyle='#e5d7b159';g.fillRect(x+20,roof+h-8,36,2);
+  for(let j=0;j<4;j++){g.strokeStyle='#15222b8a';g.beginPath();g.moveTo(x+20+j*10,roof+h-7);g.lineTo(x+20+j*10,roof+h+9);g.stroke()}
+  // Small pavement shop lights, cast down towards the curb.
+  const lx=x+39,ly=141;const cone=g.createLinearGradient(lx,ly,lx,175);
+  cone.addColorStop(0,'#ffdba441');cone.addColorStop(1,'#ffdba400');
+  g.fillStyle=cone;g.beginPath();g.moveTo(lx-2,ly);g.lineTo(lx-35,171);g.lineTo(lx+35,171);g.fill();
+ }
+ // Foreground road: repeated gutters, metallic drainage grilles, cracks and tyre marks.
+ for(let lane=0;lane<3;lane++){
+  const y=171+lane*106;
+  const gutter=g.createLinearGradient(0,y,0,y+18);
+  gutter.addColorStop(0,'#c7c8b721');gutter.addColorStop(1,'#080f1500');
+  g.fillStyle=gutter;g.fillRect(0,y,W,18);
+  for(let i=0;i<9;i++){
+   const x=37+i*129+lane*16;
+   g.strokeStyle='#0a1b257d';g.lineWidth=1.2;g.beginPath();g.moveTo(x,y+55);
+   g.quadraticCurveTo(x+9,y+48,x+23,y+59);g.lineTo(x+43,y+54);g.stroke();
+  }
+  for(let k=0;k<4;k++){
+   const x=85+k*284+(lane%2)*53;
+   g.fillStyle='#162b37';g.fillRect(x,y+95,23,5);
+   g.strokeStyle='#7f95964a';for(let t=0;t<5;t++){g.beginPath();g.moveTo(x+2+t*4,y+96);g.lineTo(x+2+t*4,y+99);g.stroke()}
+  }
+  // Reflection patches are broken, irregular and never cover lane marks.
+  for(let i=0;i<15;i++){
+   const x=30+smoothNoise(i*2+lane*132)*1050,py=y+12+smoothNoise(i*7+35)*78;
+   const w=12+smoothNoise(i*9+stage*37)*42;
+   g.fillStyle=i%3?'#b8bdc00b':'#e9c29d14';g.beginPath();g.ellipse(x,py,w,2+i%3,0,0,Math.PI*2);g.fill();
+   g.fillStyle='#26384426';g.fillRect(x-w*.7,py+4,w,1);
+  }
+ }
+ // Urban elements at street level, each with dimensional highlights.
+ for(let x=95;x<1100;x+=258){
+  g.fillStyle='#1e2c37';g.fillRect(x,149,3,20);
+  g.fillStyle='#a6b8b1';g.fillRect(x+1,151,1,13);
+  g.fillStyle='#bdc7bf';g.beginPath();g.arc(x+1.5,149,3,0,7);g.fill();
+ }
+ // Distant suspended cable, light and posts tie the visual field together.
+ g.strokeStyle='#1a2b3659';g.lineWidth=1;g.beginPath();g.moveTo(0,76);g.quadraticCurveTo(520,106,W,68);g.stroke();
+ if(stage>=3){
+  g.fillStyle='#13212b25';g.fillRect(0,169,W,H-169);
+ }
+}
  // District label is baked once, never blocks moving sprites.
+ scenicDetailPass(g);
  g.font='700 13px system-ui';g.textAlign='center';g.fillStyle='#fff0d3bb';g.fillText(STAGES[stage].region.toUpperCase(),W/2,150);
 }
 function drawBackground(){
@@ -605,20 +679,129 @@ function drawGasCloud(g){
  }
  ctx.restore();
 }
-function draw(){drawBackground();for(const gas of gasClouds)drawGasCloud(gas);for(const field of stunFields)drawStunField(field);for(let l=0;l<3;l++)if(fires[l])drawFireBlock(fires[l],l);for(let l=0;l<3;l++)if(barriers[l])drawBarrier(barriers[l],l);const ordered=[...units].sort((a,b)=>a.y-b.y||a.x-b.x);for(const u of ordered)drawUnit(u);for(const e of effects){ctx.globalAlpha=clamp(e.life/e.max,0,1);ctx.fillStyle=e.color;ctx.beginPath();ctx.arc(e.x,e.y,e.r,0,7);ctx.fill()}ctx.globalAlpha=1;ctx.textAlign='center';ctx.font='900 15px system-ui';for(const f of floating){ctx.globalAlpha=clamp(f.life,0,1);ctx.fillStyle='#17212ddd';ctx.fillText(f.text,f.x+1,f.y+2);ctx.fillStyle=f.color;ctx.fillText(f.text,f.x,f.y)}ctx.globalAlpha=1;
+
+const filmCanvas=document.createElement('canvas');filmCanvas.width=W;filmCanvas.height=H;
+const filmCtx=filmCanvas.getContext('2d');
+(function createFilm(){
+ const v=filmCtx.createRadialGradient(550,260,85,550,260,670);
+ v.addColorStop(0,'#09151a00');v.addColorStop(.65,'#050b1309');v.addColorStop(1,'#03050b98');
+ filmCtx.fillStyle=v;filmCtx.fillRect(0,0,W,H);
+ const top=filmCtx.createLinearGradient(0,0,0,160);
+ top.addColorStop(0,'#1122323d');top.addColorStop(1,'#13233500');
+ filmCtx.fillStyle=top;filmCtx.fillRect(0,0,W,160);
+})();
+function worldWeather(){
+ const t=ambientClock;const rain=stage===1||stage===3;
+ if(rain){
+  ctx.strokeStyle='#cbdce063';ctx.lineWidth=1.05;ctx.beginPath();
+  const count=compactDevice?38:68;
+  for(let i=0;i<count;i++){
+   const px=(smoothNoise(i*27+stage*17)*1190+t*(20+i%4*13))%1190-45;
+   const py=(smoothNoise(i*19+51)*590+t*(100+i%5*21))%590-50;
+   ctx.moveTo(px,py);ctx.lineTo(px-4,py+11+i%3*3);
+  }ctx.stroke();
+ }
+ // Atmospheric dust near distant building line; front units remain readable.
+ ctx.fillStyle=rain?'#cfdfd017':'#fff2c11c';
+ for(let i=0;i<(compactDevice?10:19);i++){
+  const x=(smoothNoise(i*13)*W+t*(8+i%5*2))%(W+50)-25;
+  const y=165+smoothNoise(i*21)*310+Math.sin(t*.35+i)*6;
+  ctx.beginPath();ctx.arc(x,y,.9+i%3*.65,0,7);ctx.fill();
+ }
+}
+function drawIllumination(){
+ // Headlamp scatter and blue/red vehicle glows, all capped to avoid fill-rate spikes.
+ const active=units.filter(u=>u.type==='van'||u.type==='paysans');
+ for(const u of active.slice(0,12)){
+  const x=u.x,y=u.y;
+  ctx.save();ctx.globalCompositeOperation='screen';
+  const light=ctx.createRadialGradient(x+(u.team==='foe'?-32:34),y-22,2,x,y-22,88);
+  light.addColorStop(0,u.team==='foe'?'#8ec3f65c':'#ffe18d55');
+  light.addColorStop(1,'#adbac900');ctx.fillStyle=light;ctx.fillRect(x-90,y-105,180,145);
+  ctx.restore();
+ }
+ for(let l=0;l<3;l++)if(fires[l]){
+  const f=fires[l],y=feet[l];
+  ctx.save();ctx.globalCompositeOperation='screen';
+  ctx.fillStyle='#ffb04b36';ctx.beginPath();ctx.ellipse(f.x,y+4,85,11,0,0,7);ctx.fill();
+  for(let i=0;i<5;i++){
+   const px=f.x+Math.sin(tickLog*.8+i*5.2+ambientClock*2)*(9+i*7);
+   const py=y-32-((ambientClock*(20+i*4)+i*17)%90);
+   ctx.fillStyle=i%2?'#ffca69bb':'#fa7137a5';ctx.beginPath();ctx.arc(px,py,1+i%3*.45,0,7);ctx.fill();
+  }ctx.restore();
+ }
+}
+function unitSurfaceDetails(u){
+ // Extra uniform, material and silhouette details over the existing animated sprites.
+ if(u.type==='van'||u.type==='paysans')return;
+ const enemy=u.team==='foe',walk=Math.sin(u.step*1.95+u.id*.23);
+ const sc=1.12;
+ ctx.save();ctx.translate(Math.round(u.x),Math.round(u.y)-Math.abs(walk)*1.6);ctx.scale((enemy?-1:1)*sc,sc);
+ ctx.lineWidth=1;ctx.lineCap='round';
+ // Long fabric seams, vest clips, kneepads and shin guards.
+ ctx.strokeStyle=enemy?'#bbd0db55':'#fff4dc5c';
+ for(let side of [-1,1]){
+  ctx.beginPath();ctx.moveTo(side*7,-41);ctx.lineTo(side*8,-22);ctx.stroke();
+  ctx.fillStyle=enemy?'#667b8d':'#4d5861';
+  ctx.fillRect(side*7-3,-13,7,4);
+  ctx.fillStyle='#a6b7b780';ctx.fillRect(side*8-3,-12,5,1);
+ }
+ if(enemy){
+  ctx.fillStyle='#647f97';ctx.fillRect(-11,-46,22,2);
+  ctx.fillStyle='#182f43';ctx.fillRect(-9,-54,18,2);
+  ctx.fillStyle='#e4f1f777';ctx.fillRect(-10,-58,15,1.6);
+  // Reflective angled glints across the polycarbonate shield.
+  ctx.strokeStyle='#ffffff6a';ctx.beginPath();ctx.moveTo(24,-42);ctx.lineTo(27,-24);ctx.lineTo(25,-15);ctx.stroke();
+  ctx.fillStyle='#cee0ecb9';ctx.fillRect(-8,-33,5,3);ctx.fillRect(4,-33,5,3);
+ }else if(u.type==='gilets'){
+  ctx.fillStyle='#fff5bd86';ctx.fillRect(-8,-37,18,1.4);ctx.fillRect(-8,-27,18,1.4);
+  ctx.strokeStyle='#7a5c3199';ctx.beginPath();ctx.moveTo(-3,-43);ctx.lineTo(2,-16);ctx.stroke();
+ }else if(u.type==='lyceennes'||u.type==='genz'){
+  ctx.fillStyle='#efdbbd55';ctx.fillRect(-9,-40,18,2);
+  ctx.fillStyle=u.type==='genz'?'#693a65':'#54556b';ctx.fillRect(4,-25,7,6);
+ }else if(u.type==='pompiers'){
+  ctx.fillStyle='#fff2a4ad';ctx.fillRect(-10,-39,20,2);ctx.fillRect(-10,-26,20,2);
+ }else if(u.type==='infirmieres'){
+  ctx.strokeStyle='#6da99da0';ctx.beginPath();ctx.moveTo(-6,-41);ctx.lineTo(-6,-21);ctx.stroke();
+ }
+ ctx.restore();
+}
+function draw(){
+ // Smooth camera follows the most contested part of the selected lane.
+ const idealZoom=camera.enabled?1.72:1;
+ let targetX=550,targetY=feet[selectedLane]-40;
+ if(camera.enabled){
+  const battling=units.filter(u=>u.lane===selectedLane&&u.hp>0);
+  if(battling.length){
+   const frontAlly=battling.filter(u=>u.team==='ally').sort((a,b)=>b.x-a.x)[0];
+   const frontFoe=battling.filter(u=>u.team==='foe').sort((a,b)=>a.x-b.x)[0];
+   if(frontAlly&&frontFoe)targetX=(frontAlly.x+frontFoe.x)*.5;
+   else targetX=frontAlly?.x??frontFoe?.x??550;
+  }
+ }
+ targetX=clamp(targetX, W/(2*idealZoom), W-W/(2*idealZoom));
+ targetY=clamp(targetY, H/(2*idealZoom), H-H/(2*idealZoom));
+ const inertia=lowMotion?.85:.11;
+ camera.zoom+=(idealZoom-camera.zoom)*inertia;
+ camera.cx+=(targetX-camera.cx)*inertia;
+ camera.cy+=(targetY-camera.cy)*inertia;
+ ctx.save();ctx.translate(W/2,H/2);ctx.scale(camera.zoom,camera.zoom);ctx.translate(-camera.cx,-camera.cy);
+ drawBackground();worldWeather();drawIllumination();for(const gas of gasClouds)drawGasCloud(gas);for(const field of stunFields)drawStunField(field);for(let l=0;l<3;l++)if(fires[l])drawFireBlock(fires[l],l);for(let l=0;l<3;l++)if(barriers[l])drawBarrier(barriers[l],l);const ordered=[...units].sort((a,b)=>a.y-b.y||a.x-b.x);for(const u of ordered){drawUnit(u);unitSurfaceDetails(u)}for(const e of effects){ctx.globalAlpha=clamp(e.life/e.max,0,1);ctx.fillStyle=e.color;ctx.beginPath();ctx.arc(e.x,e.y,e.r,0,7);ctx.fill()}ctx.globalAlpha=1;ctx.textAlign='center';ctx.font='900 15px system-ui';for(const f of floating){ctx.globalAlpha=clamp(f.life,0,1);ctx.fillStyle='#17212ddd';ctx.fillText(f.text,f.x+1,f.y+2);ctx.fillStyle=f.color;ctx.fillText(f.text,f.x,f.y)}ctx.globalAlpha=1;
 if(mode==='playing'&&elapsed<7&&unitsPlaced===0){rounded(317,281,465,45,10,'#101c2fdc','#e8c560bb');ctx.fillStyle='#ffe3a6';ctx.textAlign='center';ctx.font='900 19px system-ui';ctx.fillText('CHOISISSEZ UNE UNITÉ EN BAS ↓',550,310)}
 if(elapsed<chantUntil){ctx.fillStyle='#f2d473';ctx.font='bold 17px system-ui';ctx.textAlign='center';ctx.fillText('♪  CHANT COLLECTIF ACTIF  ♪',550,174)}
+ ctx.restore();ctx.drawImage(filmCanvas,0,0); // screen-space cinematic grade
 }
 function frame(t){if(!lastTime)lastTime=t;const dt=Math.min(.05,(t-lastTime)/1000);lastTime=t;if(mode==='playing'){ambientClock+=dt*gameSpeed;update(dt*gameSpeed)}draw();requestAnimationFrame(frame)}
-canvas.addEventListener('click',ev=>{const r=canvas.getBoundingClientRect();const y=(ev.clientY-r.top)/r.height*H;setLane(clamp(Math.floor((y-168)/102),0,2));if(mode==='playing')effect(180,feet[selectedLane]-40,'#f4d26f',4)});document.querySelectorAll('[data-lane]').forEach(b=>b.addEventListener('click',()=>setLane(Number(b.dataset.lane))));
-$('palletBtn').addEventListener('click',()=>applyAbility('pallet'));$('binBtn').addEventListener('click',()=>applyAbility('bin'));$('barrierBtn').addEventListener('click',()=>applyAbility('barrier'));$('rosterUpgrade').addEventListener('click',openUpgrades);$('speedBtn').addEventListener('click',toggleSpeed);$('chantBtn').addEventListener('click',()=>applyAbility('chant'));$('careBtn').addEventListener('click',()=>applyAbility('care'));$('modalPrimary').addEventListener('click',modalPrimary);$('modalSecondary').addEventListener('click',closeAndShowUpgrades);
+canvas.addEventListener('click',ev=>{const r=canvas.getBoundingClientRect();const screenY=(ev.clientY-r.top)/r.height*H;const y=(screenY-H/2)/camera.zoom+camera.cy;setLane(clamp(Math.floor((y-168)/102),0,2));if(mode==='playing')effect(180,feet[selectedLane]-40,'#f4d26f',4)});document.querySelectorAll('[data-lane]').forEach(b=>b.addEventListener('click',()=>setLane(Number(b.dataset.lane))));
+$('palletBtn').addEventListener('click',()=>applyAbility('pallet'));$('binBtn').addEventListener('click',()=>applyAbility('bin'));$('barrierBtn').addEventListener('click',()=>applyAbility('barrier'));$('rosterUpgrade').addEventListener('click',openUpgrades);$('speedBtn').addEventListener('click',toggleSpeed);$('cameraBtn').addEventListener('click',toggleCamera);$('chantBtn').addEventListener('click',()=>applyAbility('chant'));$('careBtn').addEventListener('click',()=>applyAbility('care'));$('modalPrimary').addEventListener('click',modalPrimary);$('modalSecondary').addEventListener('click',closeAndShowUpgrades);
 $('pauseBtn').addEventListener('click',()=>{if(mode==='playing')present('paused');else if(mode==='paused'){mode='playing';$('overlay').hidden=true;$('pauseBtn').textContent='Pause'}else present('stage')});
 $('resetBtn').addEventListener('click',()=>{if(mode==='playing'||mode==='paused'||mode==='over'){present('stage')}else present('intro')});
 $('rulesBtn').addEventListener('click',()=>{prevMode=mode;present('rules')});
 $('muteBtn').addEventListener('click',()=>{muted=!muted;$('muteBtn').textContent=muted?'Son : non':'Son : oui';$('muteBtn').setAttribute('aria-pressed',String(!muted));if(!muted)beep(600,.12)});
-document.addEventListener('keydown',ev=>{if(ev.target&&['INPUT','TEXTAREA'].includes(ev.target.tagName))return;const k=ev.key.toLowerCase();if(k===' '){ev.preventDefault();if(mode==='playing')present('paused');else if(mode==='paused'){mode='playing';$('overlay').hidden=true;$('pauseBtn').textContent='Pause'}return}if(mode!=='playing')return;if(['q','w','e'].includes(k))setLane(['q','w','e'].indexOf(k));if('123456'.includes(k))deployUnit(Number(k)-1);if(k==='f')toggleSpeed();if(k==='b')applyAbility('barrier');if(k==='p')applyAbility('pallet');if(k==='n')applyAbility('bin');if(k==='u')openUpgrades()});
+document.addEventListener('keydown',ev=>{if(ev.target&&['INPUT','TEXTAREA'].includes(ev.target.tagName))return;const k=ev.key.toLowerCase();if(k===' '){ev.preventDefault();if(mode==='playing')present('paused');else if(mode==='paused'){mode='playing';$('overlay').hidden=true;$('pauseBtn').textContent='Pause'}return}if(mode!=='playing')return;if(['q','w','e'].includes(k))setLane(['q','w','e'].indexOf(k));if('123456'.includes(k))deployUnit(Number(k)-1);if(k==='f')toggleSpeed();if(k==='v')toggleCamera();if(k==='b')applyAbility('barrier');if(k==='p')applyAbility('pallet');if(k==='n')applyAbility('bin');if(k==='u')openUpgrades()});
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&mode==='playing')present('paused')});
 
+function toggleCamera(){camera.enabled=!camera.enabled;const btn=$('cameraBtn');btn.textContent=camera.enabled?'⊖ Vue large':'◎ Vue proche';btn.setAttribute('aria-pressed',String(camera.enabled));btn.setAttribute('aria-label',camera.enabled?'Revenir à la vue générale':'Activer la caméra rapprochée')}
 function toggleSpeed(){if(mode!=='playing')return;gameSpeed=gameSpeed===1?2:1;updateSpeedUI();beep(500,.06)}
 function updateSpeedUI(){$('speedBtn').textContent='×'+gameSpeed;$('speedBtn').setAttribute('aria-pressed',String(gameSpeed===2))}
 function openUpgrades(){if(!$('upgradeSheet').hidden)return;upgradePreviousMode=mode;if(mode==='playing')mode='upgrade';$('upgradeSheet').hidden=false;renderUpgrades();updateMobileDock()}
@@ -628,7 +811,7 @@ function updateTacticalIntel(){let mostDanger=0,maxThreat=-1;for(let l=0;l<3;l++
 function drawBarrier(b,l){const y=feet[l];ctx.save();ctx.translate(b.x,y);ctx.fillStyle='#1a253188';ctx.fillRect(-25,-35,48,43);for(let k=0;k<3;k++){const off=k*12-14;rounded(-22+off,-35,12,40,2,'#87684b','#d0ae6c');ctx.strokeStyle='#523c30';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-22+off,-25);ctx.lineTo(-10+off,-5);ctx.stroke()}ctx.fillStyle='#101a23';ctx.fillRect(-24,-45,48,5);ctx.fillStyle='#f4d16b';ctx.fillRect(-24,-45,48*Math.max(0,b.hp/b.maxHp),5);ctx.restore()}
 initMobileDock();updateChapters();updateRoster();updateHud();present('intro');requestAnimationFrame(frame);
 // A tiny diagnostic interface used only for local verification, without external dependencies.
-window.CONVERGENCE_TEST={getState:()=>({mode,stage,money,morale,defense,elapsed,gameSpeed,barriers:barriers.filter(Boolean).length,fires:fires.filter(Boolean).map(f=>({type:f.type,lane:f.lane,hp:f.hp,time:f.time})),gasClouds:gasClouds.length,stunFields:stunFields.length,foesByType:Object.fromEntries(FOES.map(f=>[f.id,units.filter(u=>u.team==='foe'&&u.type===f.id).length])),squads:new Set(units.filter(u=>u.squad).map(u=>u.squad)).size,cooldowns:{...cooldowns},unitsPlaced,enemyPlaced,allyUnits:units.filter(u=>u.team==='ally').length,foeUnits:units.filter(u=>u.team==='foe').length,highest:save.highest,points:save.points}),start:()=>startStage(stage),deploy:(i,lane)=>{setLane(lane);deployUnit(i)},advance:seconds=>{for(let i=0;i<Math.round(seconds*20)&&mode==='playing';i++)update(.05)},buildBarrier:lane=>{setLane(lane);applyAbility('barrier')},spawnSquad:(type,lane)=>spawnSquad(type,lane),placeFire:(type,lane)=>{setLane(lane);return placeFire(type)},openUpgrades,closeUpgrades,toggleSpeed,resetProgress:()=>{save={highest:0,points:120,levels:Object.fromEntries(UNITS.map(u=>[u.id,1])),wins:0};persist();startStage(0)}};
+window.CONVERGENCE_TEST={getState:()=>({mode,stage,money,morale,defense,elapsed,gameSpeed,zoom:camera.zoom,cameraEnabled:camera.enabled,barriers:barriers.filter(Boolean).length,fires:fires.filter(Boolean).map(f=>({type:f.type,lane:f.lane,hp:f.hp,time:f.time})),gasClouds:gasClouds.length,stunFields:stunFields.length,foesByType:Object.fromEntries(FOES.map(f=>[f.id,units.filter(u=>u.team==='foe'&&u.type===f.id).length])),squads:new Set(units.filter(u=>u.squad).map(u=>u.squad)).size,cooldowns:{...cooldowns},unitsPlaced,enemyPlaced,allyUnits:units.filter(u=>u.team==='ally').length,foeUnits:units.filter(u=>u.team==='foe').length,highest:save.highest,points:save.points}),start:()=>startStage(stage),deploy:(i,lane)=>{setLane(lane);deployUnit(i)},advance:seconds=>{for(let i=0;i<Math.round(seconds*20)&&mode==='playing';i++)update(.05)},buildBarrier:lane=>{setLane(lane);applyAbility('barrier')},spawnSquad:(type,lane)=>spawnSquad(type,lane),placeFire:(type,lane)=>{setLane(lane);return placeFire(type)},openUpgrades,closeUpgrades,toggleSpeed,toggleCamera,resetProgress:()=>{save={highest:0,points:120,levels:Object.fromEntries(UNITS.map(u=>[u.id,1])),wins:0};persist();startStage(0)}};
 })();
 </script>
 </body></html>
