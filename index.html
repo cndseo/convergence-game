@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#111723"><meta name="description" content="CONVERGENCE — jeu tactique de mobilisation, jouable hors ligne sur ordinateur et mobile.">
-<title>CONVERGENCE V8 — La rue s'éveille</title>
+<title>CONVERGENCE V9 — La rue s'éveille</title>
 <style>
 :root{--bg:#0b0f16;--surface:#141c27;--panel:#192332;--line:#2d3c4c;--ink:#f4f4ed;--dim:#94a3b5;--yellow:#f1c849;--orange:#f59b51;--red:#e16e70;--green:#9ce2be;--blue:#7eb3d9;--shadow:0 20px 90px #0008;--radius:17px}
 *{box-sizing:border-box}html{height:100%;background:var(--bg)}body{margin:0;min-height:100%;color:var(--ink);background:radial-gradient(ellipse at 13% -12%,#55402a45,transparent 31%),radial-gradient(ellipse at 90% 22%,#24596d28,transparent 36%),var(--bg);font:500 14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:hidden}button{font:inherit;cursor:pointer;color:inherit}button:disabled{cursor:not-allowed;opacity:.42}button:focus-visible{outline:2px solid #fff;outline-offset:3px}.wrap{max-width:1440px;margin:auto;padding:21px clamp(14px,2.6vw,42px) 52px}.mast{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:21px}.logo{display:flex;align-items:center;gap:15px}.mark{height:52px;width:52px;border:2px solid var(--yellow);border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#f1c84920,#f1c84905);transform:rotate(-7deg);box-shadow:inset 0 0 0 5px #0c1119}.mark svg{height:32px;width:32px;transform:rotate(7deg)}.eyebrow{color:var(--yellow);text-transform:uppercase;letter-spacing:.2em;font-weight:850;font-size:10px}.brand{font-weight:1000;letter-spacing:-.055em;font-size:clamp(28px,3.7vw,45px);line-height:1;margin:3px 0}.subbrand{font-size:12px;letter-spacing:.055em;color:var(--dim);text-transform:uppercase}.mast-actions{display:flex;gap:8px;flex-wrap:wrap}.small-btn{border:1px solid var(--line);background:#17202b;padding:10px 13px;border-radius:10px;font-weight:740;font-size:12px;transition:.15s}.small-btn:hover{background:#253449}.small-btn.active{background:#493b21;border-color:#ad8c35;color:#fff0bd}.ticker{border:1px solid #5f5036;background:linear-gradient(90deg,#423922,#1d2930 64%);padding:11px 16px;border-radius:12px;display:flex;align-items:center;gap:14px;margin-bottom:16px;box-shadow:inset 3px 0 0 var(--yellow)}.ticker strong{color:var(--yellow);font-size:11px;letter-spacing:.1em;white-space:nowrap}.ticker span{font-size:12px;color:#d5d6ca}.top-grid{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px}.battle{min-width:0}.battle-top{border:1px solid var(--line);background:linear-gradient(180deg,#202d3d,#161e2b);border-radius:var(--radius) var(--radius) 0 0;display:flex;align-items:center;gap:20px;justify-content:space-between;padding:16px 19px}.battle-top .act{font-weight:930;font-size:16px;letter-spacing:.01em}.battle-top .location{color:var(--dim);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.scoreboard{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;border-top:1px solid var(--line);padding:14px 19px;background:#111925}.scorecol.right{text-align:right}.scoretitle{font-size:10px;letter-spacing:.12em;font-weight:900;color:var(--dim)}.scoreval{font-weight:930;font-size:24px;line-height:1.2;margin:4px 0}.scorecol.left .scoreval{color:var(--yellow)}.scorecol.right .scoreval{color:var(--red)}.meter{height:7px;border-radius:20px;overflow:hidden;background:#283444}.meter span{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--orange),var(--yellow));transition:width .3s}.scorecol.right .meter span{background:linear-gradient(90deg,#cc5364,#f28b7f);margin-left:auto}.versus{font-size:10px;border-radius:40px;border:1px solid #4a5864;padding:8px;color:#9eacb7;letter-spacing:.18em;font-weight:900}.canvas-shell{position:relative;overflow:hidden;border:1px solid var(--line);border-top:0;background:#273b48}.canvas-shell canvas{width:100%;height:auto;display:block;touch-action:manipulation;cursor:pointer;aspect-ratio:1100/490}.canvas-corner{position:absolute;pointer-events:none;top:12px;left:13px;font-size:10px;font-weight:900;letter-spacing:.12em;background:#0d1722ae;border:1px solid #ffffff28;border-radius:7px;padding:6px 9px;color:#e8e9e0}.canvas-corner.right{right:13px;left:auto}.lane-picker{display:flex;gap:7px;border:1px solid var(--line);border-top:0;background:#121a25;padding:11px;border-radius:0 0 var(--radius) var(--radius)}.lane{flex:1;min-width:0;background:#202b39;border:1px solid #334153;border-radius:9px;padding:10px 5px;font-size:11px;font-weight:780;letter-spacing:.045em;white-space:nowrap}.lane.selected{background:#594a28;border-color:var(--yellow);color:#ffe78f;box-shadow:inset 0 -2px 0 #f1c849}.lane:hover{filter:brightness(1.14)}.side{display:flex;flex-direction:column;gap:12px}.panel{border:1px solid var(--line);background:linear-gradient(150deg,#1b2635,#131d29);border-radius:var(--radius);padding:18px}.panel h2,.section-title{margin:0;color:var(--ink);font-size:14px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.panel small{display:block;color:var(--dim);margin-top:5px}.resource{border-color:#7d6836;background:radial-gradient(circle at top right,#71602e50,transparent 65%),linear-gradient(145deg,#272b2b,#1a222b)}.resource-title{display:flex;justify-content:space-between;color:var(--yellow);font-size:10px;letter-spacing:.12em;font-weight:900}.resource-total{font-size:46px;font-weight:1000;letter-spacing:-.055em;line-height:1.1;margin-top:8px}.resource-total span{color:#b6b7af;font-size:14px;letter-spacing:0}.resource-bar{height:7px;border-radius:10px;background:#49505a;overflow:hidden;margin:13px 0 8px}.resource-bar>div{height:100%;width:45%;background:linear-gradient(90deg,#f38c4b,#efd15a)}.meta{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--dim)}.meta b{color:var(--ink)}.ability{width:100%;text-align:left;border-radius:11px;padding:12px;margin-top:11px;display:flex;gap:11px;align-items:center;background:#203042;border:1px solid #38516a}.ability:hover:not(:disabled){border-color:#83bad8}.ability .glyph{display:grid;place-items:center;width:39px;height:39px;border-radius:9px;background:#30546c;font-size:22px;flex:none}.ability strong{font-size:12px;display:block}.ability em{font-size:10px;color:#a8b7c7;font-style:normal;display:block;margin-top:2px}.ability .cool{margin-left:auto;color:#d8ecfb;font-size:12px;font-weight:900}.side .chapter-list{display:flex;gap:6px;margin-top:12px}.chapter{height:36px;flex:1;border:1px solid #465066;border-radius:8px;background:#273244;font-weight:900}.chapter.current{border-color:var(--yellow);background:#6c5a2b}.chapter:disabled{opacity:.35}.description{color:var(--dim);font-size:12px;margin-top:10px;line-height:1.55}.lower{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:16px;margin-top:20px}.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 12px}.help-text{color:var(--dim);font-size:11px}.roster{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.unit-card{border-radius:13px;min-width:0;background:linear-gradient(150deg,#202d3a,#161f2c);border:1px solid #324353;position:relative;overflow:hidden;transition:transform .12s,border-color .12s,background .12s}.unit-card:hover{transform:translateY(-2px);border-color:#728491}.unit-card.affordable{border-color:#635837}.unit-card.locked{opacity:.57}.unit-deploy{display:grid;grid-template-columns:47px minmax(0,1fr) 53px;align-items:center;gap:9px;width:100%;border:0;background:transparent;text-align:left;padding:12px 11px 9px}.unit-pict{width:44px;height:44px;display:grid;place-items:center;border-radius:11px;background:#ffffff10;font-size:27px}.unit-name{display:block;font-weight:880;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.unit-role{display:block;font-size:10px;color:var(--dim);line-height:1.35;margin-top:3px}.cost{text-align:center;color:#ffdd75;font-weight:950;font-size:16px}.cost small{display:block;font-size:9px;color:#aeb3ad;font-weight:700}.unit-bottom{border-top:1px solid #344151;padding:7px 11px 9px;display:flex;align-items:center;justify-content:space-between;gap:8px;color:#c3cdd5;font-size:10px}.level-dots{display:flex;gap:3px;margin-top:4px}.dot{height:5px;width:13px;border-radius:3px;background:#455361}.dot.on{background:var(--yellow)}.upgrade{border:1px solid #816a3b;background:#59492c;border-radius:8px;min-width:89px;padding:6px;font-size:10px;font-weight:900;color:#ffe9a2}.upgrade:hover:not(:disabled){background:#756038}.notes{display:flex;flex-direction:column;gap:7px;margin-top:13px}.note{font-size:11px;padding:9px 11px;color:#a9b9c9;background:#151f2d;border-left:2px solid #4a7992;border-radius:5px}.note:first-child{color:#f1e8be;border-color:#ecd078}.counter{color:var(--yellow);font-weight:900}.footer-info{border:1px solid #293947;border-radius:12px;padding:14px;color:#95a4b2;font-size:11px;margin-top:20px;line-height:1.65}.footer-info b{color:#e3ddbc}.kbd{border:1px solid #445667;border-radius:5px;padding:1px 5px;font-family:ui-monospace,monospace;color:#d5e0e9}.overlay{position:fixed;inset:0;z-index:30;background:#080d16d9;backdrop-filter:blur(10px);display:grid;place-items:center;padding:18px}.overlay[hidden]{display:none}.modal{width:min(520px,100%);background:radial-gradient(circle at 10% 0%,#67532a45,transparent 45%),linear-gradient(#1e2a38,#131c27);border:1px solid #79818b;border-radius:21px;padding:clamp(22px,5vw,39px);box-shadow:0 36px 130px #0009;text-align:center;position:relative}.modal:before{content:"";position:absolute;inset:6px;pointer-events:none;border:1px solid #ffffff0e;border-radius:16px}.modal .hero-icon{font-size:45px;margin-bottom:12px}.modal .eyebrow{font-size:11px}.modal h2{font-size:clamp(27px,5vw,43px);letter-spacing:-.04em;line-height:1.1;margin:12px 0}.modal p{color:#b7c4cf;font-size:13px;line-height:1.7}.primary{border:0;border-radius:10px;padding:14px 22px;background:linear-gradient(100deg,#eebc43,#ffe17a);color:#1c252c;font-size:13px;font-weight:1000;letter-spacing:.045em;box-shadow:0 7px 30px #e7ae3536}.primary:hover{filter:brightness(1.1)}.secondary{border:1px solid #64778b;padding:12px 18px;border-radius:9px;background:#253546;color:#dce9f3;font-weight:780}.modal-actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:23px}.instruct{margin:15px 0;background:#172434;border-radius:10px;padding:13px;text-align:left;font-size:12px;line-height:1.8;color:#d0dae3}.instruct b{color:#f0ce74}.hidden{display:none!important}.flash{animation:flash .4s ease}@keyframes flash{50%{filter:brightness(1.7)}}
@@ -141,7 +141,7 @@
 </head>
 <body>
 <main class="wrap">
-<header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · édition V8</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button></div></header>
+<header class="mast"><div class="logo"><div class="mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M4 20l6-1 3 3 13-9-1-5-11 6-5-3-5 5z" stroke="#f1c849" stroke-width="2.4" stroke-linejoin="round"/><path d="M9 25l14-2M16 7h9" stroke="#f1c849" stroke-width="2.4" stroke-linecap="round"/></svg></div><div><div class="eyebrow">Jeu de stratégie · édition V9</div><h1 class="brand">CONVERGENCE<span style="color:var(--yellow)">.</span></h1><div class="subbrand">La rue s'éveille — le rapport de force change</div></div></div><div class="mast-actions"><button class="small-btn" id="rulesBtn">Règles</button><button class="small-btn" id="muteBtn" aria-pressed="false">Son : non</button><button class="small-btn" id="pauseBtn">Pause</button><button class="small-btn" id="speedBtn" aria-label="Vitesse de jeu" aria-pressed="false">×1</button><button class="small-btn" id="resetBtn">Rejouer</button></div></header>
 <div class="ticker"><strong>● ÉDITION SPÉCIALE</strong><span id="tickerMsg">Une mobilisation inédite traverse le pays. Formez un collectif, rassemblez et faites reculer la ligne de maintien de l'ordre.</span></div>
 <div class="top-grid"><section class="battle" aria-label="Champ de jeu"><div class="battle-top"><div><div class="location" id="stageTag">ACTE 01 · LE ROND-POINT</div><div class="act" id="stageTitle">Première mobilisation</div></div><div style="text-align:right"><div class="location">TEMPS ÉCOULÉ</div><div class="act" id="timeText">00:00</div></div></div><div class="scoreboard"><div class="scorecol left"><div class="scoretitle">MOBILISATION</div><div class="scoreval"><span id="allyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="allyMeter"></span></div></div><div class="versus">VS</div><div class="scorecol right"><div class="scoretitle">LIGNE DES CRS</div><div class="scoreval"><span id="enemyPct">100</span><span style="font-size:12px"> %</span></div><div class="meter"><span id="enemyMeter"></span></div></div></div><div class="canvas-shell"><button type="button" id="cameraBtn" class="camera-button" aria-pressed="false" aria-label="Activer la caméra rapprochée">◎ Vue proche</button><canvas id="field" width="1100" height="490" aria-label="Bataille stylisée sur trois axes. Sélectionnez un axe puis déployez des unités."></canvas><div class="canvas-corner">← MOBILISATION</div><div class="canvas-corner right">CRS →</div></div><div class="lane-picker" aria-label="Choisir un axe de progression"><button class="lane" data-lane="0">01 · BOULEVARD</button><button class="lane selected" data-lane="1">02 · PLACE</button><button class="lane" data-lane="2">03 · RUE BASSE</button></div></section>
 <div class="mobile-intel" id="mobileIntel"><span id="intelLane">AXE 2 · PLACE</span><strong id="intelMessage">PRÉPARATION</strong><span id="intelWave">VAGUE 0</span></div><aside class="side"><section class="panel resource"><div class="resource-title"><span>ÉLAN COLLECTIF</span><span id="income">+14 / SEC</span></div><div class="resource-total"><span id="resourceValue">85</span> <span>/ 160</span></div><div class="resource-bar"><div id="resourceBar"></div></div><div class="meta"><span>Mobilisation disponible</span><b id="remainingCount">0 unités</b></div></section><section class="panel"><h2>Actions collectives</h2><small>Des capacités à recharger pendant l'affrontement.</small><button class="ability" id="chantBtn"><span class="glyph">📣</span><span><strong>Chant collectif</strong><em>+35 % de puissance · 9 s</em></span><span class="cool" id="chantCd">PRÊT</span></button><button class="ability" id="careBtn"><span class="glyph">✚</span><span><strong>Chaîne de solidarité</strong><em>Rétablit la cohésion du groupe</em></span><span class="cool" id="careCd">PRÊT</span></button><button class="ability" id="barrierBtn"><span class="glyph">▥</span><span><strong>Barricade collective</strong><em>65 élan · freine les renforts · 22 s</em></span><span class="cool" id="barrierCd">PRÊT</span></button>
@@ -216,7 +216,7 @@ function updateMobileDock(){$('dockMoney').textContent=Math.floor(money);for(con
 function updateRosterAfford(){for(const u of UNITS){const card=$('card-'+u.id);if(card)card.classList.toggle('affordable',money>=u.cost)}$('points').textContent=save.points;updateMobileDock()}
 function setLane(i){selectedLane=clamp(i,0,2);document.querySelectorAll('.dock-lane').forEach(el=>{const a=Number(el.dataset.lane)===selectedLane;el.classList.toggle('selected',a);el.setAttribute('aria-pressed',String(a))});document.querySelectorAll('.lane').forEach(el=>{const a=Number(el.dataset.lane)===selectedLane;el.classList.toggle('selected',a);el.setAttribute('aria-pressed',String(a))});beep(420,.025)}
 function createEntity(team,type,lane){const source=team==='ally'?UNITS.find(u=>u.id===type):FOES.find(u=>u.id===type);if(!source)return;const lv=team==='ally'?getLevel(source):1,scale=team==='ally'?1+(lv-1)*.18:STAGES[stage].foeHp;const entity={id:nextId++,team,type,lane,source,hp:source.hp*scale,maxHp:source.hp*scale,dps:source.dps*(team==='ally'?(1+(lv-1)*.17):STAGES[stage].foeDps),speed:source.speed,range:source.reach,attack:rand(0,.5),x:team==='ally'?76+rand(-5,5):1025+rand(-5,5),y:feet[lane]+rand(-10,5),stagger:rand(-4,4),step:rand(0,10),flash:0};units.push(entity);if(team==='ally')unitsPlaced++;else enemyPlaced++;return entity}
-function deployUnit(i){if(mode!=='playing')return;const u=UNITS[i];if(!u||money<u.cost){if(u)log(`Élan insuffisant pour ${u.name} (${u.cost} requis).`);beep(170,.08);return}money-=u.cost;createEntity('ally',u.id,selectedLane);updateHud();updateRosterAfford();effect(90,feet[selectedLane]-34,u.color,12);beep(380+i*80,.08);if(unitsPlaced===1)notify('La mobilisation commence. Alternez les voies et utilisez les unités de soutien pour tenir.')}
+function deployUnit(i){if(mode!=='playing')return;const u=UNITS[i];if(!u||money<u.cost){if(u)log(`Élan insuffisant pour ${u.name} (${u.cost} requis).`);beep(170,.08);return}money-=u.cost;createEntity('ally',u.id,selectedLane);updateHud();updateRosterAfford();effect(90,feet[selectedLane]-34,u.color,12);soundEffect('deploy');beep(380+i*80,.08);if(unitsPlaced===1)notify('La mobilisation commence. Alternez les voies et utilisez les unités de soutien pour tenir.')}
 function spawnSquad(type,lane){
  const group=++squadSequence;
  for(let i=0;i<3;i++){
@@ -243,8 +243,8 @@ function createFoe(){
  spawnSquad(type,lane);
  if(stage>=3&&random()<.12)spawnSquad('crs',(lane+1)%3);
  waveNum++;
- if(waveNum%4===0){log(`Escouades CRS sur ${LANE_NAMES[lane]} · trois agents par groupe.`);notify('CRS en formation, unités équipées en soutien. Répartissez votre mobilisation.');}
- if(waveNum%5===0){createEntity('foe','van',lane);log(`Fourgon CRS sur ${LANE_NAMES[lane]}.`);if(stage>=3&&waveNum%10===0)createEntity('foe','van',(lane+1)%3)}
+ soundEffect('steps');if(waveNum%4===0){log(`Escouades CRS sur ${LANE_NAMES[lane]} · trois agents par groupe.`);notify('CRS en formation, unités équipées en soutien. Répartissez votre mobilisation.');}
+ if(waveNum%5===0){createEntity('foe','van',lane);soundEffect('siren');log(`Fourgon CRS sur ${LANE_NAMES[lane]}.`);if(stage>=3&&waveNum%10===0)createEntity('foe','van',(lane+1)%3)}
 }
 function effect(x,y,color,count=5){for(let j=0;j<count;j++)effects.push({x:x+rand(-10,10),y:y+rand(-10,10),vx:rand(-50,50),vy:rand(-80,-15),life:rand(.2,.6),max:.6,r:rand(1.5,4),color});if(effects.length>120)effects.splice(0,effects.length-120)}
 function burstText(x,y,text,color){floating.push({x,y,text,color,life:1.2})}
@@ -275,8 +275,120 @@ function updateAmbience(){
  const active=units.filter(u=>u.team==='foe'&&u.type==='van').length;
  const osc=ambience.oscillators[1];
  const slow=Math.sin(ambientClock*(active>0?1.9:0.45));
+ if(units.some(u=>u.team==='ally')){if(ambientClock%4<.26)soundEffect('crowd');if(ambientClock%2.1<.26)soundEffect('steps')}
+ if(fires.some(Boolean)&&ambientClock%2.4<.26)soundEffect('fireCrackle');
  osc.frequency.setTargetAtTime((active?155:130)+slow*(active?26:5),ambience.ctx.currentTime,.17);
 }
+
+// CONVERGENCE V9 - synthesised, offline sound effects. Audio starts only after "Son : oui".
+const SFX_VOICES={};
+const SFX_COOLDOWN={siren:2.7,crowd:3.2,steps:1.4,fireCrackle:1.5,shield:.27,lbd:.7,gas:2.1,stun:1.5,impact:.21,deploy:.11};
+let sfxBus=null,sfxNoise=null,sfxNext={};
+function getSfxAudio(){
+ if(muted||!window.AudioContext&&!window.webkitAudioContext)return null;
+ try{
+  const ac=actSound??=new(window.AudioContext||window.webkitAudioContext)();
+  if(ac.state==='suspended')ac.resume().catch(()=>{});
+  if(!sfxBus||sfxBus.context!==ac){
+   const master=ac.createGain();
+   master.gain.value=.38;
+   const compressor=ac.createDynamicsCompressor();
+   compressor.threshold.value=-17;compressor.knee.value=18;compressor.ratio.value=8;
+   compressor.attack.value=.003;compressor.release.value=.13;
+   master.connect(compressor);compressor.connect(ac.destination);
+   sfxBus={context:ac,master,compressor};
+  }
+  if(!sfxNoise){
+   const buffer=ac.createBuffer(1,ac.sampleRate*2,ac.sampleRate);
+   const samples=buffer.getChannelData(0);
+   let seed=76543;
+   for(let i=0;i<samples.length;i++){
+    seed=(Math.imul(1664525,seed)+1013904223)>>>0;
+    samples[i]=(seed/2147483648-1)*.85;
+   }
+   sfxNoise=buffer;
+  }
+  return ac;
+ }catch{return null}
+}
+function sfxTone(ac,at,dur,a,b,peak=.1,type='sine'){
+ const osc=ac.createOscillator(),gain=ac.createGain();
+ osc.type=type;
+ osc.frequency.setValueAtTime(Math.max(20,a),at);
+ osc.frequency.exponentialRampToValueAtTime(Math.max(20,b),at+Math.max(.02,dur));
+ gain.gain.setValueAtTime(.0001,at);
+ gain.gain.linearRampToValueAtTime(Math.max(.0002,peak),at+Math.min(.023,dur/4));
+ gain.gain.exponentialRampToValueAtTime(.0001,at+dur);
+ osc.connect(gain);gain.connect(sfxBus.master);
+ osc.start(at);osc.stop(at+dur+.01);
+}
+function sfxNoiseBurst(ac,at,dur,peak=.10,filterHz=1100,filterType='bandpass'){
+ const source=ac.createBufferSource(),filter=ac.createBiquadFilter(),gain=ac.createGain();
+ source.buffer=sfxNoise;filter.type=filterType;filter.frequency.value=filterHz;
+ filter.Q.value=.7;
+ gain.gain.setValueAtTime(.0001,at);
+ gain.gain.linearRampToValueAtTime(peak,at+Math.min(.025,dur/4));
+ gain.gain.exponentialRampToValueAtTime(.0001,at+dur);
+ source.connect(filter);filter.connect(gain);gain.connect(sfxBus.master);
+ source.start(at,Math.min(1.1,(at*.217)%1.05));
+ source.stop(at+dur+.01);
+}
+function soundEffect(kind){
+ if(muted)return false;
+ const ac=getSfxAudio();if(!ac)return false;
+ const t=ac.currentTime+.007;
+ if(sfxNext[kind]&&t<sfxNext[kind])return false;
+ sfxNext[kind]=t+(SFX_COOLDOWN[kind]||.07);
+ try{
+  switch(kind){
+   case 'deploy':sfxTone(ac,t,.12,490,650,.13,'triangle');sfxNoiseBurst(ac,t,.09,.06,760);break;
+   case 'steps':for(let j=0;j<3;j++){sfxNoiseBurst(ac,t+j*.17,.065,.045,145,'lowpass');sfxTone(ac,t+j*.17,.055,135,72,.065,'sine')}break;
+   case 'crowd':{
+    for(let j=0;j<3;j++)sfxNoiseBurst(ac,t+j*.28,.4,.040,340+j*110,'bandpass');
+    sfxTone(ac,t,.8,170,158,.025,'triangle');break;
+   }
+   case 'siren':{
+    for(let j=0;j<3;j++){
+     sfxTone(ac,t+j*.32,.34,j%2?770:510,j%2?530:775,.080,'sawtooth');
+     sfxTone(ac,t+j*.32,.34,j%2?386:257,j%2?267:390,.037,'triangle');
+    }break;
+   }
+   case 'fire':case 'fireCrackle':{
+    const big=kind==='fire';
+    for(let j=0;j<(big?6:3);j++){
+     const when=t+j*(big?.082:.11),peak=big?.095:.05;
+     sfxNoiseBurst(ac,when,.055+(j%3)*.018,peak,1600+(j%3)*780,'highpass');
+     if(j%2===0)sfxTone(ac,when,.075,145,60,big?.085:.045,'sine');
+    }break;
+   }
+   case 'barrier':sfxNoiseBurst(ac,t,.23,.24,380,'lowpass');sfxTone(ac,t,.29,155,61,.17,'triangle');break;
+   case 'shield':sfxTone(ac,t,.15,690,250,.13,'triangle');sfxNoiseBurst(ac,t,.12,.12,2000,'highpass');break;
+   case 'impact':sfxNoiseBurst(ac,t,.085,.085,570,'bandpass');sfxTone(ac,t,.09,200,89,.08,'sine');break;
+   case 'lbd':sfxNoiseBurst(ac,t,.16,.18,480,'lowpass');sfxTone(ac,t,.16,130,70,.18,'triangle');break;
+   case 'gas':sfxNoiseBurst(ac,t,.68,.16,2800,'highpass');sfxTone(ac,t,.31,220,120,.03,'sine');break;
+   case 'stun':sfxNoiseBurst(ac,t,.42,.2,270,'lowpass');sfxTone(ac,t,.43,116,49,.20,'sawtooth');break;
+   case 'chant':{
+    const melody=[196,247,220,294,247];
+    for(let j=0;j<melody.length;j++){
+     sfxTone(ac,t+j*.18,.35,melody[j],melody[j]*1.015,.078,'triangle');
+     sfxTone(ac,t+j*.18,.31,melody[j]*.50,melody[j]*.51,.039,'sine');
+    }break;
+   }
+   case 'care':{
+    for(let j=0;j<4;j++)sfxTone(ac,t+j*.12,.31,[392,494,587,784][j],[410,520,615,800][j],.075,'sine');
+    break;
+   }
+   case 'win':case 'lose':{
+    const notes=kind==='win'?[330,440,554,660]:[330,247,196,147];
+    for(let j=0;j<4;j++)sfxTone(ac,t+j*.19,.32,notes[j],notes[j]*.99,.12,'triangle');
+    break;
+   }
+  }
+  SFX_VOICES[kind]=(SFX_VOICES[kind]||0)+1;
+  return true;
+ }catch{return false}
+}
+
 function beep(f,duration){if(muted)return;try{actSound??=new(window.AudioContext||window.webkitAudioContext)();const o=actSound.createOscillator(),g=actSound.createGain();o.type='triangle';o.frequency.value=f;g.gain.setValueAtTime(.038,actSound.currentTime);g.gain.exponentialRampToValueAtTime(.0001,actSound.currentTime+duration);o.connect(g);g.connect(actSound.destination);o.start();o.stop(actSound.currentTime+duration)}catch{}}
 function cancelPlacement(silent=false){pendingPlacement=null;if(!silent){notify('Placement annulé.');log('Placement annulé.')}updatePlacementUI()}
 function beginPlacement(type){if(!canUseFire(type))return false;pendingPlacement={type,lane:selectedLane};const label=type==='pallet'?'feu de palettes':'poubelle en feu';log(`Placement en attente : choisissez l'emplacement du ${label} sur ${LANE_NAMES[selectedLane]}.`);notify(`Touchez la chaussée pour placer votre ${label}. Il bloquera aussi vos propres troupes tant qu'il brûle.`);canvas.scrollIntoView({behavior:'auto',block:'center'});updatePlacementUI();return true}
@@ -298,7 +410,7 @@ function placeFire(type,xOverride){
  money-=cost;cooldowns[type]=pallet?35:24;
  fires[selectedLane]={type,lane:selectedLane,x,hp:pallet?240:150,maxHp:pallet?240:150,time:duration,maxTime:duration,owner:'ally',width:pallet?44:36};
  pendingPlacement=null;
- effect(x,feet[selectedLane]-36,'#ffb04e',22);
+ effect(x,feet[selectedLane]-36,'#ffb04e',22);soundEffect('fire');
  const name=pallet?'Feu de palettes':'Poubelle en feu';
  log(name+' : blocage posé sur '+LANE_NAMES[selectedLane]+' à l’emplacement choisi.');
  notify(name+' en place. Les CRS sont retenus et vos propres groupes ne franchiront pas la zone tant qu’elle brûle.');
@@ -309,14 +421,14 @@ function addGasCloud(lane,x){
  if(old){old.time=Math.max(old.time,5.5);return;}
  gasClouds.push({lane,x:clamp(x,80,1020),time:7,maxTime:7});
  if(gasClouds.length>9)gasClouds.shift();
- effect(x,feet[lane]-24,'#c3cfbf',7);
+ effect(x,feet[lane]-24,'#c3cfbf',7);soundEffect('gas');
 }
-function applyAbility(type){if(mode!=='playing'||cooldowns[type]>0)return;if(type==='pallet'||type==='bin'){beginPlacement(type);return;}if(type==='barrier'){if(money<65||barriers[selectedLane])return;money-=65;cooldowns.barrier=28;barriers[selectedLane]={x:415,hp:155,maxHp:155,time:22};effect(415,feet[selectedLane]-20,'#f4c765',15);log(`Barricade posée sur ${LANE_NAMES[selectedLane]} : résistance temporaire.`);notify('Un obstacle collectif ralentit les unités mobiles sur cet axe.');beep(450,.17)}else if(type==='chant'){cooldowns.chant=31;chantUntil=elapsed+9;effect(180,290,'#f6c44d',30);log('Chant collectif : l’ensemble des groupes gagne en puissance pendant 9 s.');notify('Une même voix traverse les trois axes. Puissance du collectif temporairement renforcée.');beep(520,.25)}else{cooldowns.care=43;let healed=0;for(const e of units)if(e.team==='ally'){const before=e.hp;e.hp=Math.min(e.maxHp,e.hp+e.maxHp*.4);healed+=Math.round(e.hp-before);effect(e.x,e.y-25,'#a7f5c9',5)}morale=Math.min(100,morale+9);log(`Chaîne de solidarité : ${healed} points de cohésion restaurés.`);beep(780,.3)}updateHud()}
+function applyAbility(type){if(mode!=='playing'||cooldowns[type]>0)return;if(type==='pallet'||type==='bin'){beginPlacement(type);return;}if(type==='barrier'){if(money<65||barriers[selectedLane])return;money-=65;cooldowns.barrier=28;barriers[selectedLane]={x:415,hp:155,maxHp:155,time:22};effect(415,feet[selectedLane]-20,'#f4c765',15);soundEffect('barrier');log(`Barricade posée sur ${LANE_NAMES[selectedLane]} : résistance temporaire.`);notify('Un obstacle collectif ralentit les unités mobiles sur cet axe.');beep(450,.17)}else if(type==='chant'){cooldowns.chant=31;chantUntil=elapsed+9;effect(180,290,'#f6c44d',30);soundEffect('chant');log('Chant collectif : l’ensemble des groupes gagne en puissance pendant 9 s.');notify('Une même voix traverse les trois axes. Puissance du collectif temporairement renforcée.');beep(520,.25)}else{cooldowns.care=43;let healed=0;for(const e of units)if(e.team==='ally'){const before=e.hp;e.hp=Math.min(e.maxHp,e.hp+e.maxHp*.4);healed+=Math.round(e.hp-before);effect(e.x,e.y-25,'#a7f5c9',5)}morale=Math.min(100,morale+9);soundEffect('care');log(`Chaîne de solidarité : ${healed} points de cohésion restaurés.`);beep(780,.3)}updateHud()}
 function startStage(i=stage){stage=clamp(i,0,save.highest);units=[];effects=[];floating=[];elapsed=0;money=105;morale=100;defense=100;waveNum=0;unitsPlaced=0;enemyPlaced=0;spawnCountdown=5;resourceTimer=0;cooldowns={chant:0,care:0,barrier:0,pallet:0,bin:0};barriers=[null,null,null];fires=[null,null,null];gasClouds=[];stunFields=[];squadSequence=0;gameSpeed=1;updateSpeedUI();chantUntil=-1;tickLog=0;rng=1001+stage*423;mode='playing';pendingPlacement=null;ambientPulse=0;spawnAmbientLife();$('overlay').hidden=true;$('stageTag').textContent=`ACTE ${String(stage+1).padStart(2,'0')} · ${STAGES[stage].region.toUpperCase()}`;$('stageTitle').textContent=STAGES[stage].title;$('stageDescription').textContent=STAGES[stage].brief;setLane(1);updateChapters();updateRoster();$('eventLog').innerHTML='';log(`ACTE ${stage+1} — ${STAGES[stage].region}. Déployez vos premières unités.`);notify(STAGES[stage].brief);$('pauseBtn').textContent='Pause';updateHud();beep(620,.2)}
 function updateChapters(){const el=$('chapters');el.innerHTML='';for(let i=0;i<STAGES.length;i++){const b=document.createElement('button');b.className='chapter'+(i===stage?' current':'');b.textContent=i<=save.highest?String(i+1):'🔒';b.title=STAGES[i].region;b.disabled=i>save.highest;b.addEventListener('click',()=>{stage=i;present('stage')});el.append(b)}}
 function present(which){displayMode=which;$('overlay').hidden=false;mode=which==='paused'?'paused':which==='victory'?'victory':which==='defeat'?'defeat':'intro';updateMobileDock();const prefix=`ACTE ${stage+1} · ${STAGES[stage].region.toUpperCase()}`;$('modalTag').textContent=prefix;$('modalSecondary').hidden=true;$('modalInfo').hidden=false;
-if(which==='victory'){$('modalIcon').textContent='★';$('modalTitle').textContent=stage===4?'La place est conquise !':'Le collectif avance !';$('modalMessage').textContent=`La ligne des CRS a reculé. Vous gagnez ${STAGES[stage].bonus} points d'organisation pour améliorer vos groupes.`;$('modalInfo').innerHTML=`<b>${unitsPlaced}</b> groupes mobilisés · <b>${Math.round(morale)} %</b> de mobilisation restante · <b>${Math.round(elapsed)} s</b> de partie.`;$('modalPrimary').textContent=stage<save.highest?'ACTE SUIVANT →':'REJOUER CET ACTE';$('modalSecondary').hidden=false;$('modalSecondary').textContent='Améliorer les troupes';}
-else if(which==='defeat'){$('modalIcon').textContent='↻';$('modalTitle').textContent='La mobilisation reflue';$('modalMessage').textContent='Le collectif s’est dispersé. Réorganisez vos troupes, alternez les voies et réessayez.';$('modalInfo').innerHTML=`Vous recevez <b>35 points d'organisation</b> pour renforcer vos groupes avant de repartir.`;$('modalPrimary').textContent='RETENTER L’ACTE';$('modalSecondary').hidden=false;$('modalSecondary').textContent='Améliorer les troupes';}
+if(which==='victory'){soundEffect('win');$('modalIcon').textContent='★';$('modalTitle').textContent=stage===4?'La place est conquise !':'Le collectif avance !';$('modalMessage').textContent=`La ligne des CRS a reculé. Vous gagnez ${STAGES[stage].bonus} points d'organisation pour améliorer vos groupes.`;$('modalInfo').innerHTML=`<b>${unitsPlaced}</b> groupes mobilisés · <b>${Math.round(morale)} %</b> de mobilisation restante · <b>${Math.round(elapsed)} s</b> de partie.`;$('modalPrimary').textContent=stage<save.highest?'ACTE SUIVANT →':'REJOUER CET ACTE';$('modalSecondary').hidden=false;$('modalSecondary').textContent='Améliorer les troupes';}
+else if(which==='defeat'){soundEffect('lose');$('modalIcon').textContent='↻';$('modalTitle').textContent='La mobilisation reflue';$('modalMessage').textContent='Le collectif s’est dispersé. Réorganisez vos troupes, alternez les voies et réessayez.';$('modalInfo').innerHTML=`Vous recevez <b>35 points d'organisation</b> pour renforcer vos groupes avant de repartir.`;$('modalPrimary').textContent='RETENTER L’ACTE';$('modalSecondary').hidden=false;$('modalSecondary').textContent='Améliorer les troupes';}
 else if(which==='paused'){$('modalIcon').textContent='Ⅱ';$('modalTitle').textContent='Partie en pause';$('modalMessage').textContent='Le rapport de force est figé. Reprenez quand vous voulez.';$('modalInfo').hidden=true;$('modalPrimary').textContent='REPRENDRE';$('modalSecondary').hidden=false;$('modalSecondary').textContent='Recommencer';}
 else if(which==='rules'){$('modalIcon').textContent='⌘';$('modalTitle').textContent='Comment jouer';$('modalMessage').textContent='Un jeu de stratégie sur trois axes. Chaque groupe possède sa propre capacité et peut être amélioré durablement.';$('modalInfo').innerHTML='<b>1.</b> Touchez une voie, puis une carte d’unité pour la déployer.<br><b>2.</b> L’Élan se régénère au fil du temps ; la Génération Z accélère ce gain.<br><b>3.</b> Les infirmières soignent les groupes, les pompiers protègent les alliés proches.<br><b>4.</b> Faites atteindre à vos unités la ligne opposée pour gagner.<br><b>5.</b> Les gilets jaunes peuvent armer un feu de palettes (P), la Gen Z une poubelle en feu (N), puis toucher la chaussée pour choisir l’emplacement exact. Les escouades CRS arrivent à trois et utilisent plusieurs équipements.<br><b>6.</b> Débloquez les cinq actes et dépensez vos points d’organisation pour les améliorations.';$('modalPrimary').textContent='COMPRIS';}
 else if(which==='stage'){$('modalIcon').textContent='✊';$('modalTitle').textContent=STAGES[stage].title;$('modalMessage').textContent=STAGES[stage].brief;$('modalInfo').innerHTML='<b>Objectif :</b> brisez la ligne adverse avant que votre mobilisation ne s’épuise. Les unités de soutien sont essentielles.';$('modalPrimary').textContent=`JOUER L'ACTE ${stage+1}`;}
@@ -326,7 +438,7 @@ function modalPrimary(){if(displayMode==='paused'||displayMode==='rules'&&prevMo
 function closeAndShowUpgrades(){if(displayMode==='paused'){startStage(stage);return}$('overlay').hidden=true;mode='over';$('pauseBtn').textContent='Jouer';$('roster').scrollIntoView({behavior:'smooth',block:'center'})}
 function finish(won){if(mode!=='playing')return;mode='over';if(won){save.points+=STAGES[stage].bonus;save.wins++;save.highest=Math.min(4,Math.max(save.highest,stage+1));persist();updateRoster();updateChapters();present('victory');beep(800,.5)}else{save.points+=35;persist();updateRoster();present('defeat');beep(280,.5)}}
 function update(dt){elapsed+=dt;
- for(let l=0;l<3;l++)if(fires[l]){fires[l].time-=dt;if(fires[l].time<=0||fires[l].hp<=0){effect(fires[l].x,feet[l]-25,'#9eaaa9',9);fires[l]=null;}}
+ for(let l=0;l<3;l++)if(fires[l]){fires[l].time-=dt;if(fires[l].time<=0||fires[l].hp<=0){effect(fires[l].x,feet[l]-25,'#9eaaa9',9);soundEffect('fireCrackle');fires[l]=null;}}
  for(const gas of gasClouds)gas.time-=dt;
  gasClouds=gasClouds.filter(g=>g.time>0);
  for(const field of stunFields)field.time-=dt;
@@ -340,7 +452,7 @@ for(const u of units){u.attack-=dt;u.flash=Math.max(0,u.flash-dt);u.step+=dt*(u.
   if(nearby.length){
    const x=nearby[0].x;
    if(!stunFields.some(f=>f.lane===u.lane&&Math.abs(f.x-x)<75))stunFields.push({lane:u.lane,x,time:3,maxTime:3});
-   effect(x,feet[u.lane]-25,'#f3d4a3',7);
+   effect(x,feet[u.lane]-25,'#f3d4a3',7);soundEffect('stun');
    u.specialTimer=11;
   }
  }
@@ -353,6 +465,7 @@ for(const u of units){u.attack-=dt;u.flash=Math.max(0,u.flash-dt);u.step+=dt*(u.
   for(const other of units)if(other!==target&&other.team==='ally'&&other.lane===u.lane&&Math.abs(other.x-target.x)<40)other.hp-=dmg*.18;
   if(random()<.3)effect(target.x,target.y-33,'#f6d09a',4);
  }
+ if(u.team==='foe'&&u.type==='lbd')soundEffect('lbd');else if(u.team==='foe')soundEffect('shield');else soundEffect('impact');
  if(u.team==='foe'&&u.type==='lbd'&&random()<.7)effect((u.x+target.x)/2,target.y-31,'#c9c4a4',4);
  target.flash=.12;u.attack=(u.type==='lbd'?1.52:u.type==='lacrymo'?1.25:.65)+rand(0,.12);if(random()<.55)effect((u.x+target.x)/2,u.y-20,u.team==='ally'?'#f2ca61':'#90c1e5',3);if(target.hp<=0){burstText(target.x,target.y-45,'RETRAIT',target.team==='ally'?'#e9958e':'#f3da82');effect(target.x,target.y-25,target.team==='ally'?'#e9958e':'#f3da82',8)}}}else{const barricade=u.team==='foe'?barriers[u.lane]:null;
  const fire=fires[u.lane];
@@ -929,7 +1042,7 @@ $('palletBtn').addEventListener('click',()=>applyAbility('pallet'));$('binBtn').
 $('pauseBtn').addEventListener('click',()=>{if(mode==='playing')present('paused');else if(mode==='paused'){mode='playing';$('overlay').hidden=true;$('pauseBtn').textContent='Pause'}else present('stage')});
 $('resetBtn').addEventListener('click',()=>{if(mode==='playing'||mode==='paused'||mode==='over'){present('stage')}else present('intro')});
 $('rulesBtn').addEventListener('click',()=>{prevMode=mode;present('rules')});
-$('muteBtn').addEventListener('click',()=>{muted=!muted;$('muteBtn').textContent=muted?'Son : non':'Son : oui';$('muteBtn').setAttribute('aria-pressed',String(!muted));if(!muted){startAmbience();beep(600,.12)}else stopAmbience()});
+$('muteBtn').addEventListener('click',()=>{muted=!muted;$('muteBtn').textContent=muted?'Son : non':'Son : oui';$('muteBtn').setAttribute('aria-pressed',String(!muted));if(!muted){getSfxAudio();startAmbience();soundEffect('deploy');beep(600,.12)}else stopAmbience()});
 document.addEventListener('keydown',ev=>{if(ev.target&&['INPUT','TEXTAREA'].includes(ev.target.tagName))return;const k=ev.key.toLowerCase();if(k==='escape'&&pendingPlacement){cancelPlacement();return}if(k===' '){ev.preventDefault();if(mode==='playing')present('paused');else if(mode==='paused'){mode='playing';$('overlay').hidden=true;$('pauseBtn').textContent='Pause'}return}if(mode!=='playing')return;if(['q','w','e'].includes(k))setLane(['q','w','e'].indexOf(k));if('123456'.includes(k))deployUnit(Number(k)-1);if(k==='f')toggleSpeed();if(k==='v')toggleCamera();if(k==='b')applyAbility('barrier');if(k==='p')applyAbility('pallet');if(k==='n')applyAbility('bin');if(k==='u')openUpgrades()});
 document.addEventListener('visibilitychange',()=>{if(document.hidden){stopAmbience();if(mode==='playing')present('paused')}else if(!muted)startAmbience()});
 
@@ -943,7 +1056,7 @@ function updateTacticalIntel(){let mostDanger=0,maxThreat=-1;for(let l=0;l<3;l++
 function drawBarrier(b,l){const y=feet[l];ctx.save();ctx.translate(b.x,y);ctx.fillStyle='#1a253188';ctx.fillRect(-25,-35,48,43);for(let k=0;k<3;k++){const off=k*12-14;rounded(-22+off,-35,12,40,2,'#87684b','#d0ae6c');ctx.strokeStyle='#523c30';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-22+off,-25);ctx.lineTo(-10+off,-5);ctx.stroke()}ctx.fillStyle='#101a23';ctx.fillRect(-24,-45,48,5);ctx.fillStyle='#f4d16b';ctx.fillRect(-24,-45,48*Math.max(0,b.hp/b.maxHp),5);ctx.restore()}
 initMobileDock();updateChapters();updateRoster();updateHud();present('intro');requestAnimationFrame(frame);
 // A tiny diagnostic interface used only for local verification, without external dependencies.
-window.CONVERGENCE_TEST={getState:()=>({mode,stage,money,morale,defense,elapsed,gameSpeed,pendingPlacement:pendingPlacement?.type||null,zoom:camera.zoom,cameraEnabled:camera.enabled,barriers:barriers.filter(Boolean).length,fires:fires.filter(Boolean).map(f=>({type:f.type,lane:f.lane,hp:f.hp,time:f.time,x:f.x})),gasClouds:gasClouds.length,stunFields:stunFields.length,foesByType:Object.fromEntries(FOES.map(f=>[f.id,units.filter(u=>u.team==='foe'&&u.type===f.id).length])),squads:new Set(units.filter(u=>u.squad).map(u=>u.squad)).size,cooldowns:{...cooldowns},unitsPlaced,enemyPlaced,unitPositions:units.map(u=>({id:u.id,type:u.type,team:u.team,lane:u.lane,x:u.x,y:u.y})),allyUnits:units.filter(u=>u.team==='ally').length,foeUnits:units.filter(u=>u.team==='foe').length,highest:save.highest,points:save.points}),start:()=>startStage(stage),deploy:(i,lane)=>{setLane(lane);deployUnit(i)},advance:seconds=>{for(let i=0;i<Math.round(seconds*20)&&mode==='playing';i++)update(.05)},buildBarrier:lane=>{setLane(lane);applyAbility('barrier')},spawnSquad:(type,lane)=>spawnSquad(type,lane),armFire:(type,lane)=>{setLane(lane);return beginPlacement(type)},placeFire:(type,lane,x)=>{setLane(lane);if(!pendingPlacement||pendingPlacement.type!==type)beginPlacement(type);return placeFire(type,x)},openUpgrades,closeUpgrades,toggleSpeed,toggleCamera,cancelPlacement,resetProgress:()=>{save={highest:0,points:120,levels:Object.fromEntries(UNITS.map(u=>[u.id,1])),wins:0};persist();startStage(0)}};
+window.CONVERGENCE_TEST={audioStatus:()=>({muted,contextState:actSound?.state||'none',played:{...SFX_VOICES},activeAmbient:!!ambience}),triggerSound:kind=>soundEffect(kind),getState:()=>({mode,stage,money,morale,defense,elapsed,gameSpeed,pendingPlacement:pendingPlacement?.type||null,zoom:camera.zoom,cameraEnabled:camera.enabled,barriers:barriers.filter(Boolean).length,fires:fires.filter(Boolean).map(f=>({type:f.type,lane:f.lane,hp:f.hp,time:f.time,x:f.x})),gasClouds:gasClouds.length,stunFields:stunFields.length,foesByType:Object.fromEntries(FOES.map(f=>[f.id,units.filter(u=>u.team==='foe'&&u.type===f.id).length])),squads:new Set(units.filter(u=>u.squad).map(u=>u.squad)).size,cooldowns:{...cooldowns},unitsPlaced,enemyPlaced,unitPositions:units.map(u=>({id:u.id,type:u.type,team:u.team,lane:u.lane,x:u.x,y:u.y})),allyUnits:units.filter(u=>u.team==='ally').length,foeUnits:units.filter(u=>u.team==='foe').length,highest:save.highest,points:save.points}),start:()=>startStage(stage),deploy:(i,lane)=>{setLane(lane);deployUnit(i)},advance:seconds=>{for(let i=0;i<Math.round(seconds*20)&&mode==='playing';i++)update(.05)},buildBarrier:lane=>{setLane(lane);applyAbility('barrier')},spawnSquad:(type,lane)=>spawnSquad(type,lane),armFire:(type,lane)=>{setLane(lane);return beginPlacement(type)},placeFire:(type,lane,x)=>{setLane(lane);if(!pendingPlacement||pendingPlacement.type!==type)beginPlacement(type);return placeFire(type,x)},openUpgrades,closeUpgrades,toggleSpeed,toggleCamera,cancelPlacement,resetProgress:()=>{save={highest:0,points:120,levels:Object.fromEntries(UNITS.map(u=>[u.id,1])),wins:0};persist();startStage(0)}};
 })();
 </script>
 </body></html>
